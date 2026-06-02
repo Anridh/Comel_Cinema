@@ -1,0 +1,10 @@
+# Mengabaikan folder konfigurasi Visual Studio
+.vs/
+
+# Mengabaikan fail hasil build (kompilasi)
+[Bb]in/
+[Oo]bj/
+
+# Mengabaikan fail pengguna
+*.user
+*.suo
