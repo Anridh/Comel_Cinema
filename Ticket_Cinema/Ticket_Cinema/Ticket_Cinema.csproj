@@ -99,15 +99,6 @@
     <None Include="Resources\c13a508da7683a29e7220c9a50b2d181.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cinemax.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Cinemax_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Cinemax.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>

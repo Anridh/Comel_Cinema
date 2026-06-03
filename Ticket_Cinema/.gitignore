@@ -8,3 +8,6 @@
 # Mengabaikan fail pengguna
 *.user
 *.suo
+
+*.mdf
+*.ldf
