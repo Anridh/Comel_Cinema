@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Ticket_Cinema/Ticket_Cinema/Cinemax.mdf
+/Ticket_Cinema/Ticket_Cinema/Cinemax_log.ldf
