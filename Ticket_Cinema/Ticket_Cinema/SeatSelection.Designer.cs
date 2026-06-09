@@ -113,7 +113,7 @@
             this.labelHall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHall.Location = new System.Drawing.Point(711, 19);
             this.labelHall.Name = "labelHall";
-            this.labelHall.Size = new System.Drawing.Size(96, 23);
+            this.labelHall.Size = new System.Drawing.Size(77, 18);
             this.labelHall.TabIndex = 18;
             this.labelHall.Text = "label Hall";
             this.labelHall.Click += new System.EventHandler(this.labelduration_Click);
@@ -124,7 +124,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(668, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "Hall :";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -135,7 +135,7 @@
             this.labelmoviename.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelmoviename.Location = new System.Drawing.Point(256, 30);
             this.labelmoviename.Name = "labelmoviename";
-            this.labelmoviename.Size = new System.Drawing.Size(66, 25);
+            this.labelmoviename.Size = new System.Drawing.Size(53, 20);
             this.labelmoviename.TabIndex = 13;
             this.labelmoviename.Text = "Movie";
             this.labelmoviename.Click += new System.EventHandler(this.labelmoviename_Click);
@@ -146,7 +146,7 @@
             this.labelMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMovie.Location = new System.Drawing.Point(184, 30);
             this.labelMovie.Name = "labelMovie";
-            this.labelMovie.Size = new System.Drawing.Size(79, 25);
+            this.labelMovie.Size = new System.Drawing.Size(63, 20);
             this.labelMovie.TabIndex = 12;
             this.labelMovie.Text = "Movie :";
             this.labelMovie.Click += new System.EventHandler(this.labelMovie_Click);
@@ -703,7 +703,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(1137, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 80;
             this.label2.Text = "Available";
             // 
@@ -713,7 +713,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(1137, 365);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 25);
+            this.label3.Size = new System.Drawing.Size(65, 20);
             this.label3.TabIndex = 81;
             this.label3.Text = "Booked";
             // 
@@ -723,7 +723,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(1137, 305);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 25);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 82;
             this.label4.Text = "Selected";
             // 
@@ -750,7 +750,7 @@
             this.labelTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalPrice.Location = new System.Drawing.Point(533, 583);
             this.labelTotalPrice.Name = "labelTotalPrice";
-            this.labelTotalPrice.Size = new System.Drawing.Size(125, 25);
+            this.labelTotalPrice.Size = new System.Drawing.Size(100, 20);
             this.labelTotalPrice.TabIndex = 85;
             this.labelTotalPrice.Text = "Total Price :";
             // 
@@ -786,7 +786,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(184, 114);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 25);
+            this.label5.Size = new System.Drawing.Size(56, 20);
             this.label5.TabIndex = 89;
             this.label5.Text = "Time :";
             // 
@@ -796,7 +796,7 @@
             this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDate.Location = new System.Drawing.Point(184, 71);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(69, 25);
+            this.labelDate.Size = new System.Drawing.Size(55, 20);
             this.labelDate.TabIndex = 90;
             this.labelDate.Text = "Date :";
             // 
@@ -806,7 +806,7 @@
             this.labelDatemovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDatemovie.Location = new System.Drawing.Point(256, 71);
             this.labelDatemovie.Name = "labelDatemovie";
-            this.labelDatemovie.Size = new System.Drawing.Size(56, 25);
+            this.labelDatemovie.Size = new System.Drawing.Size(45, 20);
             this.labelDatemovie.TabIndex = 91;
             this.labelDatemovie.Text = "Date";
             // 
@@ -816,7 +816,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(256, 114);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 25);
+            this.label7.Size = new System.Drawing.Size(46, 20);
             this.label7.TabIndex = 92;
             this.label7.Text = "Time";
             // 
@@ -824,7 +824,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 539);
+            this.ClientSize = new System.Drawing.Size(1245, 682);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.labelDatemovie);
             this.Controls.Add(this.labelDate);
