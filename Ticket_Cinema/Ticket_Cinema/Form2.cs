@@ -19,7 +19,7 @@ namespace Ticket_Cinema
 
         private void Ticket_Load(object sender, EventArgs e)
         {
-
+            //testing testing
         }
 
         private void label1_Click(object sender, EventArgs e)
