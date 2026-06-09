@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class Ticket : Form
+    public partial class sideBar : Form
     {
-        public Ticket()
+        public sideBar()
         {
             InitializeComponent();
-        }
-
-        private void Ticket_Load(object sender, EventArgs e)
-        {
-            //testing testing
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
