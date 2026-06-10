@@ -49,7 +49,7 @@
             this.picQR = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.viewbBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMovie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQR)).BeginInit();
@@ -271,31 +271,31 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Enjoy the movie.";
             // 
-            // btnClose
+            // viewbBtn
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1108, 581);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(95, 41);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
+            this.viewbBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.viewbBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.viewbBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewbBtn.ForeColor = System.Drawing.Color.White;
+            this.viewbBtn.Location = new System.Drawing.Point(946, 566);
+            this.viewbBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.viewbBtn.Name = "viewbBtn";
+            this.viewbBtn.Size = new System.Drawing.Size(177, 41);
+            this.viewbBtn.TabIndex = 16;
+            this.viewbBtn.Text = "View Details";
+            this.viewbBtn.UseVisualStyleBackColor = false;
             // 
-            // Ticket
+            // TicketF9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 673);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.viewbBtn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.picQR);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Ticket";
+            this.Name = "TicketF9";
             this.Text = "Ticket";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -326,7 +326,7 @@
         private System.Windows.Forms.PictureBox picQR;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button viewbBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
     }

@@ -22,35 +22,13 @@ namespace Ticket_Cinema
 
         }
 
-        private void labellanguage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelgenre_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void labelduration_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,10 +45,7 @@ namespace Ticket_Cinema
 
         }
 
-        private void labelrating_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -95,6 +70,20 @@ namespace Ticket_Cinema
         private void buttonB2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            BookingF6 booking = new BookingF6();
+            booking.Show();
+            this.Hide();
         }
     }
 }

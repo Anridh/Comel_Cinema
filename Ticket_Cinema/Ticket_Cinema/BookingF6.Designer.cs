@@ -232,8 +232,9 @@
             this.backBtn.TabIndex = 90;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
-            // Booking
+            // BookingF6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -258,7 +259,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelbooking);
-            this.Name = "Booking";
+            this.Name = "BookingF6";
             this.Text = "Booking";
             this.ResumeLayout(false);
             this.PerformLayout();

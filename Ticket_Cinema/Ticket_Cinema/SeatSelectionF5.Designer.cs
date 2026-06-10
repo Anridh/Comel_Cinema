@@ -769,6 +769,7 @@
             this.buttonBack.TabIndex = 87;
             this.buttonBack.Text = "Back";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonNext
             // 
@@ -779,6 +780,7 @@
             this.buttonNext.TabIndex = 88;
             this.buttonNext.Text = "Next";
             this.buttonNext.UseVisualStyleBackColor = false;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // label5
             // 
@@ -820,7 +822,7 @@
             this.label7.TabIndex = 92;
             this.label7.Text = "Time";
             // 
-            // SeatSelection
+            // SeatSelectionF5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -901,7 +903,7 @@
             this.Controls.Add(this.labelmoviename);
             this.Controls.Add(this.labelMovie);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "SeatSelection";
+            this.Name = "SeatSelectionF5";
             this.Text = "SeatSelection";
             this.Load += new System.EventHandler(this.SeatSelection_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

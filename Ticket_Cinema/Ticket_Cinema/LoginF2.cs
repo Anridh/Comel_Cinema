@@ -28,5 +28,10 @@ namespace Ticket_Cinema
             signup.Show();
             this.Hide();
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
