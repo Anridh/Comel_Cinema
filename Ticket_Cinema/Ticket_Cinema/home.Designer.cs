@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class sideBar
+    partial class HomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.sideBar = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.sideBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // sideBar
             // 
-            this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(136, 450);
-            this.panel1.TabIndex = 0;
+            this.sideBar.BackColor = System.Drawing.Color.Navy;
+            this.sideBar.Controls.Add(this.button3);
+            this.sideBar.Controls.Add(this.button2);
+            this.sideBar.Controls.Add(this.button1);
+            this.sideBar.Location = new System.Drawing.Point(0, -1);
+            this.sideBar.Name = "sideBar";
+            this.sideBar.Size = new System.Drawing.Size(143, 676);
+            this.sideBar.TabIndex = 0;
             // 
             // button3
             // 
@@ -53,7 +53,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(0, 244);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 37);
+            this.button3.Size = new System.Drawing.Size(143, 37);
             this.button3.TabIndex = 1;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = false;
@@ -65,7 +65,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(0, 190);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 37);
+            this.button2.Size = new System.Drawing.Size(143, 37);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
@@ -77,27 +77,27 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 37);
+            this.button1.Size = new System.Drawing.Size(143, 37);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // sideBar
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 673);
-            this.Controls.Add(this.panel1);
-            this.Name = "sideBar";
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.sideBar);
+            this.Name = "HomeForm";
             this.Text = "home";
-            this.panel1.ResumeLayout(false);
+            this.sideBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel sideBar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
