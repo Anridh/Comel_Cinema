@@ -30,7 +30,6 @@
         {
             this.sideBar = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnProfile = new System.Windows.Forms.Button();
             this.btnTickets = new System.Windows.Forms.Button();
             this.btnPayments = new System.Windows.Forms.Button();
             this.btnBookings = new System.Windows.Forms.Button();
@@ -78,7 +77,6 @@
             // 
             this.sideBar.BackColor = System.Drawing.Color.Navy;
             this.sideBar.Controls.Add(this.btnLogout);
-            this.sideBar.Controls.Add(this.btnProfile);
             this.sideBar.Controls.Add(this.btnTickets);
             this.sideBar.Controls.Add(this.btnPayments);
             this.sideBar.Controls.Add(this.btnBookings);
@@ -90,7 +88,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.Navy;
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Location = new System.Drawing.Point(0, 407);
@@ -100,18 +98,6 @@
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnProfile
-            // 
-            this.btnProfile.BackColor = System.Drawing.Color.Navy;
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.Location = new System.Drawing.Point(0, 353);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(143, 37);
-            this.btnProfile.TabIndex = 3;
-            this.btnProfile.Text = "Profile";
-            this.btnProfile.UseVisualStyleBackColor = false;
             // 
             // btnTickets
             // 
@@ -193,6 +179,7 @@
             this.btnBook3.TabIndex = 8;
             this.btnBook3.Text = "BOOK";
             this.btnBook3.UseVisualStyleBackColor = false;
+            this.btnBook3.Click += new System.EventHandler(this.btnBook3_Click);
             // 
             // btnBook2
             // 
@@ -205,6 +192,7 @@
             this.btnBook2.TabIndex = 7;
             this.btnBook2.Text = "BOOK";
             this.btnBook2.UseVisualStyleBackColor = false;
+            this.btnBook2.Click += new System.EventHandler(this.btnBook2_Click);
             // 
             // btnBook1
             // 
@@ -217,6 +205,7 @@
             this.btnBook1.TabIndex = 6;
             this.btnBook1.Text = "BOOK";
             this.btnBook1.UseVisualStyleBackColor = false;
+            this.btnBook1.Click += new System.EventHandler(this.btnBook1_Click);
             // 
             // lblNowShowing
             // 
@@ -499,7 +488,6 @@
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.Button btnMovies;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnTickets;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panel3;

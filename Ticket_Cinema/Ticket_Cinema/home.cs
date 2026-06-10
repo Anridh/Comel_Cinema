@@ -193,5 +193,26 @@ namespace Ticket_Cinema
                 this.Hide();
             }
         }
+
+        private void btnBook1_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
+
+        private void btnBook2_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
+
+        private void btnBook3_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
     }
 }
