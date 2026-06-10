@@ -31,14 +31,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.signUpLbl = new System.Windows.Forms.LinkLabel();
+            this.label6 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.passCheckBox = new System.Windows.Forms.CheckBox();
             this.passTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.signUpLbl = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +92,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(549, 388);
             this.panel1.TabIndex = 4;
+            // 
+            // signUpLbl
+            // 
+            this.signUpLbl.AutoSize = true;
+            this.signUpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLbl.LinkColor = System.Drawing.SystemColors.HotTrack;
+            this.signUpLbl.Location = new System.Drawing.Point(322, 340);
+            this.signUpLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.signUpLbl.Name = "signUpLbl";
+            this.signUpLbl.Size = new System.Drawing.Size(75, 20);
+            this.signUpLbl.TabIndex = 17;
+            this.signUpLbl.TabStop = true;
+            this.signUpLbl.Text = "Sign Up";
+            this.signUpLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLbl_LinkClicked);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(124, 340);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(190, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Don\'t have an account? ";
             // 
             // loginBtn
             // 
@@ -167,36 +193,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Email";
             // 
-            // signUpLbl
-            // 
-            this.signUpLbl.AutoSize = true;
-            this.signUpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpLbl.LinkColor = System.Drawing.SystemColors.HotTrack;
-            this.signUpLbl.Location = new System.Drawing.Point(322, 340);
-            this.signUpLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.signUpLbl.Name = "signUpLbl";
-            this.signUpLbl.Size = new System.Drawing.Size(75, 20);
-            this.signUpLbl.TabIndex = 17;
-            this.signUpLbl.TabStop = true;
-            this.signUpLbl.Text = "Sign Up";
-            this.signUpLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLbl_LinkClicked);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(124, 340);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(190, 20);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Don\'t have an account? ";
-            // 
             // LoginF2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Ticket_Cinema.Properties.Resources.LoginBg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);

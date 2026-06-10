@@ -121,4 +121,7 @@
   <data name="c13a508da7683a29e7220c9a50b2d181" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c13a508da7683a29e7220c9a50b2d181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LoginBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginBg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupF1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.signUpBtn = new System.Windows.Forms.Button();
-            this.loginLbl = new System.Windows.Forms.LinkLabel();
             this.passCheckBox = new System.Windows.Forms.CheckBox();
             this.conPassTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,6 +37,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.loginLbl = new System.Windows.Forms.LinkLabel();
+            this.signUpBtn = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -66,47 +66,6 @@
             this.panel1.Size = new System.Drawing.Size(549, 450);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(113, 393);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(206, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Already have an account? ";
-            // 
-            // signUpBtn
-            // 
-            this.signUpBtn.AllowDrop = true;
-            this.signUpBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.signUpBtn.Location = new System.Drawing.Point(68, 302);
-            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(412, 55);
-            this.signUpBtn.TabIndex = 14;
-            this.signUpBtn.Text = "Sign Up";
-            this.signUpBtn.UseVisualStyleBackColor = false;
-            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
-            // 
-            // loginLbl
-            // 
-            this.loginLbl.AutoSize = true;
-            this.loginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLbl.LinkColor = System.Drawing.SystemColors.HotTrack;
-            this.loginLbl.Location = new System.Drawing.Point(327, 393);
-            this.loginLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.loginLbl.Name = "loginLbl";
-            this.loginLbl.Size = new System.Drawing.Size(104, 20);
-            this.loginLbl.TabIndex = 15;
-            this.loginLbl.TabStop = true;
-            this.loginLbl.Text = "Log in here";
-            this.loginLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginLbl_LinkClicked);
             // 
             // passCheckBox
             // 
@@ -187,6 +146,47 @@
             this.label1.Size = new System.Drawing.Size(149, 42);
             this.label1.TabIndex = 16;
             this.label1.Text = "Email";
+            // 
+            // loginLbl
+            // 
+            this.loginLbl.AutoSize = true;
+            this.loginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLbl.LinkColor = System.Drawing.SystemColors.HotTrack;
+            this.loginLbl.Location = new System.Drawing.Point(327, 393);
+            this.loginLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.loginLbl.Name = "loginLbl";
+            this.loginLbl.Size = new System.Drawing.Size(104, 20);
+            this.loginLbl.TabIndex = 15;
+            this.loginLbl.TabStop = true;
+            this.loginLbl.Text = "Log in here";
+            this.loginLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginLbl_LinkClicked);
+            // 
+            // signUpBtn
+            // 
+            this.signUpBtn.AllowDrop = true;
+            this.signUpBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.signUpBtn.Location = new System.Drawing.Point(68, 302);
+            this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.signUpBtn.Name = "signUpBtn";
+            this.signUpBtn.Size = new System.Drawing.Size(412, 55);
+            this.signUpBtn.TabIndex = 14;
+            this.signUpBtn.Text = "Sign Up";
+            this.signUpBtn.UseVisualStyleBackColor = false;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(113, 393);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(206, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Already have an account? ";
             // 
             // label3
             // 
