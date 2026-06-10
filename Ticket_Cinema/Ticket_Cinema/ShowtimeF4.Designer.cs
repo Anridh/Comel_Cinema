@@ -185,7 +185,7 @@
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.White;
-            this.backBtn.Location = new System.Drawing.Point(1106, 519);
+            this.backBtn.Location = new System.Drawing.Point(1122, 546);
             this.backBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(95, 41);
@@ -193,7 +193,7 @@
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = false;
             // 
-            // ShowtimeF3
+            // ShowtimeF4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.labelmoviename);
             this.Controls.Add(this.labelMovie);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "ShowtimeF3";
+            this.Name = "ShowtimeF4";
             this.Text = "Showtime";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -21,5 +21,12 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void signUpLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignupF1 signup = new SignupF1();
+            signup.Show();
+            this.Hide();
+        }
     }
 }

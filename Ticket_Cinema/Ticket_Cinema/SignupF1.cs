@@ -17,16 +17,6 @@ namespace Ticket_Cinema
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             int radius = 20; // Nilai radius mesti SAMA dengan nilai di Form_Load tadi
@@ -70,39 +60,18 @@ namespace Ticket_Cinema
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void signUpBtn_Click(object sender, EventArgs e)
         {
-
+            LoginF2 login = new LoginF2();
+            login.Show();
+            this.Hide();
         }
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        private void loginLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
+            LoginF2 login = new LoginF2();
+            login.Show();
+            this.Hide();
         }
     }
 }
