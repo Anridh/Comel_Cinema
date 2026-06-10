@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class showtime
+    partial class ShowtimeF4
     {
         /// <summary>
         /// Required designer variable.
@@ -40,9 +40,9 @@
             this.labelduration = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.buttonback = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.labelMovie.AutoSize = true;
             this.labelMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMovie.Location = new System.Drawing.Point(206, 54);
+            this.labelMovie.Location = new System.Drawing.Point(211, 84);
             this.labelMovie.Name = "labelMovie";
             this.labelMovie.Size = new System.Drawing.Size(70, 25);
             this.labelMovie.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.labelmoviename.AutoSize = true;
             this.labelmoviename.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmoviename.Location = new System.Drawing.Point(206, 93);
+            this.labelmoviename.Location = new System.Drawing.Point(211, 118);
             this.labelmoviename.Name = "labelmoviename";
             this.labelmoviename.Size = new System.Drawing.Size(240, 29);
             this.labelmoviename.TabIndex = 2;
@@ -146,38 +146,29 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 249);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(31, 256);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 22);
+            this.label5.Size = new System.Drawing.Size(162, 29);
             this.label5.TabIndex = 11;
             this.label5.Text = "Select Date :";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(211, 249);
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(199, 256);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(252, 22);
             this.dateTimePicker1.TabIndex = 12;
-            // 
-            // buttonback
-            // 
-            this.buttonback.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonback.Location = new System.Drawing.Point(945, 470);
-            this.buttonback.Name = "buttonback";
-            this.buttonback.Size = new System.Drawing.Size(97, 34);
-            this.buttonback.TabIndex = 13;
-            this.buttonback.Text = "Back";
-            this.buttonback.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 283);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 313);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 199);
             this.dataGridView1.TabIndex = 14;
             // 
             // pictureBox1
@@ -188,13 +179,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // showtime
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.White;
+            this.backBtn.Location = new System.Drawing.Point(1106, 519);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(95, 41);
+            this.backBtn.TabIndex = 17;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = false;
+            // 
+            // ShowtimeF3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 673);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonback);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.labelrating);
@@ -208,8 +213,8 @@
             this.Controls.Add(this.labelmoviename);
             this.Controls.Add(this.labelMovie);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "showtime";
-            this.Text = "showtime";
+            this.Name = "ShowtimeF3";
+            this.Text = "Showtime";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -232,7 +237,7 @@
         private System.Windows.Forms.Label labelduration;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button buttonback;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button backBtn;
     }
 }

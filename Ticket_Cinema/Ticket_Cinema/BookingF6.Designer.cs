@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class Booking
+    partial class BookingF6
     {
         /// <summary>
         /// Required designer variable.
@@ -46,8 +46,8 @@
             this.textBoxMovie = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
-            this.buttonConfirmBooking = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelbooking
@@ -205,32 +205,41 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Ticket Price :";
             // 
-            // buttonBack
+            // btnClose
             // 
-            this.buttonBack.Location = new System.Drawing.Point(32, 624);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(120, 36);
-            this.buttonBack.TabIndex = 88;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
+            this.btnClose.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1035, 589);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(171, 41);
+            this.btnClose.TabIndex = 89;
+            this.btnClose.Text = "Confirm Booking";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // buttonConfirmBooking
+            // backBtn
             // 
-            this.buttonConfirmBooking.BackColor = System.Drawing.Color.RoyalBlue;
-            this.buttonConfirmBooking.Location = new System.Drawing.Point(1044, 624);
-            this.buttonConfirmBooking.Name = "buttonConfirmBooking";
-            this.buttonConfirmBooking.Size = new System.Drawing.Size(178, 36);
-            this.buttonConfirmBooking.TabIndex = 89;
-            this.buttonConfirmBooking.Text = "Confirm Booking";
-            this.buttonConfirmBooking.UseVisualStyleBackColor = false;
+            this.backBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.ForeColor = System.Drawing.Color.White;
+            this.backBtn.Location = new System.Drawing.Point(77, 589);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(171, 41);
+            this.backBtn.TabIndex = 90;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = false;
             // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 672);
-            this.Controls.Add(this.buttonConfirmBooking);
-            this.Controls.Add(this.buttonBack);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxMovie);
@@ -276,7 +285,7 @@
         private System.Windows.Forms.TextBox textBoxMovie;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.Button buttonConfirmBooking;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button backBtn;
     }
 }

@@ -46,23 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Booking.cs">
+    <Compile Include="BookingF6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Booking.Designer.cs">
-      <DependentUpon>Booking.cs</DependentUpon>
+    <Compile Include="BookingF6.Designer.cs">
+      <DependentUpon>BookingF6.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookingList.cs">
+    <Compile Include="BookingListF10.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookingList.Designer.cs">
-      <DependentUpon>BookingList.cs</DependentUpon>
+    <Compile Include="BookingListF10.Designer.cs">
+      <DependentUpon>BookingListF10.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="LoginF2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LoginF2.Designer.cs">
+      <DependentUpon>LoginF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignupF1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupF1.Designer.cs">
+      <DependentUpon>SignupF1.cs</DependentUpon>
     </Compile>
     <Compile Include="home.cs">
       <SubType>Form</SubType>
@@ -72,32 +78,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeatSelection.cs">
+    <Compile Include="SeatSelectionF5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeatSelection.Designer.cs">
-      <DependentUpon>SeatSelection.cs</DependentUpon>
+    <Compile Include="SeatSelectionF5.Designer.cs">
+      <DependentUpon>SeatSelectionF5.cs</DependentUpon>
     </Compile>
-    <Compile Include="showtime.cs">
+    <Compile Include="ShowtimeF4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="showtime.Designer.cs">
-      <DependentUpon>showtime.cs</DependentUpon>
+    <Compile Include="ShowtimeF4.Designer.cs">
+      <DependentUpon>ShowtimeF4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ticket.cs">
+    <Compile Include="TicketF9.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ticket.Designer.cs">
-      <DependentUpon>Ticket.cs</DependentUpon>
+    <Compile Include="TicketF9.Designer.cs">
+      <DependentUpon>TicketF9.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Booking.resx">
-      <DependentUpon>Booking.cs</DependentUpon>
+    <EmbeddedResource Include="BookingF6.resx">
+      <DependentUpon>BookingF6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookingList.resx">
-      <DependentUpon>BookingList.cs</DependentUpon>
+    <EmbeddedResource Include="BookingListF10.resx">
+      <DependentUpon>BookingListF10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="LoginF2.resx">
+      <DependentUpon>LoginF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupF1.resx">
+      <DependentUpon>SignupF1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
@@ -112,14 +121,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SeatSelection.resx">
-      <DependentUpon>SeatSelection.cs</DependentUpon>
+    <EmbeddedResource Include="SeatSelectionF5.resx">
+      <DependentUpon>SeatSelectionF5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="showtime.resx">
-      <DependentUpon>showtime.cs</DependentUpon>
+    <EmbeddedResource Include="ShowtimeF4.resx">
+      <DependentUpon>ShowtimeF4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ticket.resx">
-      <DependentUpon>Ticket.cs</DependentUpon>
+    <EmbeddedResource Include="TicketF9.resx">
+      <DependentUpon>TicketF9.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

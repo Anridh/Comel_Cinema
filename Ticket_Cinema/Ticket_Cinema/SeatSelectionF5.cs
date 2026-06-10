@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class SeatSelection : Form
+    public partial class SeatSelectionF5 : Form
     {
-        public SeatSelection()
+        public SeatSelectionF5()
         {
             InitializeComponent();
         }

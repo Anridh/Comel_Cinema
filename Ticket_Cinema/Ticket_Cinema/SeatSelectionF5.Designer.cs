@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class SeatSelection
+    partial class SeatSelectionF5
     {
         /// <summary>
         /// Required designer variable.
@@ -824,7 +824,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1245, 682);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.labelDatemovie);
             this.Controls.Add(this.labelDate);

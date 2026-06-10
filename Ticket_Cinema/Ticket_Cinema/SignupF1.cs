@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class Form1 : Form
+    public partial class SignupF1 : Form
     {
-        public Form1()
+        public SignupF1()
         {
             InitializeComponent();
         }
@@ -91,6 +91,16 @@ namespace Ticket_Cinema
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

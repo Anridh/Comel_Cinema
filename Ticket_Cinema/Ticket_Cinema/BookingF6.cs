@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class showtime : Form
+    public partial class BookingF6 : Form
     {
-        public showtime()
+        public BookingF6()
         {
             InitializeComponent();
+        }
+
+        private void buttonConfirmBooking_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class Form1
+    partial class SignupF1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupF1));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,6 +47,7 @@
             // 
             // label2
             // 
+            this.label2.AllowDrop = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Stencil", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,16 +58,13 @@
             this.label2.Padding = new System.Windows.Forms.Padding(0, 23, 0, 0);
             this.label2.Size = new System.Drawing.Size(1261, 98);
             this.label2.TabIndex = 1;
-// HEAD
-            this.label2.Text = "CineMax CINEMA";
-
             this.label2.Text = "CINEMAX";
-// 9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
+            this.label3.AllowDrop = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Rage Italic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +81,7 @@
             // 
             // panel1
             // 
+            this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.linkLabel1);
@@ -130,15 +129,12 @@
             // 
             // button1
             // 
+            this.button1.AllowDrop = true;
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Cornsilk;
             this.button1.Location = new System.Drawing.Point(69, 324);
-// HEAD
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//
             this.button1.Margin = new System.Windows.Forms.Padding(4);
-//9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(412, 55);
             this.button1.TabIndex = 11;
@@ -149,31 +145,24 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.AllowDrop = true;
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(320, 222);
-// HEAD
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
-// 9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(149, 24);
             this.checkBox1.TabIndex = 10;
             this.checkBox1.Text = "Show password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-// HEAD
-            this.textBox3.Location = new System.Drawing.Point(175, 169);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-//
             this.textBox3.Location = new System.Drawing.Point(157, 180);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-// 9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(323, 30);
             this.textBox3.TabIndex = 9;
@@ -191,20 +180,19 @@
             // 
             // textBox2
             // 
+            this.textBox2.AllowDrop = true;
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(157, 117);
-// HEAD
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-// 9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 30);
             this.textBox2.TabIndex = 7;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 
+            this.label4.AllowDrop = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 117);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -217,14 +205,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.AllowDrop = true;
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(157, 58);
-///// HEAD
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-/////
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-// 9d6d92f71ec369015a51f7a1531e3d6c437fb115
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(323, 30);
             this.textBox1.TabIndex = 5;
@@ -232,6 +217,7 @@
             // 
             // label1
             // 
+            this.label1.AllowDrop = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(7, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -242,8 +228,9 @@
             this.label1.Text = "Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // SignupF1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -254,7 +241,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "SignupF1";
             this.Text = "      ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
