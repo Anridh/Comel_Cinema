@@ -64,6 +64,12 @@
     <Compile Include="LoginF2.Designer.cs">
       <DependentUpon>LoginF2.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentGW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentGW.Designer.cs">
+      <DependentUpon>PaymentGW.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignupF1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <EmbeddedResource Include="LoginF2.resx">
       <DependentUpon>LoginF2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PaymentGW.resx">
+      <DependentUpon>PaymentGW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignupF1.resx">
       <DependentUpon>SignupF1.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,9 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\c13a508da7683a29e7220c9a50b2d181.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LoginBg.jpg" />
