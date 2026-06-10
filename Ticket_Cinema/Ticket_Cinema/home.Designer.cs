@@ -36,18 +36,33 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnBook3 = new System.Windows.Forms.Button();
+            this.btnBook2 = new System.Windows.Forms.Button();
+            this.btnBook1 = new System.Windows.Forms.Button();
+            this.lblNowShowing = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblRating3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblLang3 = new System.Windows.Forms.Label();
+            this.lblGenre3 = new System.Windows.Forms.Label();
+            this.lblDuration3 = new System.Windows.Forms.Label();
+            this.lblTitle3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblRating2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblLang2 = new System.Windows.Forms.Label();
+            this.lblGenre2 = new System.Windows.Forms.Label();
+            this.lblDuration2 = new System.Windows.Forms.Label();
+            this.lblTitle2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblRating1 = new System.Windows.Forms.Label();
+            this.lblLang1 = new System.Windows.Forms.Label();
+            this.lblDuration1 = new System.Windows.Forms.Label();
+            this.lblGenre1 = new System.Windows.Forms.Label();
+            this.lblTitle1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sideBar.SuspendLayout();
             this.panelMain.SuspendLayout();
@@ -147,12 +162,12 @@
             // 
             // panelMain
             // 
-            this.panelMain.Controls.Add(this.button10);
-            this.panelMain.Controls.Add(this.button9);
-            this.panelMain.Controls.Add(this.button8);
-            this.panelMain.Controls.Add(this.label1);
-            this.panelMain.Controls.Add(this.textBox1);
-            this.panelMain.Controls.Add(this.button7);
+            this.panelMain.Controls.Add(this.btnBook3);
+            this.panelMain.Controls.Add(this.btnBook2);
+            this.panelMain.Controls.Add(this.btnBook1);
+            this.panelMain.Controls.Add(this.lblNowShowing);
+            this.panelMain.Controls.Add(this.txtSearch);
+            this.panelMain.Controls.Add(this.btnNext);
             this.panelMain.Controls.Add(this.btnPrevious);
             this.panelMain.Controls.Add(this.panel3);
             this.panelMain.Controls.Add(this.panel2);
@@ -162,126 +177,287 @@
             this.panelMain.Size = new System.Drawing.Size(1121, 673);
             this.panelMain.TabIndex = 1;
             // 
-            // button10
+            // btnBook3
             // 
-            this.button10.BackColor = System.Drawing.Color.Yellow;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(860, 607);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(94, 38);
-            this.button10.TabIndex = 8;
-            this.button10.Text = "BOOK";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnBook3.BackColor = System.Drawing.Color.Yellow;
+            this.btnBook3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBook3.ForeColor = System.Drawing.Color.Black;
+            this.btnBook3.Location = new System.Drawing.Point(860, 607);
+            this.btnBook3.Name = "btnBook3";
+            this.btnBook3.Size = new System.Drawing.Size(94, 38);
+            this.btnBook3.TabIndex = 8;
+            this.btnBook3.Text = "BOOK";
+            this.btnBook3.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnBook2
             // 
-            this.button9.BackColor = System.Drawing.Color.Yellow;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(522, 607);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(94, 38);
-            this.button9.TabIndex = 7;
-            this.button9.Text = "BOOK";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnBook2.BackColor = System.Drawing.Color.Yellow;
+            this.btnBook2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBook2.ForeColor = System.Drawing.Color.Black;
+            this.btnBook2.Location = new System.Drawing.Point(522, 607);
+            this.btnBook2.Name = "btnBook2";
+            this.btnBook2.Size = new System.Drawing.Size(94, 38);
+            this.btnBook2.TabIndex = 7;
+            this.btnBook2.Text = "BOOK";
+            this.btnBook2.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnBook1
             // 
-            this.button8.BackColor = System.Drawing.Color.Yellow;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(186, 607);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(94, 38);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "BOOK";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnBook1.BackColor = System.Drawing.Color.Yellow;
+            this.btnBook1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBook1.ForeColor = System.Drawing.Color.Black;
+            this.btnBook1.Location = new System.Drawing.Point(186, 607);
+            this.btnBook1.Name = "btnBook1";
+            this.btnBook1.Size = new System.Drawing.Size(94, 38);
+            this.btnBook1.TabIndex = 6;
+            this.btnBook1.Text = "BOOK";
+            this.btnBook1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblNowShowing
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 46);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Now Showing";
+            this.lblNowShowing.AutoSize = true;
+            this.lblNowShowing.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNowShowing.Location = new System.Drawing.Point(37, 33);
+            this.lblNowShowing.Name = "lblNowShowing";
+            this.lblNowShowing.Size = new System.Drawing.Size(235, 45);
+            this.lblNowShowing.TabIndex = 5;
+            this.lblNowShowing.Text = "Now Showing";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(700, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Search";
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSearch.Location = new System.Drawing.Point(700, 52);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(327, 22);
+            this.txtSearch.TabIndex = 4;
+            this.txtSearch.Text = "Search";
             // 
-            // button7
+            // btnNext
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(1061, 273);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(57, 76);
-            this.button7.TabIndex = 3;
-            this.button7.Text = ">";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(1061, 273);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(57, 76);
+            this.btnNext.TabIndex = 3;
+            this.btnNext.Text = ">";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrevious
             // 
             this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(22, 273);
+            this.btnPrevious.Location = new System.Drawing.Point(20, 273);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(57, 76);
             this.btnPrevious.TabIndex = 2;
             this.btnPrevious.Text = "<";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lblRating3);
             this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.lblLang3);
+            this.panel3.Controls.Add(this.lblGenre3);
+            this.panel3.Controls.Add(this.lblDuration3);
+            this.panel3.Controls.Add(this.lblTitle3);
             this.panel3.Location = new System.Drawing.Point(757, 107);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(296, 485);
             this.panel3.TabIndex = 1;
             // 
+            // lblRating3
+            // 
+            this.lblRating3.AutoSize = true;
+            this.lblRating3.Location = new System.Drawing.Point(32, 445);
+            this.lblRating3.Name = "lblRating3";
+            this.lblRating3.Size = new System.Drawing.Size(44, 16);
+            this.lblRating3.TabIndex = 15;
+            this.lblRating3.Text = "label1";
+            // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::Ticket_Cinema.Properties.Resources.pic3;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(296, 283);
+            this.pictureBox3.Size = new System.Drawing.Size(296, 306);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
+            // lblLang3
+            // 
+            this.lblLang3.AutoSize = true;
+            this.lblLang3.Location = new System.Drawing.Point(32, 415);
+            this.lblLang3.Name = "lblLang3";
+            this.lblLang3.Size = new System.Drawing.Size(44, 16);
+            this.lblLang3.TabIndex = 14;
+            this.lblLang3.Text = "label5";
+            // 
+            // lblGenre3
+            // 
+            this.lblGenre3.AutoSize = true;
+            this.lblGenre3.Location = new System.Drawing.Point(32, 353);
+            this.lblGenre3.Name = "lblGenre3";
+            this.lblGenre3.Size = new System.Drawing.Size(44, 16);
+            this.lblGenre3.TabIndex = 12;
+            this.lblGenre3.Text = "label3";
+            // 
+            // lblDuration3
+            // 
+            this.lblDuration3.AutoSize = true;
+            this.lblDuration3.Location = new System.Drawing.Point(32, 383);
+            this.lblDuration3.Name = "lblDuration3";
+            this.lblDuration3.Size = new System.Drawing.Size(44, 16);
+            this.lblDuration3.TabIndex = 13;
+            this.lblDuration3.Text = "label4";
+            // 
+            // lblTitle3
+            // 
+            this.lblTitle3.AutoSize = true;
+            this.lblTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle3.Location = new System.Drawing.Point(114, 321);
+            this.lblTitle3.Name = "lblTitle3";
+            this.lblTitle3.Size = new System.Drawing.Size(59, 20);
+            this.lblTitle3.TabIndex = 11;
+            this.lblTitle3.Text = "label2";
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblRating2);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.lblLang2);
+            this.panel2.Controls.Add(this.lblGenre2);
+            this.panel2.Controls.Add(this.lblDuration2);
+            this.panel2.Controls.Add(this.lblTitle2);
             this.panel2.Location = new System.Drawing.Point(421, 107);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(296, 485);
             this.panel2.TabIndex = 1;
             // 
+            // lblRating2
+            // 
+            this.lblRating2.AutoSize = true;
+            this.lblRating2.Location = new System.Drawing.Point(38, 445);
+            this.lblRating2.Name = "lblRating2";
+            this.lblRating2.Size = new System.Drawing.Size(44, 16);
+            this.lblRating2.TabIndex = 10;
+            this.lblRating2.Text = "label1";
+            // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::Ticket_Cinema.Properties.Resources.pic2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(296, 283);
+            this.pictureBox2.Size = new System.Drawing.Size(296, 306);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // lblLang2
+            // 
+            this.lblLang2.AutoSize = true;
+            this.lblLang2.Location = new System.Drawing.Point(38, 415);
+            this.lblLang2.Name = "lblLang2";
+            this.lblLang2.Size = new System.Drawing.Size(44, 16);
+            this.lblLang2.TabIndex = 9;
+            this.lblLang2.Text = "label5";
+            // 
+            // lblGenre2
+            // 
+            this.lblGenre2.AutoSize = true;
+            this.lblGenre2.Location = new System.Drawing.Point(38, 353);
+            this.lblGenre2.Name = "lblGenre2";
+            this.lblGenre2.Size = new System.Drawing.Size(44, 16);
+            this.lblGenre2.TabIndex = 7;
+            this.lblGenre2.Text = "label3";
+            // 
+            // lblDuration2
+            // 
+            this.lblDuration2.AutoSize = true;
+            this.lblDuration2.Location = new System.Drawing.Point(38, 383);
+            this.lblDuration2.Name = "lblDuration2";
+            this.lblDuration2.Size = new System.Drawing.Size(44, 16);
+            this.lblDuration2.TabIndex = 8;
+            this.lblDuration2.Text = "label4";
+            // 
+            // lblTitle2
+            // 
+            this.lblTitle2.AutoSize = true;
+            this.lblTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle2.Location = new System.Drawing.Point(120, 321);
+            this.lblTitle2.Name = "lblTitle2";
+            this.lblTitle2.Size = new System.Drawing.Size(59, 20);
+            this.lblTitle2.TabIndex = 6;
+            this.lblTitle2.Text = "label2";
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblRating1);
+            this.panel1.Controls.Add(this.lblLang1);
+            this.panel1.Controls.Add(this.lblDuration1);
+            this.panel1.Controls.Add(this.lblGenre1);
+            this.panel1.Controls.Add(this.lblTitle1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(85, 107);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 485);
             this.panel1.TabIndex = 0;
             // 
+            // lblRating1
+            // 
+            this.lblRating1.AutoSize = true;
+            this.lblRating1.Location = new System.Drawing.Point(32, 445);
+            this.lblRating1.Name = "lblRating1";
+            this.lblRating1.Size = new System.Drawing.Size(44, 16);
+            this.lblRating1.TabIndex = 5;
+            this.lblRating1.Text = "label1";
+            // 
+            // lblLang1
+            // 
+            this.lblLang1.AutoSize = true;
+            this.lblLang1.Location = new System.Drawing.Point(32, 415);
+            this.lblLang1.Name = "lblLang1";
+            this.lblLang1.Size = new System.Drawing.Size(44, 16);
+            this.lblLang1.TabIndex = 4;
+            this.lblLang1.Text = "label5";
+            // 
+            // lblDuration1
+            // 
+            this.lblDuration1.AutoSize = true;
+            this.lblDuration1.Location = new System.Drawing.Point(32, 383);
+            this.lblDuration1.Name = "lblDuration1";
+            this.lblDuration1.Size = new System.Drawing.Size(44, 16);
+            this.lblDuration1.TabIndex = 3;
+            this.lblDuration1.Text = "label4";
+            // 
+            // lblGenre1
+            // 
+            this.lblGenre1.AutoSize = true;
+            this.lblGenre1.Location = new System.Drawing.Point(32, 353);
+            this.lblGenre1.Name = "lblGenre1";
+            this.lblGenre1.Size = new System.Drawing.Size(44, 16);
+            this.lblGenre1.TabIndex = 2;
+            this.lblGenre1.Text = "label3";
+            // 
+            // lblTitle1
+            // 
+            this.lblTitle1.AutoSize = true;
+            this.lblTitle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle1.Location = new System.Drawing.Point(114, 321);
+            this.lblTitle1.Name = "lblTitle1";
+            this.lblTitle1.Size = new System.Drawing.Size(59, 20);
+            this.lblTitle1.TabIndex = 1;
+            this.lblTitle1.Text = "label2";
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::Ticket_Cinema.Properties.Resources.pic1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(296, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(296, 306);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -294,14 +470,18 @@
             this.Controls.Add(this.sideBar);
             this.Name = "HomeForm";
             this.Text = "home";
+            this.Load += new System.EventHandler(this.HomeForm_Load);
             this.sideBar.ResumeLayout(false);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -320,15 +500,30 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label lblNowShowing;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnBook3;
+        private System.Windows.Forms.Button btnBook2;
+        private System.Windows.Forms.Button btnBook1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblLang1;
+        private System.Windows.Forms.Label lblDuration1;
+        private System.Windows.Forms.Label lblGenre1;
+        private System.Windows.Forms.Label lblTitle1;
+        private System.Windows.Forms.Label lblRating1;
+        private System.Windows.Forms.Label lblRating3;
+        private System.Windows.Forms.Label lblLang3;
+        private System.Windows.Forms.Label lblGenre3;
+        private System.Windows.Forms.Label lblDuration3;
+        private System.Windows.Forms.Label lblTitle3;
+        private System.Windows.Forms.Label lblRating2;
+        private System.Windows.Forms.Label lblLang2;
+        private System.Windows.Forms.Label lblGenre2;
+        private System.Windows.Forms.Label lblDuration2;
+        private System.Windows.Forms.Label lblTitle2;
     }
 }

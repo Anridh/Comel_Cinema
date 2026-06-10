@@ -31,7 +31,10 @@ namespace Ticket_Cinema
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            HomeForm home = new HomeForm();
+            home.Show();
 
+            this.Hide();
         }
 
         private void passCheckBox_CheckedChanged(object sender, EventArgs e)
