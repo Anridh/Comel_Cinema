@@ -70,6 +70,12 @@
     <Compile Include="PaymentGW.Designer.cs">
       <DependentUpon>PaymentGW.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaymentSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentSuccess.Designer.cs">
+      <DependentUpon>PaymentSuccess.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignupF1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentGW.resx">
       <DependentUpon>PaymentGW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentSuccess.resx">
+      <DependentUpon>PaymentSuccess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignupF1.resx">
       <DependentUpon>SignupF1.cs</DependentUpon>
@@ -175,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bank.png" />
+    <None Include="Resources\checked.png" />
     <None Include="Resources\wallet.png" />
     <None Include="Resources\card2.png" />
     <None Include="Resources\bank1.png" />
