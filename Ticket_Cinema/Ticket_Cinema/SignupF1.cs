@@ -62,9 +62,7 @@ namespace Ticket_Cinema
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            LoginF2 login = new LoginF2();
-            login.Show();
-            this.Hide();
+            
         }
 
         private void loginLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -72,6 +70,18 @@ namespace Ticket_Cinema
             LoginF2 login = new LoginF2();
             login.Show();
             this.Hide();
+        }
+
+        private void passTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(passCheckBox.Checked)
+            { passR.UseSystemPasswordChar = false; PassRCon.UseSystemPasswordChar = false; }
+            else { passR.UseSystemPasswordChar = true; PassRCon.UseSystemPasswordChar = true; }
         }
     }
 }

@@ -35,7 +35,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.passCheckBox = new System.Windows.Forms.CheckBox();
-            this.passTextBox = new System.Windows.Forms.TextBox();
+            this.passTxtBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.loginBtn);
             this.panel1.Controls.Add(this.passCheckBox);
-            this.panel1.Controls.Add(this.passTextBox);
+            this.panel1.Controls.Add(this.passTxtBox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.emailTextBox);
             this.panel1.Controls.Add(this.label1);
@@ -146,17 +146,20 @@
             this.passCheckBox.TabIndex = 10;
             this.passCheckBox.Text = "Show password";
             this.passCheckBox.UseVisualStyleBackColor = true;
+            this.passCheckBox.CheckedChanged += new System.EventHandler(this.passCheckBox_CheckedChanged);
             // 
-            // passTextBox
+            // passTxtBox
             // 
-            this.passTextBox.AllowDrop = true;
-            this.passTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.passTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passTextBox.Location = new System.Drawing.Point(157, 117);
-            this.passTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.passTextBox.Name = "passTextBox";
-            this.passTextBox.Size = new System.Drawing.Size(323, 30);
-            this.passTextBox.TabIndex = 7;
+            this.passTxtBox.AllowDrop = true;
+            this.passTxtBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.passTxtBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passTxtBox.Location = new System.Drawing.Point(157, 117);
+            this.passTxtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.passTxtBox.Name = "passTxtBox";
+            this.passTxtBox.Size = new System.Drawing.Size(323, 30);
+            this.passTxtBox.TabIndex = 7;
+            this.passTxtBox.UseSystemPasswordChar = true;
+            this.passTxtBox.TextChanged += new System.EventHandler(this.passTxtBox_TextChanged);
             // 
             // label4
             // 
@@ -219,7 +222,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.CheckBox passCheckBox;
-        private System.Windows.Forms.TextBox passTextBox;
+        private System.Windows.Forms.TextBox passTxtBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label1;

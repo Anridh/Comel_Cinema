@@ -33,5 +33,17 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void passCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (passCheckBox.Checked)
+            { passTxtBox.UseSystemPasswordChar = false; } 
+            else { passTxtBox.UseSystemPasswordChar = true; }
+    }
+
+        private void passTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
