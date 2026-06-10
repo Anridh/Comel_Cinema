@@ -17,12 +17,12 @@ namespace Ticket_Cinema
             InitializeComponent();
         }
 
-        private void Ticket_Load(object sender, EventArgs e)
+        private void lblHall_Click(object sender, EventArgs e)
         {
-            //testing testing
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
