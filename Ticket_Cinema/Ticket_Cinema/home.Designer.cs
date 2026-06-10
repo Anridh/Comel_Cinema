@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.sideBar = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnTickets = new System.Windows.Forms.Button();
+            this.btnPayments = new System.Windows.Forms.Button();
+            this.btnBookings = new System.Windows.Forms.Button();
+            this.btnMovies = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
             this.btnBook3 = new System.Windows.Forms.Button();
             this.btnBook2 = new System.Windows.Forms.Button();
@@ -77,88 +76,80 @@
             // sideBar
             // 
             this.sideBar.BackColor = System.Drawing.Color.Navy;
-            this.sideBar.Controls.Add(this.button4);
-            this.sideBar.Controls.Add(this.button5);
-            this.sideBar.Controls.Add(this.button6);
-            this.sideBar.Controls.Add(this.button3);
-            this.sideBar.Controls.Add(this.button2);
-            this.sideBar.Controls.Add(this.button1);
+            this.sideBar.Controls.Add(this.btnLogout);
+            this.sideBar.Controls.Add(this.btnTickets);
+            this.sideBar.Controls.Add(this.btnPayments);
+            this.sideBar.Controls.Add(this.btnBookings);
+            this.sideBar.Controls.Add(this.btnMovies);
             this.sideBar.Location = new System.Drawing.Point(0, -1);
             this.sideBar.Name = "sideBar";
             this.sideBar.Size = new System.Drawing.Size(143, 676);
             this.sideBar.TabIndex = 0;
             // 
-            // button4
+            // btnLogout
             // 
-            this.button4.BackColor = System.Drawing.Color.Navy;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 407);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 37);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Logout";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(0, 407);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(143, 37);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button5
+            // btnTickets
             // 
-            this.button5.BackColor = System.Drawing.Color.Navy;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 353);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 37);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Profile";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnTickets.BackColor = System.Drawing.Color.Navy;
+            this.btnTickets.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTickets.ForeColor = System.Drawing.Color.White;
+            this.btnTickets.Location = new System.Drawing.Point(0, 299);
+            this.btnTickets.Name = "btnTickets";
+            this.btnTickets.Size = new System.Drawing.Size(143, 37);
+            this.btnTickets.TabIndex = 2;
+            this.btnTickets.Text = "Tickets";
+            this.btnTickets.UseVisualStyleBackColor = false;
+            this.btnTickets.Click += new System.EventHandler(this.btnTickets_Click);
             // 
-            // button6
+            // btnPayments
             // 
-            this.button6.BackColor = System.Drawing.Color.Navy;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 299);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(143, 37);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Tickets";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnPayments.BackColor = System.Drawing.Color.Navy;
+            this.btnPayments.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPayments.ForeColor = System.Drawing.Color.White;
+            this.btnPayments.Location = new System.Drawing.Point(0, 244);
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.Size = new System.Drawing.Size(143, 37);
+            this.btnPayments.TabIndex = 1;
+            this.btnPayments.Text = "Payments";
+            this.btnPayments.UseVisualStyleBackColor = false;
+            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
             // 
-            // button3
+            // btnBookings
             // 
-            this.button3.BackColor = System.Drawing.Color.Navy;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 244);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 37);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Payments";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBookings.BackColor = System.Drawing.Color.Navy;
+            this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBookings.ForeColor = System.Drawing.Color.White;
+            this.btnBookings.Location = new System.Drawing.Point(0, 190);
+            this.btnBookings.Name = "btnBookings";
+            this.btnBookings.Size = new System.Drawing.Size(143, 37);
+            this.btnBookings.TabIndex = 1;
+            this.btnBookings.Text = "Bookings";
+            this.btnBookings.UseVisualStyleBackColor = false;
+            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
-            // button2
+            // btnMovies
             // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 190);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Bookings";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Navy;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Movies";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMovies.BackColor = System.Drawing.Color.Navy;
+            this.btnMovies.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMovies.ForeColor = System.Drawing.Color.White;
+            this.btnMovies.Location = new System.Drawing.Point(0, 136);
+            this.btnMovies.Name = "btnMovies";
+            this.btnMovies.Size = new System.Drawing.Size(143, 37);
+            this.btnMovies.TabIndex = 0;
+            this.btnMovies.Text = "Movies";
+            this.btnMovies.UseVisualStyleBackColor = false;
+            this.btnMovies.Click += new System.EventHandler(this.btnMovies_Click);
             // 
             // panelMain
             // 
@@ -188,6 +179,7 @@
             this.btnBook3.TabIndex = 8;
             this.btnBook3.Text = "BOOK";
             this.btnBook3.UseVisualStyleBackColor = false;
+            this.btnBook3.Click += new System.EventHandler(this.btnBook3_Click);
             // 
             // btnBook2
             // 
@@ -200,6 +192,7 @@
             this.btnBook2.TabIndex = 7;
             this.btnBook2.Text = "BOOK";
             this.btnBook2.UseVisualStyleBackColor = false;
+            this.btnBook2.Click += new System.EventHandler(this.btnBook2_Click);
             // 
             // btnBook1
             // 
@@ -212,6 +205,7 @@
             this.btnBook1.TabIndex = 6;
             this.btnBook1.Text = "BOOK";
             this.btnBook1.UseVisualStyleBackColor = false;
+            this.btnBook1.Click += new System.EventHandler(this.btnBook1_Click);
             // 
             // lblNowShowing
             // 
@@ -490,12 +484,11 @@
         #endregion
 
         private System.Windows.Forms.Panel sideBar;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnPayments;
+        private System.Windows.Forms.Button btnBookings;
+        private System.Windows.Forms.Button btnMovies;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnTickets;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;

@@ -149,5 +149,70 @@ namespace Ticket_Cinema
 
             ShowMovies();
         }
+
+        private void btnMovies_Click(object sender, EventArgs e)
+        {
+            HomeForm movie = new HomeForm();
+            movie.Show();
+            this.Hide();
+        }
+
+        private void btnBookings_Click(object sender, EventArgs e)
+        {
+            BookingF6 booking = new BookingF6();
+            booking.Show();
+            this.Hide();
+        }
+
+        private void btnPayments_Click(object sender, EventArgs e)
+        {
+            PaymentGW payment = new PaymentGW();
+            payment.Show();
+            this.Hide();
+        }
+
+        private void btnTickets_Click(object sender, EventArgs e)
+        {
+            TicketF9 ticket = new TicketF9();
+            ticket.Show();
+            this.Hide();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginF2 login = new LoginF2();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnBook1_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
+
+        private void btnBook2_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
+
+        private void btnBook3_Click(object sender, EventArgs e)
+        {
+            ShowtimeF4 showtime = new ShowtimeF4();
+            showtime.Show();
+            this.Hide();
+        }
     }
 }
