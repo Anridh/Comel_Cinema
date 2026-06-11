@@ -284,6 +284,7 @@
             this.viewbBtn.TabIndex = 16;
             this.viewbBtn.Text = "View Details";
             this.viewbBtn.UseVisualStyleBackColor = false;
+            this.viewbBtn.Click += new System.EventHandler(this.viewbBtn_Click);
             // 
             // TicketF9
             // 
