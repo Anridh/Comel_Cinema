@@ -194,7 +194,7 @@
             this.label1.Padding = new System.Windows.Forms.Padding(27, 0, 40, 12);
             this.label1.Size = new System.Drawing.Size(149, 42);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Email";
+            this.label1.Text = "Name";
             // 
             // LoginF2
             // 
