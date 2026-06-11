@@ -64,17 +64,17 @@
     <Compile Include="LoginF2.Designer.cs">
       <DependentUpon>LoginF2.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentGW.cs">
+    <Compile Include="PaymentF7.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentGW.Designer.cs">
-      <DependentUpon>PaymentGW.cs</DependentUpon>
+    <Compile Include="PaymentF7.Designer.cs">
+      <DependentUpon>PaymentF7.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaymentSuccess.cs">
+    <Compile Include="PaymentSuccessF8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentSuccess.Designer.cs">
-      <DependentUpon>PaymentSuccess.cs</DependentUpon>
+    <Compile Include="PaymentSuccessF8.Designer.cs">
+      <DependentUpon>PaymentSuccessF8.cs</DependentUpon>
     </Compile>
     <Compile Include="SignupF1.cs">
       <SubType>Form</SubType>
@@ -82,11 +82,11 @@
     <Compile Include="SignupF1.Designer.cs">
       <DependentUpon>SignupF1.cs</DependentUpon>
     </Compile>
-    <Compile Include="home.cs">
+    <Compile Include="HomeF3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="home.Designer.cs">
-      <DependentUpon>home.cs</DependentUpon>
+    <Compile Include="HomeF3.Designer.cs">
+      <DependentUpon>HomeF3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,17 +117,17 @@
     <EmbeddedResource Include="LoginF2.resx">
       <DependentUpon>LoginF2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentGW.resx">
-      <DependentUpon>PaymentGW.cs</DependentUpon>
+    <EmbeddedResource Include="PaymentF7.resx">
+      <DependentUpon>PaymentF7.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaymentSuccess.resx">
-      <DependentUpon>PaymentSuccess.cs</DependentUpon>
+    <EmbeddedResource Include="PaymentSuccessF8.resx">
+      <DependentUpon>PaymentSuccessF8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignupF1.resx">
       <DependentUpon>SignupF1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="home.resx">
-      <DependentUpon>home.cs</DependentUpon>
+    <EmbeddedResource Include="HomeF3.resx">
+      <DependentUpon>HomeF3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

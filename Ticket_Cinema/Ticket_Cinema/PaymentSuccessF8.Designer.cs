@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class PaymentSuccess
+    partial class PaymentSuccessF8
     {
         /// <summary>
         /// Required designer variable.

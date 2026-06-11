@@ -774,6 +774,7 @@
             // buttonNext
             // 
             this.buttonNext.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonNext.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonNext.Location = new System.Drawing.Point(1107, 626);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(111, 36);

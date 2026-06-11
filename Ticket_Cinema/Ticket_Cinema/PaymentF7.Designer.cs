@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class PaymentGW
+    partial class PaymentF7
     {
         /// <summary>
         /// Required designer variable.

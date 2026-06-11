@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class PaymentSuccess : Form
+    public partial class PaymentSuccessF8 : Form
     {
-        public PaymentSuccess()
+        public PaymentSuccessF8()
         {
             InitializeComponent();
         }

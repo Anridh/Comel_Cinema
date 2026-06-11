@@ -166,7 +166,7 @@ namespace Ticket_Cinema
 
         private void btnPayments_Click(object sender, EventArgs e)
         {
-            PaymentGW payment = new PaymentGW();
+            PaymentF7 payment = new PaymentF7();
             payment.Show();
             this.Hide();
         }
