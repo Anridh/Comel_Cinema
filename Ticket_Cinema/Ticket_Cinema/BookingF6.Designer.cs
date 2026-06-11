@@ -211,7 +211,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1035, 589);
+            this.btnClose.Location = new System.Drawing.Point(977, 600);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(171, 41);

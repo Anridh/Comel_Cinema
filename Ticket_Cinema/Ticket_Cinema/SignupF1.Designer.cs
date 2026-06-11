@@ -91,6 +91,7 @@
             this.PassRCon.Size = new System.Drawing.Size(323, 30);
             this.PassRCon.TabIndex = 21;
             this.PassRCon.UseSystemPasswordChar = true;
+            this.PassRCon.TextChanged += new System.EventHandler(this.PassRCon_TextChanged);
             // 
             // label5
             // 

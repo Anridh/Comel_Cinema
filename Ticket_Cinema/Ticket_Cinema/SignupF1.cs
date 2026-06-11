@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace Ticket_Cinema
 {
     public partial class SignupF1 : Form
     {
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\CinemaData.mdf;Integrated Security=True";
         public SignupF1()
         {
             InitializeComponent();
@@ -55,14 +57,56 @@ namespace Ticket_Cinema
             BucuPanel(panel1, 20);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            
+            if (passR.Text != PassRCon.Text)
+            {
+                MessageBox.Show("Passwords do not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(emailTextBox.Text) || string.IsNullOrEmpty(passR.Text))
+            {
+                MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 2. Insert user credentials into the database
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO Customer (Email, Password) VALUES (@Email, @Password)";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    // Using parameters prevents SQL Injection attacks
+                    cmd.Parameters.AddWithValue("@Email", emailTextBox.Text.Trim());
+                    cmd.Parameters.AddWithValue("@Password", passR.Text);
+
+                    try
+                    {
+                        conn.Open();
+                        cmd.ExecuteNonQuery(); // Executes the insert statement
+
+                        MessageBox.Show("Account created successfully! Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Optional: Navigate to login form here
+                    }
+                    catch (SqlException ex)
+                    {
+                        // Handles if an email is already registered (since we marked Email as UNIQUE)
+                        if (ex.Number == 2627)
+                        {
+                            MessageBox.Show("This email is already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Database error: " + ex.Message);
+                        }
+                    }
+                }
+            }
         }
 
         private void loginLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -82,6 +126,11 @@ namespace Ticket_Cinema
             if(passCheckBox.Checked)
             { passR.UseSystemPasswordChar = false; PassRCon.UseSystemPasswordChar = false; }
             else { passR.UseSystemPasswordChar = true; PassRCon.UseSystemPasswordChar = true; }
+        }
+
+        private void PassRCon_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
