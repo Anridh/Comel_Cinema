@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,17 @@ namespace Ticket_Cinema
 {
     public partial class SeatSelectionF5 : Form
     {
-        public SeatSelectionF5()
+        private string showtimeId;
+        private string movieId;
+        private string connectionString =
+            @"Data Source=(LocalDB)\MSSQLLocalDB;
+              AttachDbFilename=|DataDirectory|\CinemaData.mdf;
+              Integrated Security=True";
+        public SeatSelectionF5(string selectedShowtimeId, string selectedMovieId    )
         {
             InitializeComponent();
+            showtimeId = selectedShowtimeId;
+            movieId = selectedMovieId;  
         }
 
         private void SeatSelection_Load(object sender, EventArgs e)
@@ -74,9 +83,34 @@ namespace Ticket_Cinema
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            ShowtimeF4 showtime = new ShowtimeF4();
+            string movieId = GetMovieId();
+
+            ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
             this.Hide();
+        }
+        private string GetMovieId()
+        {
+            string movieId = "";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "SELECT MovieID FROM Showtime WHERE ShowtimeID = @ShowtimeID";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+
+                object result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    movieId = result.ToString();
+                }
+            }
+
+            return movieId;
         }
 
         private void buttonNext_Click(object sender, EventArgs e)

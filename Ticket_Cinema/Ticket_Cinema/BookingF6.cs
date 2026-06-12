@@ -24,9 +24,7 @@ namespace Ticket_Cinema
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            SeatSelectionF5 seatSelection = new SeatSelectionF5();
-            seatSelection.Show();
-            this.Hide();
+            
         }
     }
 }

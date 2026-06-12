@@ -38,12 +38,10 @@
             this.labellanguage = new System.Windows.Forms.Label();
             this.labelgenre = new System.Windows.Forms.Label();
             this.labelduration = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.movieDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.selectBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,10 +49,10 @@
             // labelMovie
             // 
             this.labelMovie.AutoSize = true;
-            this.labelMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMovie.Location = new System.Drawing.Point(211, 84);
+            this.labelMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMovie.Location = new System.Drawing.Point(210, 77);
             this.labelMovie.Name = "labelMovie";
-            this.labelMovie.Size = new System.Drawing.Size(70, 25);
+            this.labelMovie.Size = new System.Drawing.Size(100, 36);
             this.labelMovie.TabIndex = 1;
             this.labelMovie.Text = "Movie";
             // 
@@ -64,14 +62,14 @@
             this.labelmoviename.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelmoviename.Location = new System.Drawing.Point(211, 118);
             this.labelmoviename.Name = "labelmoviename";
-            this.labelmoviename.Size = new System.Drawing.Size(240, 29);
+            this.labelmoviename.Size = new System.Drawing.Size(205, 29);
             this.labelmoviename.TabIndex = 2;
-            this.labelmoviename.Text = "Avengers Endgame";
+            this.labelmoviename.Text = "labelmoviename";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(690, 43);
+            this.label1.Location = new System.Drawing.Point(601, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 3;
@@ -80,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(690, 69);
+            this.label2.Location = new System.Drawing.Point(601, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 4;
@@ -89,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(690, 93);
+            this.label3.Location = new System.Drawing.Point(601, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 16);
             this.label3.TabIndex = 5;
@@ -98,7 +96,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(690, 118);
+            this.label4.Location = new System.Drawing.Point(601, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 6;
@@ -108,7 +106,7 @@
             // 
             this.labelrating.AutoSize = true;
             this.labelrating.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelrating.Location = new System.Drawing.Point(759, 118);
+            this.labelrating.Location = new System.Drawing.Point(670, 153);
             this.labelrating.Name = "labelrating";
             this.labelrating.Size = new System.Drawing.Size(81, 16);
             this.labelrating.TabIndex = 10;
@@ -118,7 +116,7 @@
             // 
             this.labellanguage.AutoSize = true;
             this.labellanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labellanguage.Location = new System.Drawing.Point(759, 93);
+            this.labellanguage.Location = new System.Drawing.Point(670, 128);
             this.labellanguage.Name = "labellanguage";
             this.labellanguage.Size = new System.Drawing.Size(107, 16);
             this.labellanguage.TabIndex = 9;
@@ -128,7 +126,7 @@
             // 
             this.labelgenre.AutoSize = true;
             this.labelgenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelgenre.Location = new System.Drawing.Point(759, 69);
+            this.labelgenre.Location = new System.Drawing.Point(670, 104);
             this.labelgenre.Name = "labelgenre";
             this.labelgenre.Size = new System.Drawing.Size(82, 16);
             this.labelgenre.TabIndex = 8;
@@ -138,62 +136,33 @@
             // 
             this.labelduration.AutoSize = true;
             this.labelduration.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelduration.Location = new System.Drawing.Point(759, 43);
+            this.labelduration.Location = new System.Drawing.Point(670, 78);
             this.labelduration.Name = "labelduration";
             this.labelduration.Size = new System.Drawing.Size(98, 16);
             this.labelduration.TabIndex = 7;
             this.labelduration.Text = "labelduration";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(31, 256);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 29);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Select Date :";
-            // 
-            // movieDateTimePicker
-            // 
-            this.movieDateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.movieDateTimePicker.Location = new System.Drawing.Point(199, 256);
-            this.movieDateTimePicker.Name = "movieDateTimePicker";
-            this.movieDateTimePicker.Size = new System.Drawing.Size(252, 22);
-            this.movieDateTimePicker.TabIndex = 12;
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(34, 313);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(988, 199);
+            this.dataGridView1.Size = new System.Drawing.Size(1119, 181);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(34, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 187);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 208);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // selectBtn
-            // 
-            this.selectBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.selectBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.selectBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectBtn.ForeColor = System.Drawing.Color.White;
-            this.selectBtn.Location = new System.Drawing.Point(1070, 325);
-            this.selectBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.selectBtn.Name = "selectBtn";
-            this.selectBtn.Size = new System.Drawing.Size(99, 45);
-            this.selectBtn.TabIndex = 17;
-            this.selectBtn.Text = "Select";
-            this.selectBtn.UseVisualStyleBackColor = false;
-            this.selectBtn.Click += new System.EventHandler(this.selectBtn_Click);
             // 
             // backBtn
             // 
@@ -204,17 +173,25 @@
             this.backBtn.TabIndex = 18;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(726, 78);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 16);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Minute";
             // 
             // ShowtimeF4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.selectBtn);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.movieDateTimePicker);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.labelrating);
             this.Controls.Add(this.labellanguage);
             this.Controls.Add(this.labelgenre);
@@ -228,6 +205,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "ShowtimeF4";
             this.Text = "Showtime";
+            this.Load += new System.EventHandler(this.ShowtimeF4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -248,10 +226,8 @@
         private System.Windows.Forms.Label labellanguage;
         private System.Windows.Forms.Label labelgenre;
         private System.Windows.Forms.Label labelduration;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker movieDateTimePicker;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button selectBtn;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Label label6;
     }
 }
