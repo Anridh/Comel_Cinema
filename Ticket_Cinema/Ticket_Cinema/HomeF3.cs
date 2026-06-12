@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace Ticket_Cinema
     {
         public class Movie
         {
+            public string MovieID { get; set; }   // Add this
+
             public Image Poster { get; set; }
             public string Title { get; set; }
             public string Genre { get; set; }
@@ -22,7 +25,7 @@ namespace Ticket_Cinema
             public string Rating { get; set; }
         }
 
-        Movie[] movies;
+        List<Movie> movies = new List<Movie>();
         int startIndex = 0;
 
         public HomeForm()
@@ -32,71 +35,74 @@ namespace Ticket_Cinema
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
-            movies = new Movie[]
-            {
-                new Movie
-                {
-                    Poster = Properties.Resources.pic1,
-                    Title = "COLONY",
-                    Genre = "Genre: Action",
-                    Duration = "Duration: 122 Minutes",
-                    Lang = "Language: Korea/English",
-                    Rating = "Rating: MA 15+/16"
-                },
-
-                new Movie
-                {
-                    Poster = Properties.Resources.pic2,
-                    Title = "AVATAR",
-                    Genre = "Genre: Fantasy",
-                    Duration = "Duration: 197 Minutes",
-                    Lang = "Language: English",
-                    Rating = "Rating: P13"
-                },
-
-                new Movie
-                {
-                    Poster = Properties.Resources.pic3,
-                    Title = "MINECRAFT",
-                    Genre = "Genre: Action/Adventure",
-                    Duration = "Duration: 101 Minutes",
-                    Lang = "Language: English",
-                    Rating = "Rating: E10+"
-                },
-
-                new Movie
-                {
-                    Poster = Properties.Resources.pic4,
-                    Title = "THE FURIOUS",
-                    Genre = "Genre: Action",
-                    Duration = "Duration: 106 Minutes",
-                    Lang = "Language: Malay",
-                    Rating = "Rating: P13"
-                },
-
-                new Movie
-                {
-                    Poster = Properties.Resources.pic5,
-                    Title = "5 BOMOH",
-                    Genre = "Genre: Comedy",
-                    Duration = "Duration: 97 Minutes",
-                    Lang = "Language: Malay",
-                    Rating = "Rating: P13"
-                },
-
-                new Movie
-                {
-                    Poster = Properties.Resources.pic6,
-                    Title = "POLONG",
-                    Genre = "Genre: Horror",
-                    Duration = "Duration: 120 Minutes",
-                    Lang = "Language: Malay",
-                    Rating = "Rating: P16"
-                }
-            };
-
+            LoadMovies();
             ShowMovies();
         }
+        private void LoadMovies()
+        {
+            movies.Clear();
+
+            string connectionString =
+                @"Data Source=(LocalDB)\MSSQLLocalDB;
+          AttachDbFilename=|DataDirectory|\CinemaData.mdf;
+          Integrated Security=True";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "SELECT * FROM MOVIE";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string movieId = reader["MovieID"].ToString();
+
+                    Image img = null;
+
+                    switch (movieId)
+                    {
+                        case "M001":
+                            img = Properties.Resources.pic1;
+                            break;
+
+                        case "M002":
+                            img = Properties.Resources.pic2;
+                            break;
+
+                        case "M003":
+                            img = Properties.Resources.pic3;
+                            break;
+
+                        case "M004":
+                            img = Properties.Resources.pic4;
+                            break;
+
+                        case "M005":
+                            img = Properties.Resources.pic5;
+                            break;
+
+                        case "M006":
+                            img = Properties.Resources.pic6;
+                            break;
+                    }
+                    movies.Add(new Movie
+                    {
+                        MovieID = reader["MovieID"].ToString(),
+                        Title = reader["Title"].ToString(),
+                        Genre = reader["Genre"].ToString(),
+                        Duration = reader["Duration_Minute"].ToString(),
+                        Lang = reader["Language"].ToString(),
+                        Rating = reader["Rating"].ToString(),
+
+                        Poster = img// Poster will be handled later
+                    });
+                }
+            }
+        }   
 
         private void ShowMovies()
         {
@@ -130,7 +136,7 @@ namespace Ticket_Cinema
         {
             startIndex++;
 
-            if (startIndex > movies.Length - 3)
+            if (startIndex > movies.Count - 3)
             {
                 startIndex = 0;
             }
@@ -144,17 +150,10 @@ namespace Ticket_Cinema
 
             if (startIndex < 0)
             {
-                startIndex = movies.Length - 3;
+                startIndex = movies.Count - 3;
             }
 
             ShowMovies();
-        }
-
-        private void btnMovies_Click(object sender, EventArgs e)
-        {
-            HomeForm movie = new HomeForm();
-            movie.Show();
-            this.Hide();
         }
 
         private void btnBookings_Click(object sender, EventArgs e)
@@ -163,21 +162,6 @@ namespace Ticket_Cinema
             booking.Show();
             this.Hide();
         }
-
-        private void btnPayments_Click(object sender, EventArgs e)
-        {
-            PaymentF7 payment = new PaymentF7();
-            payment.Show();
-            this.Hide();
-        }
-
-        private void btnTickets_Click(object sender, EventArgs e)
-        {
-            TicketF9 ticket = new TicketF9();
-            ticket.Show();
-            this.Hide();
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
@@ -196,23 +180,33 @@ namespace Ticket_Cinema
 
         private void btnBook1_Click(object sender, EventArgs e)
         {
-            ShowtimeF4 showtime = new ShowtimeF4();
+            string movieId = movies[startIndex].MovieID;
+
+            ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
-            this.Hide();
+            this.Hide();    
         }
 
         private void btnBook2_Click(object sender, EventArgs e)
         {
-            ShowtimeF4 showtime = new ShowtimeF4();
+            string movieId = movies[startIndex + 1].MovieID;
+
+            ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
             this.Hide();
         }
 
         private void btnBook3_Click(object sender, EventArgs e)
         {
-            ShowtimeF4 showtime = new ShowtimeF4();
+            string movieId = movies[startIndex + 2].MovieID;
+            ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
             this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

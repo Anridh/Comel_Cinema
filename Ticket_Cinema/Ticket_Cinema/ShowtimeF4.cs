@@ -12,6 +12,13 @@ namespace Ticket_Cinema
 {
     public partial class ShowtimeF4 : Form
     {
+        private string movieId;
+
+        public ShowtimeF4(string selectedMovieId)
+        {
+            InitializeComponent();
+            movieId = selectedMovieId;
+        }
         public ShowtimeF4()
         {
             InitializeComponent();
