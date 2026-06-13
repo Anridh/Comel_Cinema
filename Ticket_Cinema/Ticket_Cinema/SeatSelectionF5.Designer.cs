@@ -92,11 +92,10 @@
             this.buttonNext = new System.Windows.Forms.Button();
             this.labelmoviename = new System.Windows.Forms.Label();
             this.labelMovie = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
             this.labelDatemovie = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.labelHall = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTotalPrice = new System.Windows.Forms.TextBox();
@@ -105,6 +104,8 @@
             this.B2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelHall = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,12 +171,13 @@
             // 
             // A1
             // 
+            this.A1.BackColor = System.Drawing.SystemColors.Control;
             this.A1.Location = new System.Drawing.Point(168, 232);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(65, 36);
             this.A1.TabIndex = 29;
             this.A1.Text = "A1";
-            this.A1.UseVisualStyleBackColor = true;
+            this.A1.UseVisualStyleBackColor = false;
             // 
             // A4
             // 
@@ -712,15 +714,15 @@
             this.labelMovie.TabIndex = 93;
             this.labelMovie.Text = "Movie";
             // 
-            // label7
+            // labelTime
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(528, 77);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 20);
-            this.label7.TabIndex = 100;
-            this.label7.Text = "Time";
+            this.labelTime.AutoSize = true;
+            this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTime.Location = new System.Drawing.Point(528, 77);
+            this.labelTime.Name = "labelTime";
+            this.labelTime.Size = new System.Drawing.Size(46, 20);
+            this.labelTime.TabIndex = 100;
+            this.labelTime.Text = "Time";
             // 
             // labelDatemovie
             // 
@@ -752,16 +754,6 @@
             this.label5.TabIndex = 97;
             this.label5.Text = "Time :";
             // 
-            // labelHall
-            // 
-            this.labelHall.AutoSize = true;
-            this.labelHall.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHall.Location = new System.Drawing.Point(510, 103);
-            this.labelHall.Name = "labelHall";
-            this.labelHall.Size = new System.Drawing.Size(77, 18);
-            this.labelHall.TabIndex = 96;
-            this.labelHall.Text = "label Hall";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -784,7 +776,7 @@
             // 
             // txtTotalPrice
             // 
-            this.txtTotalPrice.Location = new System.Drawing.Point(656, 583);
+            this.txtTotalPrice.Location = new System.Drawing.Point(669, 581);
             this.txtTotalPrice.Name = "txtTotalPrice";
             this.txtTotalPrice.Size = new System.Drawing.Size(109, 22);
             this.txtTotalPrice.TabIndex = 103;
@@ -836,11 +828,32 @@
             this.A2.Text = "A2";
             this.A2.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(608, 326);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 20);
+            this.label7.TabIndex = 109;
+            // 
+            // labelHall
+            // 
+            this.labelHall.AutoSize = true;
+            this.labelHall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHall.Location = new System.Drawing.Point(529, 104);
+            this.labelHall.Name = "labelHall";
+            this.labelHall.Size = new System.Drawing.Size(39, 20);
+            this.labelHall.TabIndex = 110;
+            this.labelHall.Text = "Hall";
+            // 
             // SeatSelectionF5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.labelHall);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.B2);
             this.Controls.Add(this.A3);
             this.Controls.Add(this.A2);
@@ -848,11 +861,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTotalPrice);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelDatemovie);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.labelHall);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelmoviename);
             this.Controls.Add(this.labelMovie);
@@ -992,11 +1004,10 @@
         private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.Label labelmoviename;
         private System.Windows.Forms.Label labelMovie;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelDatemovie;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label labelHall;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTotalPrice;
@@ -1005,5 +1016,7 @@
         private System.Windows.Forms.Button B2;
         private System.Windows.Forms.Button A3;
         private System.Windows.Forms.Button A2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelHall;
     }
 }

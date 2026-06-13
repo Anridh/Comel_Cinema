@@ -31,24 +31,104 @@ namespace Ticket_Cinema
 
         private void SeatSelection_Load(object sender, EventArgs e)
         {
-            LoadBookedSeatsFromDatabase();
+            LoadMovieDetailsAndShowtime();
             LoadBookedSeatsFromDatabase();
             AttachSeatClickEvents();
             UpdateSummary();
         }
+        private void LoadMovieDetailsAndShowtime()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // 🟢 MovieImage dipadamkan dari query kerana ia tiada dalam database anda
+                string query = @"
+            SELECT m.MovieID, m.Title, s.ShowDate, s.ShowTime, s.HallID, h.HallName 
+            FROM Showtime s
+            INNER JOIN Movie m ON s.MovieID = m.MovieID
+            INNER JOIN HALL h ON s.HallID = h.HallID
+            WHERE s.ShowtimeID = @ShowtimeID";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                //{
+                    cmd.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // 1. Papar Nama Filem
+                            labelmoviename.Text = reader["Title"].ToString();
+
+                            // 2. Papar Tarikh
+                            if (reader["ShowDate"] != DBNull.Value)
+                            {
+                                DateTime dateValue = Convert.ToDateTime(reader["ShowDate"]);
+                                labelDatemovie.Text = dateValue.ToString("dd-MMM-yyyy");
+                            }
+
+                            // 3. Papar Masa & Hall
+                            labelTime.Text = reader["ShowTime"].ToString();
+                            labelHall.Text = reader["HallName"].ToString();
+
+                            // 4. PAPAR GAMBAR POSTER MOVIE DARI RESOURCES 🎬
+                            string currentMovieId = reader["MovieID"].ToString();
+                            Image img = null;
+
+                            // Menggunakan logik switch-case yang sama seperti HomeForm anda
+                            switch (currentMovieId)
+                            {
+                                case "M001":
+                                    img = Properties.Resources.pic1;
+                                    break;
+                                case "M002":
+                                    img = Properties.Resources.pic2;
+                                    break;
+                                case "M003":
+                                    img = Properties.Resources.pic3;
+                                    break;
+                                case "M004":
+                                    img = Properties.Resources.pic4;
+                                    break;
+                                case "M005":
+                                    img = Properties.Resources.pic5;
+                                    break;
+                                case "M006":
+                                    img = Properties.Resources.pic6;
+                                    break;
+                            }
+
+                            // Jika gambar dijumpai, paparkan pada pictureBox1
+                            if (img != null)
+                            {
+                                pictureBox1.Image = img;
+                                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void AttachSeatClickEvents()
         {
-            // Loop through all controls on the form
-            foreach (Control control in this.Controls)
+            GetAllSeatButtons(this);
+        }
+        private void GetAllSeatButtons(Control container)
+        {
+            foreach (Control control in container.Controls)
             {
-                // Check if the control is a Button and its name matches a seat pattern (e.g., A1, F8)
-                if (control is Button btn && btn.Name.Length == 2)
+                // Jika butang kerusi sepanjang 2 huruf (cth: A1, B4) dan bukan butang navigasi
+                if (control is Button btn && btn.Name.Length == 2 && btn.Name != "Back" && btn.Name != "Next")
                 {
-                    // Only attach to interactive seats, ignore "Back" or "Next" buttons
-                    if (btn.Name != "Back" && btn.Name != "Next")
-                    {
-                        btn.Click += SeatButton_Click;
-                    }
+                    btn.Click -= SeatButton_Click; // Elakkan pertindihan event
+                    btn.Click += SeatButton_Click;
+                }
+
+                // Jika butang tersimpan di dalam panel/container lain, gali ke dalam
+                if (control.HasChildren)
+                {
+                    GetAllSeatButtons(control);
                 }
             }
         }
@@ -58,27 +138,23 @@ namespace Ticket_Cinema
             Button clickedSeat = (Button)sender;
             string seatName = clickedSeat.Text;
 
-            // 1. Jika kerusi warna merah (Booked), jangan buat apa-apa
             if (clickedSeat.BackColor == Color.Red)
             {
                 MessageBox.Show("This seat has already been booked!", "Unavailable", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. Tukar warna (Toggle Selection)
-            // Jika asal kelabu (Control), tukar jadi Kuning. Jika dah Kuning, tukar balik jadi Kelabu.
             if (clickedSeat.BackColor == Color.Yellow)
             {
-                clickedSeat.BackColor = SystemColors.Control; // Tukar balik ke warna asal asal button
+                clickedSeat.BackColor = SystemColors.Control;
                 selectedSeats.Remove(seatName);
             }
             else
             {
-                clickedSeat.BackColor = Color.Yellow; // Tukar jadi kuning tanda dipilih
+                clickedSeat.BackColor = Color.Yellow;
                 selectedSeats.Add(seatName);
             }
 
-            // 3. Kemas kini total harga dan list kerusi dekat bawah
             UpdateSummary();
         }
         private void UpdateSummary()
@@ -96,7 +172,6 @@ namespace Ticket_Cinema
             {
                 conn.Open();
 
-                // 🟢 Ditukar mengikut skema jadual TICKET & BOOKING anda (Pilihan 2)
                 string query = @"
                     SELECT t.SeatID 
                     FROM TICKET t
@@ -110,11 +185,12 @@ namespace Ticket_Cinema
                     {
                         while (reader.Read())
                         {
-                            string bookedSeat = reader["SeatID"].ToString();
+                            string bookedSeat = reader["SeatID"].ToString().Trim();
 
-                            // Cari button mengikut nama SeatID dari DB (cth: "B3")
-                            Control[] foundControls = this.Controls.Find(bookedSeat, true);
-                            if (foundControls.Length > 0 && foundControls[0] is Button seatBtn)
+                            // Menggunakan fungsi rekursif untuk mencari kawalan di seluruh pelan form
+                            Control seatControl = FindControlRecursive(this, bookedSeat);
+
+                            if (seatControl != null && seatControl is Button seatBtn)
                             {
                                 seatBtn.BackColor = Color.Red;
                                 seatBtn.Enabled = false;
@@ -124,31 +200,18 @@ namespace Ticket_Cinema
                 }
             }
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+        // Fungsi khas mencari komponen secara mendalam ke dalam form anak
+        private Control FindControlRecursive(Control container, string name)
         {
+            if (container.Name == name) return container;
 
+            foreach (Control subControl in container.Controls)
+            {
+                Control foundId = FindControlRecursive(subControl, name);
+                if (foundId != null) return foundId;
+            }
+            return null;
         }
-
-        private void textBoxScreen_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonA2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonA3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonB2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
             string movieId = GetMovieId();

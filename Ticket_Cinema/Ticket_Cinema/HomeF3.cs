@@ -182,8 +182,6 @@ namespace Ticket_Cinema
         {
             string movieId = movies[startIndex].MovieID;
 
-            MessageBox.Show(movieId);
-
             ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
             this.Hide();    
@@ -206,6 +204,9 @@ namespace Ticket_Cinema
             this.Hide();
         }
 
-     
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
