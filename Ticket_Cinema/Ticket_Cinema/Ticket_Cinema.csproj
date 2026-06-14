@@ -129,6 +129,12 @@
     <Compile Include="TicketF9.Designer.cs">
       <DependentUpon>TicketF9.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBooking.Designer.cs">
+      <DependentUpon>ViewBooking.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminPg.resx">
       <DependentUpon>AdminPg.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TicketF9.resx">
       <DependentUpon>TicketF9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBooking.resx">
+      <DependentUpon>ViewBooking.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
