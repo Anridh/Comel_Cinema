@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPg.Designer.cs">
+      <DependentUpon>AdminPg.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookingF6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     <Compile Include="TicketF9.Designer.cs">
       <DependentUpon>TicketF9.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminPg.resx">
+      <DependentUpon>AdminPg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookingF6.resx">
       <DependentUpon>BookingF6.cs</DependentUpon>
     </EmbeddedResource>

@@ -51,7 +51,7 @@ namespace Ticket_Cinema
             WHERE s.ShowtimeID = @ShowtimeID";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
-                //{
+                {
                     cmd.Parameters.AddWithValue("@ShowtimeID", showtimeId);
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
