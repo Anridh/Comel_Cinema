@@ -50,11 +50,11 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(59, 169);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(50, 50, 3, 3);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(742, 465);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 445);
             this.dataGridView1.TabIndex = 3;
             // 
             // BackBtn
@@ -72,6 +72,7 @@
             this.BackBtn.TabIndex = 24;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // ViewBooking
             // 

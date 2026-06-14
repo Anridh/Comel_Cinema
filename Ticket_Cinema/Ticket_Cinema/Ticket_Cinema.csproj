@@ -85,6 +85,12 @@
     <Compile Include="LoginF2.Designer.cs">
       <DependentUpon>LoginF2.cs</DependentUpon>
     </Compile>
+    <Compile Include="mngHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mngHall.Designer.cs">
+      <DependentUpon>mngHall.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaymentF7.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginF2.resx">
       <DependentUpon>LoginF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mngHall.resx">
+      <DependentUpon>mngHall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentF7.resx">
       <DependentUpon>PaymentF7.cs</DependentUpon>

@@ -48,6 +48,20 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            ViewBooking vbook = new ViewBooking();
+            vbook.Show();
+            this.Hide();
+        }
+
+        private void roundedButton3_Click(object sender, EventArgs e)
+        {
+            mngHall hall = new mngHall();
+            hall.Show();
+            this.Hide();
+        }
     }
 
     public class  RoundedButton:Button

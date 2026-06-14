@@ -108,6 +108,7 @@
             this.roundedButton4.TabIndex = 22;
             this.roundedButton4.Text = "VIEW BOOKING";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton3
             // 
@@ -124,6 +125,7 @@
             this.roundedButton3.TabIndex = 21;
             this.roundedButton3.Text = "MANAGE HALL";
             this.roundedButton3.UseVisualStyleBackColor = false;
+            this.roundedButton3.Click += new System.EventHandler(this.roundedButton3_Click);
             // 
             // roundedButton2
             // 
