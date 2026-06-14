@@ -142,6 +142,7 @@
             this.roundedButton2.TabIndex = 20;
             this.roundedButton2.Text = "MANAGE SHOWTIME";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // roundedButton1
             // 

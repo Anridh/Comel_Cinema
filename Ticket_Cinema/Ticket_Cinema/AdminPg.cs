@@ -62,6 +62,13 @@ namespace Ticket_Cinema
             hall.Show();
             this.Hide();
         }
+
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            mngShowtime showtime = new mngShowtime();
+            showtime.Show();
+            this.Hide();
+        }
     }
 
     public class  RoundedButton:Button
