@@ -125,7 +125,7 @@
             this.loginBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.loginBtn.Location = new System.Drawing.Point(68, 266);
+            this.loginBtn.Location = new System.Drawing.Point(69, 234);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(412, 55);

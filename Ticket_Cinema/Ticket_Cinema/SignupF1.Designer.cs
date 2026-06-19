@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupF1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.adminBtn = new System.Windows.Forms.Button();
             this.passCheckBox = new System.Windows.Forms.CheckBox();
             this.PassRCon = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.adminBtn);
             this.panel1.Controls.Add(this.passCheckBox);
             this.panel1.Controls.Add(this.PassRCon);
             this.panel1.Controls.Add(this.label5);
@@ -66,6 +68,21 @@
             this.panel1.Size = new System.Drawing.Size(549, 450);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // adminBtn
+            // 
+            this.adminBtn.AllowDrop = true;
+            this.adminBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.adminBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminBtn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.adminBtn.Location = new System.Drawing.Point(68, 322);
+            this.adminBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminBtn.Name = "adminBtn";
+            this.adminBtn.Size = new System.Drawing.Size(412, 55);
+            this.adminBtn.TabIndex = 23;
+            this.adminBtn.Text = "Admin";
+            this.adminBtn.UseVisualStyleBackColor = false;
+            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
             // passCheckBox
             // 
@@ -139,6 +156,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(323, 30);
             this.emailTextBox.TabIndex = 17;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label1
             // 
@@ -173,7 +191,7 @@
             this.signUpBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.signUpBtn.Location = new System.Drawing.Point(68, 302);
+            this.signUpBtn.Location = new System.Drawing.Point(68, 259);
             this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(412, 55);
@@ -261,6 +279,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button adminBtn;
     }
 }
 

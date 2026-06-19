@@ -132,5 +132,17 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void adminBtn_Click(object sender, EventArgs e)
+        {
+            AdminPg adminpg = new AdminPg();
+            adminpg.Show();
+            this.Hide();
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
