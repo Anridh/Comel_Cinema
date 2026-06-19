@@ -61,6 +61,7 @@ namespace Ticket_Cinema
             this.labelbooking.Size = new System.Drawing.Size(197, 29);
             this.labelbooking.TabIndex = 0;
             this.labelbooking.Text = "Booking Details";
+            this.labelbooking.Click += new System.EventHandler(this.labelbooking_Click);
             // 
             // label1
             // 

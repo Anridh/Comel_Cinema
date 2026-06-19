@@ -135,7 +135,7 @@ namespace Ticket_Cinema
             }
         }
 
-        //yang ni ini nak gi payment nak bayo kalau tak bayo kene tangkap
+        //yang ni ini nak gi payment nak bayo kalau tak bayo kene tangka
         private void btnClose_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Booking confirmed! Proceeding to payment.",
@@ -161,5 +161,10 @@ namespace Ticket_Cinema
         private void textBoxSeatNumber_TextChanged(object sender, EventArgs e) { }
         private void textBoxTicketPrice_TextChanged(object sender, EventArgs e) { }
         private void textBoxTotalAmount_TextChanged(object sender, EventArgs e) { }
+
+        private void labelbooking_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
