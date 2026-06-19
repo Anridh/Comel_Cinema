@@ -1,4 +1,6 @@
-﻿namespace Ticket_Cinema
+﻿using System;
+
+namespace Ticket_Cinema
 {
     partial class BookingF6
     {
@@ -145,6 +147,7 @@
             this.textBoxCustomerName.Name = "textBoxCustomerName";
             this.textBoxCustomerName.Size = new System.Drawing.Size(459, 22);
             this.textBoxCustomerName.TabIndex = 9;
+            this.textBoxCustomerName.TextChanged += new System.EventHandler(this.textBoxCustomerName_TextChanged);
             // 
             // textBoxTotalAmount
             // 
@@ -152,6 +155,7 @@
             this.textBoxTotalAmount.Name = "textBoxTotalAmount";
             this.textBoxTotalAmount.Size = new System.Drawing.Size(459, 22);
             this.textBoxTotalAmount.TabIndex = 10;
+            this.textBoxTotalAmount.TextChanged += new System.EventHandler(this.textBoxTotalAmount_TextChanged);
             // 
             // textBoxTicketPrice
             // 
@@ -159,6 +163,7 @@
             this.textBoxTicketPrice.Name = "textBoxTicketPrice";
             this.textBoxTicketPrice.Size = new System.Drawing.Size(459, 22);
             this.textBoxTicketPrice.TabIndex = 11;
+            this.textBoxTicketPrice.TextChanged += new System.EventHandler(this.textBoxTicketPrice_TextChanged);
             // 
             // textBoxSeatNumber
             // 
@@ -166,6 +171,7 @@
             this.textBoxSeatNumber.Name = "textBoxSeatNumber";
             this.textBoxSeatNumber.Size = new System.Drawing.Size(459, 22);
             this.textBoxSeatNumber.TabIndex = 12;
+            this.textBoxSeatNumber.TextChanged += new System.EventHandler(this.textBoxSeatNumber_TextChanged);
             // 
             // textBoxCinemaHall
             // 
@@ -173,6 +179,7 @@
             this.textBoxCinemaHall.Name = "textBoxCinemaHall";
             this.textBoxCinemaHall.Size = new System.Drawing.Size(459, 22);
             this.textBoxCinemaHall.TabIndex = 13;
+            this.textBoxCinemaHall.TextChanged += new System.EventHandler(this.textBoxCinemaHall_TextChanged);
             // 
             // textBoxShowtime
             // 
@@ -180,6 +187,7 @@
             this.textBoxShowtime.Name = "textBoxShowtime";
             this.textBoxShowtime.Size = new System.Drawing.Size(459, 22);
             this.textBoxShowtime.TabIndex = 14;
+            this.textBoxShowtime.TextChanged += new System.EventHandler(this.textBoxShowtime_TextChanged);
             // 
             // textBoxMovie
             // 
@@ -187,6 +195,7 @@
             this.textBoxMovie.Name = "textBoxMovie";
             this.textBoxMovie.Size = new System.Drawing.Size(459, 22);
             this.textBoxMovie.TabIndex = 15;
+            this.textBoxMovie.TextChanged += new System.EventHandler(this.textBoxMovie_TextChanged);
             // 
             // textBoxEmail
             // 
@@ -194,6 +203,7 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(459, 22);
             this.textBoxEmail.TabIndex = 16;
+            this.textBoxEmail.TextChanged += new System.EventHandler(this.textBoxEmail_TextChanged);
             // 
             // label9
             // 
@@ -218,6 +228,7 @@
             this.btnClose.TabIndex = 89;
             this.btnClose.Text = "Confirm Booking";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // backBtn
             // 
@@ -232,7 +243,7 @@
             this.backBtn.TabIndex = 90;
             this.backBtn.Text = "Back";
             this.backBtn.UseVisualStyleBackColor = false;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click_1);
             // 
             // BookingF6
             // 
@@ -288,5 +299,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button backBtn;
+        private EventHandler backBtn_Click;
     }
 }

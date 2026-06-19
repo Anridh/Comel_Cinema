@@ -73,11 +73,11 @@
             this.groupBox1.Controls.Add(this.picMovie);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Location = new System.Drawing.Point(15, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(20, 32);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(612, 416);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(816, 512);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "";
@@ -85,8 +85,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Location = new System.Drawing.Point(19, 43);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(25, 53);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 17;
@@ -96,54 +96,53 @@
             // 
             this.lblTicketPrice.AutoSize = true;
             this.lblTicketPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTicketPrice.Location = new System.Drawing.Point(260, 220);
-            this.lblTicketPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketPrice.Location = new System.Drawing.Point(347, 271);
             this.lblTicketPrice.Name = "lblTicketPrice";
-            this.lblTicketPrice.Size = new System.Drawing.Size(70, 19);
+            this.lblTicketPrice.Size = new System.Drawing.Size(82, 23);
             this.lblTicketPrice.TabIndex = 10;
             this.lblTicketPrice.Text = "RM 20.00";
+            this.lblTicketPrice.Click += new System.EventHandler(this.lblTicketPrice_Click);
             // 
             // lblTicketID
             // 
             this.lblTicketID.AutoSize = true;
             this.lblTicketID.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTicketID.Location = new System.Drawing.Point(260, 191);
-            this.lblTicketID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTicketID.Location = new System.Drawing.Point(347, 235);
             this.lblTicketID.Name = "lblTicketID";
-            this.lblTicketID.Size = new System.Drawing.Size(72, 19);
+            this.lblTicketID.Size = new System.Drawing.Size(82, 23);
             this.lblTicketID.TabIndex = 12;
             this.lblTicketID.Text = "TKT01234";
+            this.lblTicketID.Click += new System.EventHandler(this.lblTicketID_Click);
             // 
             // lblSeat
             // 
             this.lblSeat.AutoSize = true;
             this.lblSeat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeat.Location = new System.Drawing.Point(260, 162);
-            this.lblSeat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeat.Location = new System.Drawing.Point(347, 199);
             this.lblSeat.Name = "lblSeat";
-            this.lblSeat.Size = new System.Drawing.Size(26, 19);
+            this.lblSeat.Size = new System.Drawing.Size(30, 23);
             this.lblSeat.TabIndex = 11;
             this.lblSeat.Text = "A2";
+            this.lblSeat.Click += new System.EventHandler(this.lblSeat_Click);
             // 
             // lblShowtime
             // 
             this.lblShowtime.AutoSize = true;
             this.lblShowtime.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowtime.Location = new System.Drawing.Point(260, 129);
-            this.lblShowtime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblShowtime.Location = new System.Drawing.Point(347, 159);
             this.lblShowtime.Name = "lblShowtime";
-            this.lblShowtime.Size = new System.Drawing.Size(156, 19);
+            this.lblShowtime.Size = new System.Drawing.Size(184, 23);
             this.lblShowtime.TabIndex = 10;
             this.lblShowtime.Text = "25 May 2026 08:00 PM";
+            this.lblShowtime.Click += new System.EventHandler(this.lblShowtime_Click);
             // 
             // lblHall
             // 
             this.lblHall.AutoSize = true;
             this.lblHall.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHall.Location = new System.Drawing.Point(260, 98);
-            this.lblHall.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHall.Location = new System.Drawing.Point(347, 121);
             this.lblHall.Name = "lblHall";
-            this.lblHall.Size = new System.Drawing.Size(44, 19);
+            this.lblHall.Size = new System.Drawing.Size(52, 23);
             this.lblHall.TabIndex = 9;
             this.lblHall.Text = "Hall 1";
             this.lblHall.Click += new System.EventHandler(this.lblHall_Click);
@@ -152,21 +151,20 @@
             // 
             this.lblMovie.AutoSize = true;
             this.lblMovie.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMovie.Location = new System.Drawing.Point(260, 71);
-            this.lblMovie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMovie.Location = new System.Drawing.Point(347, 87);
             this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(135, 19);
+            this.lblMovie.Size = new System.Drawing.Size(168, 23);
             this.lblMovie.TabIndex = 8;
             this.lblMovie.Text = "Advangers Endgame";
+            this.lblMovie.Click += new System.EventHandler(this.lblMovie_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(172, 220);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(229, 271);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 19);
+            this.label7.Size = new System.Drawing.Size(111, 23);
             this.label7.TabIndex = 7;
             this.label7.Text = "Ticket Price : ";
             // 
@@ -174,10 +172,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(187, 191);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(249, 235);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 19);
+            this.label6.Size = new System.Drawing.Size(91, 23);
             this.label6.TabIndex = 6;
             this.label6.Text = "Ticket ID : ";
             // 
@@ -185,10 +182,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(212, 162);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(283, 199);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 19);
+            this.label5.Size = new System.Drawing.Size(57, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Seat : ";
             // 
@@ -196,10 +192,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(180, 129);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(240, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 19);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Showtime : ";
             // 
@@ -207,10 +202,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(214, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(285, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 19);
+            this.label3.Size = new System.Drawing.Size(54, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hall : ";
             // 
@@ -218,42 +212,40 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(201, 71);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(268, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 19);
+            this.label2.Size = new System.Drawing.Size(72, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Movie : ";
             // 
             // picMovie
             // 
             this.picMovie.Image = ((System.Drawing.Image)(resources.GetObject("picMovie.Image")));
-            this.picMovie.Location = new System.Drawing.Point(28, 119);
-            this.picMovie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMovie.Location = new System.Drawing.Point(37, 146);
+            this.picMovie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picMovie.Name = "picMovie";
-            this.picMovie.Size = new System.Drawing.Size(140, 210);
+            this.picMovie.Size = new System.Drawing.Size(187, 258);
             this.picMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMovie.TabIndex = 1;
             this.picMovie.TabStop = false;
+            this.picMovie.Click += new System.EventHandler(this.picMovie_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(136, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(181, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 25);
+            this.label1.Size = new System.Drawing.Size(183, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "CINEMA TICKET";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(-6, 30);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(-8, 37);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(841, 13);
+            this.label10.Size = new System.Drawing.Size(980, 16);
             this.label10.TabIndex = 17;
             this.label10.Text = "_________________________________________________________________________________" +
     "__________________________________________________________";
@@ -261,10 +253,10 @@
             // picQR
             // 
             this.picQR.Image = ((System.Drawing.Image)(resources.GetObject("picQR.Image")));
-            this.picQR.Location = new System.Drawing.Point(697, 124);
-            this.picQR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picQR.Location = new System.Drawing.Point(929, 153);
+            this.picQR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picQR.Name = "picQR";
-            this.picQR.Size = new System.Drawing.Size(150, 169);
+            this.picQR.Size = new System.Drawing.Size(200, 208);
             this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picQR.TabIndex = 13;
             this.picQR.TabStop = false;
@@ -273,10 +265,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(730, 314);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(973, 386);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 25);
+            this.label8.Size = new System.Drawing.Size(138, 31);
             this.label8.TabIndex = 13;
             this.label8.Text = "Thank You!";
             // 
@@ -284,23 +275,22 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(705, 348);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(940, 428);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 25);
+            this.label9.Size = new System.Drawing.Size(189, 31);
             this.label9.TabIndex = 14;
             this.label9.Text = "Enjoy the movie.";
             // 
             // TicketF9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.picQR);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TicketF9";
             this.Text = "Ticket";
             this.groupBox1.ResumeLayout(false);
