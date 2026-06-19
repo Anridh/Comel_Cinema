@@ -76,13 +76,13 @@ namespace Ticket_Cinema
             // 2. Insert user credentials into the database
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Customer (Email, Password) VALUES (@Email, @Password)";
+                string query = "INSERT INTO Customer (Email) VALUES (@Email)";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     // Using parameters prevents SQL Injection attacks
                     cmd.Parameters.AddWithValue("@Email", emailTextBox.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Password", passR.Text);
+                   
 
                     try
                     {
@@ -133,11 +133,6 @@ namespace Ticket_Cinema
 
         }
 
-        private void adminBtn_Click(object sender, EventArgs e)
-        {
-            AdminPg adminpg = new AdminPg();
-            adminpg.Show();
-            this.Hide();
-        }
+     
     }
 }

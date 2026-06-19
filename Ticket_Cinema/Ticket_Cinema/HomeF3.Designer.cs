@@ -1,6 +1,6 @@
 ﻿namespace Ticket_Cinema
 {
-    partial class HomeForm
+    partial class HomeF3
     {
         /// <summary>
         /// Required designer variable.
@@ -568,7 +568,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // HomeForm
+            // HomeF3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -576,7 +576,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panelMain);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "HomeForm";
+            this.Name = "HomeF3";
             this.Text = "home";
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.panelMain.ResumeLayout(false);

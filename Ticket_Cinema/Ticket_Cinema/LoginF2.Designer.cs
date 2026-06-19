@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.adminBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,7 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.adminBtn);
             this.panel1.Controls.Add(this.signUpLbl);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.loginBtn);
@@ -125,7 +127,7 @@
             this.loginBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.loginBtn.Location = new System.Drawing.Point(69, 234);
+            this.loginBtn.Location = new System.Drawing.Point(69, 199);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(412, 55);
@@ -183,6 +185,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(323, 30);
             this.emailTextBox.TabIndex = 5;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label1
             // 
@@ -195,6 +198,21 @@
             this.label1.Size = new System.Drawing.Size(149, 42);
             this.label1.TabIndex = 4;
             this.label1.Text = "Name";
+            // 
+            // adminBtn
+            // 
+            this.adminBtn.AllowDrop = true;
+            this.adminBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.adminBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminBtn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.adminBtn.Location = new System.Drawing.Point(69, 262);
+            this.adminBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.adminBtn.Name = "adminBtn";
+            this.adminBtn.Size = new System.Drawing.Size(412, 55);
+            this.adminBtn.TabIndex = 26;
+            this.adminBtn.Text = "Admin";
+            this.adminBtn.UseVisualStyleBackColor = false;
+            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
             // LoginF2
             // 
@@ -228,5 +246,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel signUpLbl;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button adminBtn;
     }
 }
