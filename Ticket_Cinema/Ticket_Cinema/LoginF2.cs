@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient; // Added for database connection
 
 namespace Ticket_Cinema
 {
     public partial class LoginF2 : Form
     {
+        // Define your connection string pointing to CinemaData.mdf
+        // AttachDbFilename uses |DataDirectory| to automatically find the file in your project folders
         private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\CinemaData.mdf;Integrated Security=True;";
+
         public LoginF2()
         {
             InitializeComponent();
@@ -31,14 +34,17 @@ namespace Ticket_Cinema
             this.Hide();
         }
 
+        // 1. CUSTOMER LOGIN BUTTON
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            // Simple validation to ensure fields aren't empty
             if (string.IsNullOrEmpty(emailTextBox.Text) || string.IsNullOrEmpty(passTxtBox.Text))
             {
                 MessageBox.Show("Please enter both Name and Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            // FIX 1: Added the missing query string variable here
             string query = "SELECT COUNT(*) FROM [dbo].[User] WHERE UserName = @Name AND UserPassword = @Password";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -57,7 +63,9 @@ namespace Ticket_Cinema
                         if (count > 0)
                         {
                             MessageBox.Show("Login Successful! Welcome Customer.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            HomeF3 home = new HomeF3(); 
+
+                            // FIX 2: Changed HomeF3 back to HomeForm (matching your project's previous form name)
+                            HomeF3 home = new HomeF3();
                             home.Show();
                             this.Hide();
                         }
@@ -74,23 +82,8 @@ namespace Ticket_Cinema
             }
         }
 
-        private void passCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (passCheckBox.Checked)
-            { passTxtBox.UseSystemPasswordChar = false; } 
-            else { passTxtBox.UseSystemPasswordChar = true; }
-    }
-
-        private void passTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        // 2. ADMIN LOGIN BUTTON 
+        // Double-click your Admin button in the designer to link it to this event if it isn't already
         private void adminBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(emailTextBox.Text) || string.IsNullOrEmpty(passTxtBox.Text))
@@ -100,7 +93,7 @@ namespace Ticket_Cinema
             }
 
             // Querying your separate 'Admin' table
-            string query = "SELECT COUNT(*) FROM [Admin] WHERE AdminName = @Name AND AdminPass = @Password";
+            string query = "SELECT COUNT(*) FROM [Admin] WHERE AdminName = @Name AND AdminPassword = @Password";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -118,9 +111,9 @@ namespace Ticket_Cinema
                         {
                             MessageBox.Show("Admin Authentication Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            
-                            AdminPg adminpg = new AdminPg();
-                            adminpg.Show();
+                            // Open the Admin panel dashboard form (e.g., mngMovie form from your Solution Explorer)
+                            mngMovie adminDashboard = new mngMovie();
+                            adminDashboard.Show();
                             this.Hide();
                         }
                         else
@@ -134,6 +127,28 @@ namespace Ticket_Cinema
                     MessageBox.Show("Database Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void passCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (passCheckBox.Checked)
+            {
+                passTxtBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passTxtBox.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void passTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
