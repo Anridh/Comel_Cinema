@@ -75,12 +75,6 @@
     <Compile Include="BookingF6.Designer.cs">
       <DependentUpon>BookingF6.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookingListF10.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookingListF10.Designer.cs">
-      <DependentUpon>BookingListF10.cs</DependentUpon>
-    </Compile>
     <Compile Include="mngMovie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,9 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingF6.resx">
       <DependentUpon>BookingF6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BookingListF10.resx">
-      <DependentUpon>BookingListF10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mngMovie.resx">
       <DependentUpon>mngMovie.cs</DependentUpon>

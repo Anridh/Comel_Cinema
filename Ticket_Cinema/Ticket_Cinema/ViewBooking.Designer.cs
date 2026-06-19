@@ -44,8 +44,9 @@
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 45F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1261, 119);
+            this.label2.Size = new System.Drawing.Size(946, 97);
             this.label2.TabIndex = 2;
             this.label2.Text = "VIEW BOOKING";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,12 +54,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 136);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(44, 110);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(38, 41, 2, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1148, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(861, 189);
             this.dataGridView1.TabIndex = 3;
             // 
             // BackBtn
@@ -69,10 +70,10 @@
             this.BackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.BackBtn.Location = new System.Drawing.Point(1032, 585);
-            this.BackBtn.Margin = new System.Windows.Forms.Padding(50, 50, 60, 30);
+            this.BackBtn.Location = new System.Drawing.Point(774, 475);
+            this.BackBtn.Margin = new System.Windows.Forms.Padding(38, 41, 45, 24);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(160, 49);
+            this.BackBtn.Size = new System.Drawing.Size(120, 40);
             this.BackBtn.TabIndex = 24;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = false;
@@ -82,10 +83,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 556);
-            this.label1.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label1.Location = new System.Drawing.Point(46, 452);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 24, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 24);
+            this.label1.Size = new System.Drawing.Size(121, 19);
             this.label1.TabIndex = 49;
             this.label1.Text = "Total Booking:";
             // 
@@ -93,10 +94,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 599);
-            this.label4.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label4.Location = new System.Drawing.Point(46, 487);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 24, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 24);
+            this.label4.Size = new System.Drawing.Size(98, 19);
             this.label4.TabIndex = 51;
             this.label4.Text = "Total Sales:";
             // 
@@ -104,10 +105,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(184, 599);
-            this.label3.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label3.Location = new System.Drawing.Point(138, 487);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 24, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 24);
+            this.label3.Size = new System.Drawing.Size(67, 19);
             this.label3.TabIndex = 52;
             this.label3.Text = "lblsales";
             // 
@@ -115,19 +116,19 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(212, 556);
-            this.label5.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label5.Location = new System.Drawing.Point(159, 452);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 24, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 24);
+            this.label5.Size = new System.Drawing.Size(90, 19);
             this.label5.TabIndex = 53;
             this.label5.Text = "lblbooking";
             // 
             // ViewBooking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -135,8 +136,10 @@
             this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewBooking";
             this.Text = "ViewBooking";
+            this.Load += new System.EventHandler(this.ViewBooking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -23,5 +23,10 @@ namespace Ticket_Cinema
             adminPg.Show();
             this.Close();
         }
+
+        private void ViewBooking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
