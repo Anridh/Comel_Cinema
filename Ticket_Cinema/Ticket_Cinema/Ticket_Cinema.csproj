@@ -79,6 +79,12 @@
     <Compile Include="BookingListF10.Designer.cs">
       <DependentUpon>BookingListF10.cs</DependentUpon>
     </Compile>
+    <Compile Include="mngMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mngMovie.Designer.cs">
+      <DependentUpon>mngMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginF2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingListF10.resx">
       <DependentUpon>BookingListF10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mngMovie.resx">
+      <DependentUpon>mngMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginF2.resx">
       <DependentUpon>LoginF2.cs</DependentUpon>
