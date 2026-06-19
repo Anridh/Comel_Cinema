@@ -246,10 +246,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CinemaData.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="CinemaData_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>CinemaData.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\bank.png" />

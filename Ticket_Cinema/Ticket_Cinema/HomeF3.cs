@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Ticket_Cinema
 {
-    public partial class HomeForm : Form
+    public partial class HomeF3 : Form
     {
         public class Movie
         {
@@ -28,7 +28,7 @@ namespace Ticket_Cinema
         List<Movie> movies = new List<Movie>();
         int startIndex = 0;
 
-        public HomeForm()
+        public HomeF3()
         {
             InitializeComponent();
         }
@@ -102,7 +102,7 @@ namespace Ticket_Cinema
                     });
                 }
             }
-        }   
+        }
 
         private void ShowMovies()
         {
@@ -184,7 +184,7 @@ namespace Ticket_Cinema
 
             ShowtimeF4 showtime = new ShowtimeF4(movieId);
             showtime.Show();
-            this.Hide();    
+            this.Hide();
         }
 
         private void btnBook2_Click(object sender, EventArgs e)

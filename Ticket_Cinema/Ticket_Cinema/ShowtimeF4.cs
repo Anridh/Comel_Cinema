@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Ticket_Cinema.HomeForm;
+using static Ticket_Cinema.HomeF3;
 
 namespace Ticket_Cinema
 {
@@ -172,7 +172,7 @@ WHERE s.MovieID = @MovieID";
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            HomeForm homeForm = new HomeForm();
+            HomeF3 homeForm = new HomeF3();
             homeForm.Show();
             this.Hide();
         }

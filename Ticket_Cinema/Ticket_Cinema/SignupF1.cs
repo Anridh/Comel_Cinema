@@ -57,52 +57,60 @@ namespace Ticket_Cinema
             BucuPanel(panel1, 20);
         }
 
-      
+
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
+            // 1. Semak jika kata laluan tidak sepadan (Sistem UI kekal semak untuk keselamatan user)
             if (passR.Text != PassRCon.Text)
             {
                 MessageBox.Show("Passwords do not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
+            // 2. Semak jika ada ruangan yang dibiarkan kosong
             if (string.IsNullOrEmpty(emailTextBox.Text) || string.IsNullOrEmpty(passR.Text))
             {
                 MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. Insert user credentials into the database
+            // JANJI ID: Menjana ID Pelanggan unik secara automatik (Contoh: C12345) supaya CustomerID tidak NULL
+            string generatedID = "C" + DateTime.Now.ToString("fffss");
+
+            // 3. Memasukkan maklumat pengguna ke dalam pangkalan data (Tanpa Kolum Password)
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Customer (Email, Password) VALUES (@Email, @Password)";
+                // Kita hanya masukkan CustomerID, CustomerName, dan Email sahaja
+                string query = "INSERT INTO [dbo].[Customer] (CustomerID, CustomerName, Email) VALUES (@ID, @Name, @Email)";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    // Using parameters prevents SQL Injection attacks
+                    cmd.Parameters.AddWithValue("@ID", generatedID);
+                    cmd.Parameters.AddWithValue("@Name", emailTextBox.Text.Split('@')[0]); // Ambil teks depan emel sebagai Nama
                     cmd.Parameters.AddWithValue("@Email", emailTextBox.Text.Trim());
-                    cmd.Parameters.AddWithValue("@Password", passR.Text);
 
                     try
                     {
                         conn.Open();
-                        cmd.ExecuteNonQuery(); // Executes the insert statement
+                        cmd.ExecuteNonQuery(); // Menjalankan arahan INSERT
 
-                        MessageBox.Show("Account created successfully! Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Account created successfully Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Optional: Navigate to login form here
+                        // Navigasi automatik ke borang log masuk selepas berjaya
+                        LoginF2 login = new LoginF2();
+                        login.Show();
+                        this.Hide();
                     }
                     catch (SqlException ex)
                     {
-                        // Handles if an email is already registered (since we marked Email as UNIQUE)
                         if (ex.Number == 2627)
                         {
                             MessageBox.Show("This email is already registered!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show("Database error: " + ex.Message);
+                            MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
@@ -131,18 +139,6 @@ namespace Ticket_Cinema
         private void PassRCon_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void adminBtn_Click(object sender, EventArgs e)
-        {
-            AdminPg adminpg = new AdminPg();
-            adminpg.Show();
-            this.Hide();
-        }
-
-        private void emailTextBox_TextChanged(object sender, EventArgs e)
-        {
-             
         }
     }
 }
