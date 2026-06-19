@@ -144,5 +144,10 @@ namespace Ticket_Cinema
         private void lblTicketID_Click(object sender, EventArgs e) { }
         private void lblTicketPrice_Click(object sender, EventArgs e) { }
         private void picMovie_Click(object sender, EventArgs e) { }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

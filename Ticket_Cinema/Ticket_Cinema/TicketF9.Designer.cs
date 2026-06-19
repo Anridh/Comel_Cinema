@@ -239,6 +239,7 @@
             this.label1.Size = new System.Drawing.Size(183, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "CINEMA TICKET";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label10
             // 
