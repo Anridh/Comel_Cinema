@@ -26,12 +26,5 @@ namespace Ticket_Cinema
         {
 
         }
-
-        private void viewbBtn_Click(object sender, EventArgs e)
-        {
-            BookingListF10 bookingListForm = new BookingListF10();
-            bookingListForm.Show();
-            this.Hide();
-        }
     }
 }
