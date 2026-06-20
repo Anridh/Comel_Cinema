@@ -119,6 +119,7 @@
             this.BackBtn.TabIndex = 51;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = false;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // dataGridView1
             // 
@@ -174,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1261, 615);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.lblHall);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);

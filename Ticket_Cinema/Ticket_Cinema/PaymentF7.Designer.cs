@@ -56,10 +56,9 @@
             // 
             this.label1.Font = new System.Drawing.Font("Arial Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(22, 20, 0, 0);
-            this.label1.Size = new System.Drawing.Size(946, 63);
+            this.label1.Padding = new System.Windows.Forms.Padding(29, 25, 0, 0);
+            this.label1.Size = new System.Drawing.Size(1261, 78);
             this.label1.TabIndex = 0;
             this.label1.Text = "PAYMENT DETAILS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -67,11 +66,10 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 63);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(3, 78);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(946, 50);
+            this.label2.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(1261, 62);
             this.label2.TabIndex = 1;
             this.label2.Text = "Booking ID:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,11 +77,10 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 113);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(0, 139);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(946, 68);
+            this.label3.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
+            this.label3.Size = new System.Drawing.Size(1261, 84);
             this.label3.TabIndex = 2;
             this.label3.Text = "Total Amount:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,11 +88,10 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(-458, 272);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(-611, 335);
             this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(22, 16, 0, 0);
-            this.label4.Size = new System.Drawing.Size(946, 220);
+            this.label4.Padding = new System.Windows.Forms.Padding(29, 20, 0, 0);
+            this.label4.Size = new System.Drawing.Size(1261, 271);
             this.label4.TabIndex = 3;
             this.label4.Text = "Payment Method:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -104,10 +100,9 @@
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(220, 67);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(293, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(332, 43);
+            this.label6.Size = new System.Drawing.Size(442, 52);
             this.label6.TabIndex = 5;
             this.label6.Text = "booking id num";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -116,10 +111,10 @@
             // 
             this.label7.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label7.Location = new System.Drawing.Point(219, 131);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.label7.Location = new System.Drawing.Point(292, 161);
+            this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 34);
+            this.label7.Size = new System.Drawing.Size(75, 42);
             this.label7.TabIndex = 6;
             this.label7.Text = "RM";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,10 +123,10 @@
             // 
             this.label8.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label8.Location = new System.Drawing.Point(254, 131);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
+            this.label8.Location = new System.Drawing.Point(339, 161);
+            this.label8.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 34);
+            this.label8.Size = new System.Drawing.Size(75, 42);
             this.label8.TabIndex = 7;
             this.label8.Text = "0.00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,20 +135,20 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(92, 199);
-            this.label10.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(123, 245);
+            this.label10.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 18);
+            this.label10.Size = new System.Drawing.Size(170, 21);
             this.label10.TabIndex = 15;
             this.label10.Text = "Credit / Debit Card";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(82, 454);
-            this.button1.Margin = new System.Windows.Forms.Padding(75, 2, 22, 41);
+            this.button1.Location = new System.Drawing.Point(109, 559);
+            this.button1.Margin = new System.Windows.Forms.Padding(100, 2, 29, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 52);
+            this.button1.Size = new System.Drawing.Size(161, 64);
             this.button1.TabIndex = 18;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -164,42 +159,43 @@
             this.bttnPay.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.bttnPay.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnPay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bttnPay.Location = new System.Drawing.Point(647, 454);
-            this.bttnPay.Margin = new System.Windows.Forms.Padding(38, 2, 75, 0);
+            this.bttnPay.Location = new System.Drawing.Point(863, 559);
+            this.bttnPay.Margin = new System.Windows.Forms.Padding(51, 2, 100, 0);
             this.bttnPay.Name = "bttnPay";
-            this.bttnPay.Size = new System.Drawing.Size(217, 52);
+            this.bttnPay.Size = new System.Drawing.Size(289, 64);
             this.bttnPay.TabIndex = 19;
             this.bttnPay.Text = "Pay Now";
             this.bttnPay.UseVisualStyleBackColor = false;
+            this.bttnPay.Click += new System.EventHandler(this.bttnPay_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = global::Ticket_Cinema.Properties.Resources.card2;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 184);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 226);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(69, 60);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
             // cardNumberTB
             // 
-            this.cardNumberTB.Location = new System.Drawing.Point(364, 292);
-            this.cardNumberTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardNumberTB.Location = new System.Drawing.Point(485, 359);
+            this.cardNumberTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardNumberTB.Name = "cardNumberTB";
-            this.cardNumberTB.Size = new System.Drawing.Size(199, 20);
+            this.cardNumberTB.Size = new System.Drawing.Size(264, 22);
             this.cardNumberTB.TabIndex = 21;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(238, 292);
-            this.label5.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(317, 359);
+            this.label5.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 36);
+            this.label5.Size = new System.Drawing.Size(126, 42);
             this.label5.TabIndex = 22;
             this.label5.Text = "Card Number\r\n\r\n";
             // 
@@ -207,10 +203,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(238, 328);
-            this.label9.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(317, 404);
+            this.label9.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 18);
+            this.label9.Size = new System.Drawing.Size(144, 21);
             this.label9.TabIndex = 23;
             this.label9.Text = "Expiration Date";
             // 
@@ -218,10 +214,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(238, 363);
-            this.label11.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(317, 447);
+            this.label11.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(153, 18);
+            this.label11.Size = new System.Drawing.Size(190, 21);
             this.label11.TabIndex = 24;
             this.label11.Text = "Security Code (CVC)";
             // 
@@ -229,62 +225,62 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(238, 259);
-            this.label12.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(317, 319);
+            this.label12.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 18);
+            this.label12.Size = new System.Drawing.Size(163, 21);
             this.label12.TabIndex = 26;
             this.label12.Text = "Cardholder Name";
             // 
             // cardNameTB
             // 
-            this.cardNameTB.Location = new System.Drawing.Point(364, 259);
-            this.cardNameTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardNameTB.Location = new System.Drawing.Point(485, 319);
+            this.cardNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardNameTB.Name = "cardNameTB";
-            this.cardNameTB.Size = new System.Drawing.Size(199, 20);
+            this.cardNameTB.Size = new System.Drawing.Size(264, 22);
             this.cardNameTB.TabIndex = 25;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(364, 328);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Location = new System.Drawing.Point(485, 404);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(38, 20);
+            this.textBox3.Size = new System.Drawing.Size(49, 22);
             this.textBox3.TabIndex = 27;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(401, 329);
-            this.label13.Margin = new System.Windows.Forms.Padding(11, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(535, 405);
+            this.label13.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(12, 18);
+            this.label13.Size = new System.Drawing.Size(15, 21);
             this.label13.TabIndex = 28;
             this.label13.Text = "/";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(417, 327);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Location = new System.Drawing.Point(556, 402);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(38, 20);
+            this.textBox4.Size = new System.Drawing.Size(49, 22);
             this.textBox4.TabIndex = 29;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(385, 364);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Location = new System.Drawing.Point(513, 448);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(71, 20);
+            this.textBox5.Size = new System.Drawing.Size(93, 22);
             this.textBox5.TabIndex = 30;
             // 
             // PaymentF7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label13);
@@ -306,7 +302,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PaymentF7";
             this.RightToLeftLayout = true;
             this.Text = "PaymentGW";

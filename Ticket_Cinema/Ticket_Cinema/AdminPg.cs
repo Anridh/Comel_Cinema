@@ -18,35 +18,19 @@ namespace Ticket_Cinema
             InitializeComponent();
         }
 
-        private void signUpBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
 
         private void AdminPg_Load(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
         {
 
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-
+            mngMovie movie = new mngMovie();
+            movie.Show();
+            this.Hide();
         }
 
         private void roundedButton4_Click(object sender, EventArgs e)
@@ -67,6 +51,20 @@ namespace Ticket_Cinema
         {
             mngShowtime showtime = new mngShowtime();
             showtime.Show();
+            this.Hide();
+        }
+
+        private void roundedButton1_Click_1(object sender, EventArgs e)
+        {
+            mngSeat seat = new mngSeat();
+            seat.Show();
+            this.Hide();
+        }
+
+        private void logOutBtn_Click(object sender, EventArgs e)
+        {
+            LoginF2 login = new LoginF2();
+            login.Show();
             this.Hide();
         }
     }

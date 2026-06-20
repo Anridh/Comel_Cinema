@@ -273,6 +273,7 @@ namespace Ticket_Cinema
             this.Controls.Add(this.labelbooking);
             this.Name = "BookingF6";
             this.Text = "Booking";
+            this.Load += new System.EventHandler(this.BookingF6_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,6 +301,6 @@ namespace Ticket_Cinema
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button backBtn;
-        private EventHandler backBtn_Click;
+        //private EventHandler backBtn_Click;
     }
 }

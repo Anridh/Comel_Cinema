@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignupF1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.adminBtn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.passCheckBox = new System.Windows.Forms.CheckBox();
+            this.PassRCon = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.passR = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -41,10 +44,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.PassRCon = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +52,8 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.passCheckBox);
             this.panel1.Controls.Add(this.PassRCon);
             this.panel1.Controls.Add(this.label5);
@@ -70,20 +71,28 @@
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // adminBtn
+            // label7
             // 
-            this.adminBtn.AllowDrop = true;
-            this.adminBtn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.adminBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.adminBtn.Location = new System.Drawing.Point(68, 322);
-            this.adminBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.adminBtn.Name = "adminBtn";
-            this.adminBtn.Size = new System.Drawing.Size(412, 55);
-            this.adminBtn.TabIndex = 23;
-            this.adminBtn.Text = "Admin";
-            this.adminBtn.UseVisualStyleBackColor = false;
-            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
+            this.label7.AllowDrop = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(37, 40);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(27, 0, 40, 12);
+            this.label7.Size = new System.Drawing.Size(149, 42);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.AllowDrop = true;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(187, 40);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(323, 30);
+            this.textBox1.TabIndex = 24;
             // 
             // passCheckBox
             // 
@@ -98,6 +107,29 @@
             this.passCheckBox.Text = "Show password";
             this.passCheckBox.UseVisualStyleBackColor = true;
             this.passCheckBox.CheckedChanged += new System.EventHandler(this.passCheckBox_CheckedChanged);
+            // 
+            // PassRCon
+            // 
+            this.PassRCon.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.PassRCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassRCon.Location = new System.Drawing.Point(187, 217);
+            this.PassRCon.Margin = new System.Windows.Forms.Padding(4);
+            this.PassRCon.Name = "PassRCon";
+            this.PassRCon.Size = new System.Drawing.Size(323, 30);
+            this.PassRCon.TabIndex = 21;
+            this.PassRCon.UseSystemPasswordChar = true;
+            this.PassRCon.TextChanged += new System.EventHandler(this.PassRCon_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(33, 206);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(27, 0, 13, 12);
+            this.label5.Size = new System.Drawing.Size(153, 60);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Confirm\r\npassword";
             // 
             // passR
             // 
@@ -134,7 +166,6 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(323, 30);
             this.emailTextBox.TabIndex = 17;
-            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label1
             // 
@@ -169,10 +200,10 @@
             this.signUpBtn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.signUpBtn.Location = new System.Drawing.Point(68, 302);
+            this.signUpBtn.Location = new System.Drawing.Point(87, 313);
             this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(412, 55);
+            this.signUpBtn.Size = new System.Drawing.Size(412, 59);
             this.signUpBtn.TabIndex = 14;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.UseVisualStyleBackColor = false;
@@ -221,52 +252,6 @@
             this.label2.Text = "CINEMAX";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 206);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(27, 0, 13, 12);
-            this.label5.Size = new System.Drawing.Size(153, 60);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Confirm\r\npassword";
-            // 
-            // PassRCon
-            // 
-            this.PassRCon.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.PassRCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassRCon.Location = new System.Drawing.Point(187, 217);
-            this.PassRCon.Margin = new System.Windows.Forms.Padding(4);
-            this.PassRCon.Name = "PassRCon";
-            this.PassRCon.Size = new System.Drawing.Size(323, 30);
-            this.PassRCon.TabIndex = 21;
-            this.PassRCon.UseSystemPasswordChar = true;
-            this.PassRCon.TextChanged += new System.EventHandler(this.PassRCon_TextChanged);
-            // 
-            // label7
-            // 
-            this.label7.AllowDrop = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(37, 40);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(27, 0, 40, 12);
-            this.label7.Size = new System.Drawing.Size(149, 42);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Name";
-            // 
-            // textBox1
-            // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 40);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 30);
-            this.textBox1.TabIndex = 24;
-            // 
             // SignupF1
             // 
             this.AllowDrop = true;
@@ -301,6 +286,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox PassRCon;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
-

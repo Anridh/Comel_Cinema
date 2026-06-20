@@ -185,8 +185,9 @@
             this.signUpBtn.TabIndex = 20;
             this.signUpBtn.Text = "View Ticket";
             this.signUpBtn.UseVisualStyleBackColor = false;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
-            // PaymentSuccess
+            // PaymentSuccessF8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,7 +205,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "PaymentSuccess";
+            this.Name = "PaymentSuccessF8";
             this.Text = "PaymentSuccess";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -21,5 +21,12 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            TicketF9 ticket = new TicketF9();
+            ticket.Show();
+            this.Hide();
+        }
     }
 }

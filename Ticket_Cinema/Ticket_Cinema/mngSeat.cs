@@ -16,5 +16,13 @@ namespace Ticket_Cinema
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            AdminPg adminPg = new AdminPg();
+            adminPg.Show();
+            this.Hide();
+        }
     }
+    
 }

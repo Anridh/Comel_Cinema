@@ -92,6 +92,7 @@
             this.logOutBtn.TabIndex = 23;
             this.logOutBtn.Text = "LOG OUT";
             this.logOutBtn.UseVisualStyleBackColor = false;
+            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
             // 
             // roundedButton4
             // 
@@ -159,6 +160,7 @@
             this.roundedButton1.TabIndex = 20;
             this.roundedButton1.Text = "MANAGE SEAT";
             this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click_1);
             // 
             // MvBtn
             // 

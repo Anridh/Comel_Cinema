@@ -87,7 +87,7 @@ namespace Ticket_Cinema
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@ID", generatedID);
-                    cmd.Parameters.AddWithValue("@Name", emailTextBox.Text.Split('@')[0]); // Ambil teks depan emel sebagai Nama
+                    cmd.Parameters.AddWithValue("@Name", textBox1.Text.Trim());
                     cmd.Parameters.AddWithValue("@Email", emailTextBox.Text.Trim());
 
                     try
@@ -140,5 +140,8 @@ namespace Ticket_Cinema
         {
 
         }
+        private void adminBtn_Click(object sender, EventArgs e) { }
+        private void emailTextBox_TextChanged(object sender, EventArgs e) { }
+
     }
 }

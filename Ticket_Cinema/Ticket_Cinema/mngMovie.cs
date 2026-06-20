@@ -69,8 +69,11 @@ namespace Ticket_Cinema
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-
+            AdminPg adminPg = new AdminPg();
+            adminPg.Show();
+            this.Hide();
         }
+       
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

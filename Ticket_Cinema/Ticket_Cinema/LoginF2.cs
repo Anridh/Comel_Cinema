@@ -93,7 +93,7 @@ namespace Ticket_Cinema
             }
 
             // Querying your separate 'Admin' table
-            string query = "SELECT COUNT(*) FROM [Admin] WHERE AdminName = @Name AND AdminPassword = @Password";
+            string query = "SELECT COUNT(*) FROM [Admin] WHERE AdminName = @Name AND AdminPass= @Password";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -112,7 +112,7 @@ namespace Ticket_Cinema
                             MessageBox.Show("Admin Authentication Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             // Open the Admin panel dashboard form (e.g., mngMovie form from your Solution Explorer)
-                            mngMovie adminDashboard = new mngMovie();
+                            AdminPg adminDashboard = new AdminPg();
                             adminDashboard.Show();
                             this.Hide();
                         }

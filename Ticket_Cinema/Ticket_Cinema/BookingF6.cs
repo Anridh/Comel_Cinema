@@ -25,7 +25,7 @@ namespace Ticket_Cinema
         public BookingF6()
         {
             InitializeComponent();
-            this.Load += BookingF6_Load;
+            //this.Load += BookingF6_Load;
         }
 
         private void BookingF6_Load(object sender, EventArgs e)
@@ -163,6 +163,11 @@ namespace Ticket_Cinema
         private void textBoxTotalAmount_TextChanged(object sender, EventArgs e) { }
 
         private void labelbooking_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookingF6_Load_1(object sender, EventArgs e)
         {
 
         }

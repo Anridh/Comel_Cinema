@@ -44,12 +44,21 @@ namespace Ticket_Cinema
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            BookingF6 bookingF6 = new BookingF6();
+            bookingF6.Show();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bttnPay_Click(object sender, EventArgs e)
+        {
+            PaymentSuccessF8 paymentSuccessF8 = new PaymentSuccessF8();
+            paymentSuccessF8.Show();
+            this.Hide();
         }
     }
 }

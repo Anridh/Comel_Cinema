@@ -22,7 +22,7 @@ namespace Ticket_Cinema
         public TicketF9()
         {
             InitializeComponent();
-            this.Load += TicketF9_Load;
+            //this.Load += TicketF9_Load;
         }
 
         private void TicketF9_Load(object sender, EventArgs e)
@@ -146,6 +146,11 @@ namespace Ticket_Cinema
         private void picMovie_Click(object sender, EventArgs e) { }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
