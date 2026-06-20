@@ -253,6 +253,9 @@
       <DependentUpon>CinemaData.mdf</DependentUpon>
     </Content>
     <Content Include="Resources\bank.png" />
+    <None Include="Resources\payment2.jpg" />
+    <None Include="Resources\payment1.jpg" />
+    <None Include="Resources\payment.jpg" />
     <None Include="Resources\homeBg.jpg" />
     <None Include="Resources\checked.png" />
     <None Include="Resources\wallet.png" />
