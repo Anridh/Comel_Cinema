@@ -219,7 +219,7 @@ namespace Ticket_Cinema
                 using(Graphics g = Graphics.FromImage(bggelap))
                 {
                     g.DrawImage(this.BackgroundImage, 0, 0);
-                    using(SolidBrush brush = new SolidBrush(Color.FromArgb(100, 0,0,0)))
+                    using(SolidBrush brush = new SolidBrush(Color.FromArgb(130, 0,0,0)))
                     {
                         g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
                     }
