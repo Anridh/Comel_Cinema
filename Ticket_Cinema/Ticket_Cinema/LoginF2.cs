@@ -24,7 +24,7 @@ namespace Ticket_Cinema
 
         private void LoginF2_Load(object sender, EventArgs e)
         {
-
+            BucuPanel(panel1, 20);
         }
 
         private void signUpLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -149,6 +149,40 @@ namespace Ticket_Cinema
         private void emailTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+            int radius = 20; // Nilai radius mesti SAMA dengan nilai di Form_Load tadi
+            int borderThickness = 3; // Ketebalan garisan border (dalam piksel)
+            Color borderColor = Color.White; // Anda boleh tukar warna border di sini (cth: Gray, White, Gold)
+
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            using (System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath())
+            {
+                gp.AddArc(0, 0, radius, radius, 180, 90);
+                gp.AddArc(panel1.Width - radius, 0, radius, radius, 270, 90);
+                gp.AddArc(panel1.Width - radius, panel1.Height - radius, radius, radius, 0, 90);
+                gp.AddArc(0, panel1.Height - radius, radius, radius, 90, 90);
+                gp.CloseFigure();
+
+                using (Pen pen = new Pen(borderColor, borderThickness))
+                {
+                    e.Graphics.DrawPath(pen, gp);
+                }
+            }
+        }
+
+        private void BucuPanel(Panel pnl, int radius)
+        {
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddArc(0, 0, radius, radius, 180, 90);
+            gp.AddArc(pnl.Width - radius, 0, radius, radius, 270, 90);
+            gp.AddArc(pnl.Width - radius, pnl.Height - radius, radius, radius, 0, 90);
+            gp.AddArc(0, pnl.Height - radius, radius, radius, 90, 90);
+            pnl.Region = new Region(gp);
         }
     }
 }

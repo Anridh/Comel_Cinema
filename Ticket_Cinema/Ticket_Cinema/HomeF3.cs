@@ -35,6 +35,7 @@ namespace Ticket_Cinema
 
         private void HomeForm_Load(object sender, EventArgs e)
         {
+            BgBrightness();
             LoadMovies();
             ShowMovies();
         }
@@ -207,6 +208,24 @@ namespace Ticket_Cinema
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Bitmap bggelap= new Bitmap(this.BackgroundImage.Width, this.BackgroundImage.Height);
+
+                using(Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using(SolidBrush brush = new SolidBrush(Color.FromArgb(100, 0,0,0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
         }
     }
 }

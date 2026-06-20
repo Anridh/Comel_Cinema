@@ -50,7 +50,7 @@
             // panel1
             // 
             this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.textBox1);
@@ -75,7 +75,7 @@
             // 
             this.label7.AllowDrop = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(37, 40);
+            this.label7.Location = new System.Drawing.Point(40, 40);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(27, 0, 40, 12);
@@ -88,10 +88,10 @@
             this.textBox1.AllowDrop = true;
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 40);
+            this.textBox1.Location = new System.Drawing.Point(190, 40);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 30);
+            this.textBox1.Size = new System.Drawing.Size(312, 30);
             this.textBox1.TabIndex = 24;
             // 
             // passCheckBox
@@ -99,7 +99,7 @@
             this.passCheckBox.AllowDrop = true;
             this.passCheckBox.AutoSize = true;
             this.passCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passCheckBox.Location = new System.Drawing.Point(350, 259);
+            this.passCheckBox.Location = new System.Drawing.Point(353, 259);
             this.passCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.passCheckBox.Name = "passCheckBox";
             this.passCheckBox.Size = new System.Drawing.Size(149, 24);
@@ -112,10 +112,10 @@
             // 
             this.PassRCon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.PassRCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassRCon.Location = new System.Drawing.Point(187, 217);
+            this.PassRCon.Location = new System.Drawing.Point(190, 217);
             this.PassRCon.Margin = new System.Windows.Forms.Padding(4);
             this.PassRCon.Name = "PassRCon";
-            this.PassRCon.Size = new System.Drawing.Size(323, 30);
+            this.PassRCon.Size = new System.Drawing.Size(312, 30);
             this.PassRCon.TabIndex = 21;
             this.PassRCon.UseSystemPasswordChar = true;
             this.PassRCon.TextChanged += new System.EventHandler(this.PassRCon_TextChanged);
@@ -123,7 +123,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 206);
+            this.label5.Location = new System.Drawing.Point(36, 206);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(27, 0, 13, 12);
@@ -136,10 +136,10 @@
             this.passR.AllowDrop = true;
             this.passR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.passR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passR.Location = new System.Drawing.Point(187, 154);
+            this.passR.Location = new System.Drawing.Point(190, 154);
             this.passR.Margin = new System.Windows.Forms.Padding(4);
             this.passR.Name = "passR";
-            this.passR.Size = new System.Drawing.Size(323, 30);
+            this.passR.Size = new System.Drawing.Size(312, 30);
             this.passR.TabIndex = 19;
             this.passR.UseSystemPasswordChar = true;
             this.passR.TextChanged += new System.EventHandler(this.passTextBox_TextChanged);
@@ -148,7 +148,7 @@
             // 
             this.label4.AllowDrop = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 154);
+            this.label4.Location = new System.Drawing.Point(36, 154);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(27, 0, 13, 12);
@@ -161,17 +161,17 @@
             this.emailTextBox.AllowDrop = true;
             this.emailTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.Location = new System.Drawing.Point(187, 95);
+            this.emailTextBox.Location = new System.Drawing.Point(190, 95);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(323, 30);
+            this.emailTextBox.Size = new System.Drawing.Size(312, 30);
             this.emailTextBox.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AllowDrop = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 95);
+            this.label1.Location = new System.Drawing.Point(40, 95);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(27, 0, 40, 12);
@@ -184,8 +184,8 @@
             this.loginLbl.AutoSize = true;
             this.loginLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLbl.LinkColor = System.Drawing.SystemColors.HotTrack;
-            this.loginLbl.Location = new System.Drawing.Point(327, 393);
+            this.loginLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(171)))));
+            this.loginLbl.Location = new System.Drawing.Point(329, 393);
             this.loginLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loginLbl.Name = "loginLbl";
             this.loginLbl.Size = new System.Drawing.Size(104, 20);
@@ -197,10 +197,10 @@
             // signUpBtn
             // 
             this.signUpBtn.AllowDrop = true;
-            this.signUpBtn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.signUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(171)))));
             this.signUpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Cornsilk;
-            this.signUpBtn.Location = new System.Drawing.Point(87, 313);
+            this.signUpBtn.Location = new System.Drawing.Point(68, 313);
             this.signUpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(412, 59);
@@ -213,7 +213,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(113, 393);
+            this.label6.Location = new System.Drawing.Point(115, 393);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(206, 20);

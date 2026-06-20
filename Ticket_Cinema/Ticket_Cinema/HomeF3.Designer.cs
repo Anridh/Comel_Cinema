@@ -98,6 +98,7 @@
             // 
             // panelMain
             // 
+            this.panelMain.BackColor = System.Drawing.Color.Transparent;
             this.panelMain.Controls.Add(this.btnBook3);
             this.panelMain.Controls.Add(this.btnBookings);
             this.panelMain.Controls.Add(this.btnBook2);
@@ -134,7 +135,7 @@
             this.btnBookings.BackColor = System.Drawing.Color.Navy;
             this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBookings.ForeColor = System.Drawing.Color.White;
-            this.btnBookings.Location = new System.Drawing.Point(888, 33);
+            this.btnBookings.Location = new System.Drawing.Point(887, 34);
             this.btnBookings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBookings.Name = "btnBookings";
             this.btnBookings.Size = new System.Drawing.Size(143, 37);
@@ -572,6 +573,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.BackgroundImage = global::Ticket_Cinema.Properties.Resources.homeBg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panelMain);
