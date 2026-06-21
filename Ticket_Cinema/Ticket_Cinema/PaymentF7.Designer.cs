@@ -280,7 +280,7 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "/";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            //this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // textBox4
             // 
@@ -335,7 +335,7 @@
             this.Name = "PaymentF7";
             this.RightToLeftLayout = true;
             this.Text = "PaymentGW";
-            this.Load += new System.EventHandler(this.PaymentF7_Load_1);
+            //this.Load += new System.EventHandler(this.PaymentF7_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

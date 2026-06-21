@@ -67,6 +67,13 @@ namespace Ticket_Cinema
             login.Show();
             this.Hide();
         }
+
+        private void btnViewReport_Click(object sender, EventArgs e)
+        {
+            ViewReport report = new ViewReport();
+            report.Show();
+            this.Hide();
+        }
     }
 
     public class  RoundedButton:Button

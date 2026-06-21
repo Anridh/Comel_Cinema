@@ -37,6 +37,7 @@
             this.roundedButton2 = new Ticket_Cinema.RoundedButton();
             this.roundedButton1 = new Ticket_Cinema.RoundedButton();
             this.MvBtn = new Ticket_Cinema.RoundedButton();
+            this.btnViewReport = new Ticket_Cinema.RoundedButton();
             this.SuspendLayout();
             // 
             // label1
@@ -179,12 +180,30 @@
             this.MvBtn.UseVisualStyleBackColor = false;
             this.MvBtn.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
+            // btnViewReport
+            // 
+            this.btnViewReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(62)))));
+            this.btnViewReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewReport.FlatAppearance.BorderSize = 0;
+            this.btnViewReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewReport.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold);
+            this.btnViewReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.btnViewReport.Location = new System.Drawing.Point(514, 486);
+            this.btnViewReport.Margin = new System.Windows.Forms.Padding(50, 50, 3, 0);
+            this.btnViewReport.Name = "btnViewReport";
+            this.btnViewReport.Size = new System.Drawing.Size(402, 90);
+            this.btnViewReport.TabIndex = 24;
+            this.btnViewReport.Text = "VIEW REPORT";
+            this.btnViewReport.UseVisualStyleBackColor = false;
+            this.btnViewReport.Click += new System.EventHandler(this.btnViewReport_Click);
+            // 
             // AdminPg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.btnViewReport);
             this.Controls.Add(this.logOutBtn);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.roundedButton3);
@@ -214,5 +233,6 @@
         private RoundedButton roundedButton3;
         private RoundedButton roundedButton4;
         private RoundedButton logOutBtn;
+        private RoundedButton btnViewReport;
     }
 }
