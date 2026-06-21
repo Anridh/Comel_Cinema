@@ -36,17 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BackBtn = new Ticket_Cinema.RoundedButton();
             this.seatDataGridView = new System.Windows.Forms.DataGridView();
+            this.seatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seatBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cinemaDataDataSet3 = new Ticket_Cinema.CinemaDataDataSet3();
             this.label2 = new System.Windows.Forms.Label();
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.lblHall = new Ticket_Cinema.RoundedButton();
-            this.cinemaDataDataSet3 = new Ticket_Cinema.CinemaDataDataSet3();
-            this.seatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.seatTableAdapter = new Ticket_Cinema.CinemaDataDataSet3TableAdapters.SeatTableAdapter();
-            this.seatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.seatDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seatBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSeatID
@@ -148,6 +148,32 @@
             this.seatDataGridView.TabIndex = 50;
             this.seatDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.seatDataGridView_CellContentClick);
             // 
+            // seatIDDataGridViewTextBoxColumn
+            // 
+            this.seatIDDataGridViewTextBoxColumn.DataPropertyName = "SeatID";
+            this.seatIDDataGridViewTextBoxColumn.HeaderText = "SeatID";
+            this.seatIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.seatIDDataGridViewTextBoxColumn.Name = "seatIDDataGridViewTextBoxColumn";
+            this.seatIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // seatBindingSource
+            // 
+            this.seatBindingSource.DataMember = "Seat";
+            this.seatBindingSource.DataSource = this.cinemaDataDataSet3;
+            // 
+            // cinemaDataDataSet3
+            // 
+            this.cinemaDataDataSet3.DataSetName = "CinemaDataDataSet3";
+            this.cinemaDataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(62)))));
@@ -186,35 +212,9 @@
             this.lblHall.Text = "Hall A";
             this.lblHall.UseVisualStyleBackColor = false;
             // 
-            // cinemaDataDataSet3
-            // 
-            this.cinemaDataDataSet3.DataSetName = "CinemaDataDataSet3";
-            this.cinemaDataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // seatBindingSource
-            // 
-            this.seatBindingSource.DataMember = "Seat";
-            this.seatBindingSource.DataSource = this.cinemaDataDataSet3;
-            // 
             // seatTableAdapter
             // 
             this.seatTableAdapter.ClearBeforeFill = true;
-            // 
-            // seatIDDataGridViewTextBoxColumn
-            // 
-            this.seatIDDataGridViewTextBoxColumn.DataPropertyName = "SeatID";
-            this.seatIDDataGridViewTextBoxColumn.HeaderText = "SeatID";
-            this.seatIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.seatIDDataGridViewTextBoxColumn.Name = "seatIDDataGridViewTextBoxColumn";
-            this.seatIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Width = 125;
             // 
             // mngSeat
             // 
@@ -236,8 +236,8 @@
             this.Text = "mngSeat";
             this.Load += new System.EventHandler(this.mngSeat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.seatDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seatBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
