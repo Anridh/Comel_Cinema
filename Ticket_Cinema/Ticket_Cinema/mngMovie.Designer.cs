@@ -32,21 +32,21 @@
             this.ClearBtn = new Ticket_Cinema.RoundedButton();
             this.delBtn = new Ticket_Cinema.RoundedButton();
             this.addBtn = new Ticket_Cinema.RoundedButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtMovieID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BackBtn = new Ticket_Cinema.RoundedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtGenre = new System.Windows.Forms.TextBox();
+            this.txtLanguage = new System.Windows.Forms.TextBox();
+            this.txtDuration = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtRating = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,23 +118,23 @@
             this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
-            // textBox2
+            // txtTitle
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(806, 256);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 28);
-            this.textBox2.TabIndex = 44;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtTitle.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.Location = new System.Drawing.Point(806, 256);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(184, 28);
+            this.txtTitle.TabIndex = 44;
+
             // 
-            // textBox1
+            // txtMovieID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(806, 202);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 28);
-            this.textBox1.TabIndex = 42;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtMovieID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieID.Location = new System.Drawing.Point(806, 202);
+            this.txtMovieID.Name = "txtMovieID";
+            this.txtMovieID.Size = new System.Drawing.Size(94, 28);
+            this.txtMovieID.TabIndex = 42;
+
             // 
             // label4
             // 
@@ -146,7 +146,7 @@
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 41;
             this.label4.Text = "Genre:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+
             // 
             // label3
             // 
@@ -158,7 +158,7 @@
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 40;
             this.label3.Text = "Title:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // label1
             // 
@@ -170,7 +170,7 @@
             this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 39;
             this.label1.Text = "Movie ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // BackBtn
             // 
@@ -213,31 +213,31 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "MANAGE MOVIE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+
             // 
-            // textBox3
+            // txtGenre
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(806, 310);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 28);
-            this.textBox3.TabIndex = 49;
+            this.txtGenre.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenre.Location = new System.Drawing.Point(806, 310);
+            this.txtGenre.Name = "txtGenre";
+            this.txtGenre.Size = new System.Drawing.Size(184, 28);
+            this.txtGenre.TabIndex = 49;
             // 
-            // textBox4
+            // txtLanguage
             // 
-            this.textBox4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(806, 419);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 28);
-            this.textBox4.TabIndex = 50;
+            this.txtLanguage.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLanguage.Location = new System.Drawing.Point(806, 419);
+            this.txtLanguage.Name = "txtLanguage";
+            this.txtLanguage.Size = new System.Drawing.Size(184, 28);
+            this.txtLanguage.TabIndex = 50;
             // 
-            // textBox5
+            // txtDuration
             // 
-            this.textBox5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(806, 365);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(184, 28);
-            this.textBox5.TabIndex = 51;
+            this.txtDuration.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuration.Location = new System.Drawing.Point(806, 365);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(184, 28);
+            this.txtDuration.TabIndex = 51;
             // 
             // label5
             // 
@@ -272,13 +272,13 @@
             this.label7.TabIndex = 54;
             this.label7.Text = "Rating:";
             // 
-            // textBox6
+            // txtRating
             // 
-            this.textBox6.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(806, 470);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 28);
-            this.textBox6.TabIndex = 55;
+            this.txtRating.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRating.Location = new System.Drawing.Point(806, 470);
+            this.txtRating.Name = "txtRating";
+            this.txtRating.Size = new System.Drawing.Size(184, 28);
+            this.txtRating.TabIndex = 55;
             // 
             // mngMovie
             // 
@@ -286,19 +286,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1261, 673);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtRating);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDuration);
+            this.Controls.Add(this.txtLanguage);
+            this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.uptBtn);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.txtMovieID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -319,20 +319,20 @@
         private RoundedButton ClearBtn;
         private RoundedButton delBtn;
         private RoundedButton addBtn;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtMovieID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private RoundedButton BackBtn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtGenre;
+        private System.Windows.Forms.TextBox txtLanguage;
+        private System.Windows.Forms.TextBox txtDuration;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtRating;
     }
 }
