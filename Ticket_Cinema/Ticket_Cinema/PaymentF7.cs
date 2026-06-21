@@ -132,6 +132,11 @@ namespace Ticket_Cinema
         private void label6_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
         private void label8_Click(object sender, EventArgs e) { }
+
+        private void PaymentF7_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

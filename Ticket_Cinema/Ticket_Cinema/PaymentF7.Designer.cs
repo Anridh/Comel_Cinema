@@ -315,6 +315,7 @@
             this.Name = "PaymentF7";
             this.RightToLeftLayout = true;
             this.Text = "PaymentGW";
+            this.Load += new System.EventHandler(this.PaymentF7_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
