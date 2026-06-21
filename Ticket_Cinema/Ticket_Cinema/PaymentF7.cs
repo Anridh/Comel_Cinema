@@ -132,37 +132,6 @@ namespace Ticket_Cinema
         private void label6_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
         private void label8_Click(object sender, EventArgs e) { }
-
-        private void PaymentF7_Load_1(object sender, EventArgs e)
-        {
-            BgBrightness();
-        }
-        private void BgBrightness()
-        {
-            if (this.BackgroundImage != null)
-            {
-                Image gambarAsal = this.BackgroundImage;
-                Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
-
-                bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
-                using (Graphics g = Graphics.FromImage(bggelap))
-                {
-                    g.DrawImage(this.BackgroundImage, 0, 0);
-                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
-                    {
-                        g.FillRectangle(brush, 0, 0, bggelap.Width,bggelap.Height);
-                    }
-                }
-                this.BackgroundImage = bggelap;
-            }
-            
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
