@@ -16,7 +16,7 @@ namespace Ticket_Cinema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SeatSelectionF5("B88","U88"));
+            Application.Run(new LoginF2());
         }
     }
 }
