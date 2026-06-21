@@ -166,7 +166,7 @@
             this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.ClearBtn.Location = new System.Drawing.Point(1032, 287);
+            this.ClearBtn.Location = new System.Drawing.Point(1033, 335);
             this.ClearBtn.Margin = new System.Windows.Forms.Padding(50, 10, 60, 0);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(160, 49);
