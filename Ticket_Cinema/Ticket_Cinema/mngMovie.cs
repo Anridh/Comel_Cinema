@@ -208,5 +208,9 @@ Integrated Security=True");
             }
         }
 
+        private void mngMovie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

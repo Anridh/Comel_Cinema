@@ -30,7 +30,6 @@
         {
             this.uptBtn = new Ticket_Cinema.RoundedButton();
             this.ClearBtn = new Ticket_Cinema.RoundedButton();
-            this.delBtn = new Ticket_Cinema.RoundedButton();
             this.addBtn = new Ticket_Cinema.RoundedButton();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtMovieID = new System.Windows.Forms.TextBox();
@@ -84,23 +83,6 @@
             this.ClearBtn.UseVisualStyleBackColor = false;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
-            // delBtn
-            // 
-            this.delBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(49)))));
-            this.delBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delBtn.FlatAppearance.BorderSize = 0;
-            this.delBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.delBtn.Location = new System.Drawing.Point(1032, 306);
-            this.delBtn.Margin = new System.Windows.Forms.Padding(50, 10, 60, 0);
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(160, 49);
-            this.delBtn.TabIndex = 46;
-            this.delBtn.Text = "Delete";
-            this.delBtn.UseVisualStyleBackColor = false;
-            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
-            // 
             // addBtn
             // 
             this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(148)))));
@@ -125,7 +107,6 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(184, 28);
             this.txtTitle.TabIndex = 44;
-
             // 
             // txtMovieID
             // 
@@ -134,7 +115,6 @@
             this.txtMovieID.Name = "txtMovieID";
             this.txtMovieID.Size = new System.Drawing.Size(94, 28);
             this.txtMovieID.TabIndex = 42;
-
             // 
             // label4
             // 
@@ -146,7 +126,6 @@
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 41;
             this.label4.Text = "Genre:";
-
             // 
             // label3
             // 
@@ -158,7 +137,6 @@
             this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 40;
             this.label3.Text = "Title:";
-
             // 
             // label1
             // 
@@ -170,7 +148,6 @@
             this.label1.Size = new System.Drawing.Size(98, 24);
             this.label1.TabIndex = 39;
             this.label1.Text = "Movie ID:";
-
             // 
             // BackBtn
             // 
@@ -213,7 +190,6 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "MANAGE MOVIE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // txtGenre
             // 
@@ -295,7 +271,6 @@
             this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.uptBtn);
             this.Controls.Add(this.ClearBtn);
-            this.Controls.Add(this.delBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.txtMovieID);
@@ -307,6 +282,7 @@
             this.Controls.Add(this.label2);
             this.Name = "mngMovie";
             this.Text = "Manage Movie";
+            this.Load += new System.EventHandler(this.mngMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -317,7 +293,6 @@
 
         private RoundedButton uptBtn;
         private RoundedButton ClearBtn;
-        private RoundedButton delBtn;
         private RoundedButton addBtn;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.TextBox txtMovieID;

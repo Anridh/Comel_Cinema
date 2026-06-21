@@ -308,6 +308,7 @@
             this.txtHallID.Name = "txtHallID";
             this.txtHallID.Size = new System.Drawing.Size(94, 28);
             this.txtHallID.TabIndex = 52;
+            this.txtHallID.TextChanged += new System.EventHandler(this.txtHallID_TextChanged);
             // 
             // txtMovieID
             // 
@@ -316,6 +317,7 @@
             this.txtMovieID.Name = "txtMovieID";
             this.txtMovieID.Size = new System.Drawing.Size(94, 28);
             this.txtMovieID.TabIndex = 53;
+            this.txtMovieID.TextChanged += new System.EventHandler(this.txtMovieID_TextChanged);
             // 
             // mngShowtime
             // 
