@@ -28,27 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.txtSeatID = new System.Windows.Forms.TextBox();
             this.uptBtn = new Ticket_Cinema.RoundedButton();
             this.ClearBtn = new Ticket_Cinema.RoundedButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BackBtn = new Ticket_Cinema.RoundedButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.seatDataGridView = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtStatus = new System.Windows.Forms.TextBox();
             this.lblHall = new Ticket_Cinema.RoundedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cinemaDataDataSet3 = new Ticket_Cinema.CinemaDataDataSet3();
+            this.seatBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.seatTableAdapter = new Ticket_Cinema.CinemaDataDataSet3TableAdapters.SeatTableAdapter();
+            this.seatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.seatDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seatBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtSeatID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(789, 300);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 28);
-            this.textBox1.TabIndex = 58;
+            this.txtSeatID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeatID.Location = new System.Drawing.Point(789, 300);
+            this.txtSeatID.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.txtSeatID.Name = "txtSeatID";
+            this.txtSeatID.Size = new System.Drawing.Size(110, 28);
+            this.txtSeatID.TabIndex = 58;
             // 
             // uptBtn
             // 
@@ -65,6 +73,7 @@
             this.uptBtn.TabIndex = 57;
             this.uptBtn.Text = "Update";
             this.uptBtn.UseVisualStyleBackColor = false;
+            this.uptBtn.Click += new System.EventHandler(this.uptBtn_Click);
             // 
             // ClearBtn
             // 
@@ -81,6 +90,7 @@
             this.ClearBtn.TabIndex = 56;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // label3
             // 
@@ -121,16 +131,22 @@
             this.BackBtn.UseVisualStyleBackColor = false;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // dataGridView1
+            // seatDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 231);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 204);
-            this.dataGridView1.TabIndex = 50;
+            this.seatDataGridView.AutoGenerateColumns = false;
+            this.seatDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.seatDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.seatIDDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn});
+            this.seatDataGridView.DataSource = this.seatBindingSource;
+            this.seatDataGridView.Location = new System.Drawing.Point(59, 231);
+            this.seatDataGridView.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
+            this.seatDataGridView.Name = "seatDataGridView";
+            this.seatDataGridView.RowHeadersWidth = 51;
+            this.seatDataGridView.RowTemplate.Height = 24;
+            this.seatDataGridView.Size = new System.Drawing.Size(555, 204);
+            this.seatDataGridView.TabIndex = 50;
+            this.seatDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.seatDataGridView_CellContentClick);
             // 
             // label2
             // 
@@ -145,14 +161,14 @@
             this.label2.Text = "MANAGE SEAT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtStatus
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(789, 358);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(110, 28);
-            this.textBox2.TabIndex = 59;
+            this.txtStatus.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatus.Location = new System.Drawing.Point(789, 358);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(110, 28);
+            this.txtStatus.TabIndex = 59;
             // 
             // lblHall
             // 
@@ -170,6 +186,36 @@
             this.lblHall.Text = "Hall A";
             this.lblHall.UseVisualStyleBackColor = false;
             // 
+            // cinemaDataDataSet3
+            // 
+            this.cinemaDataDataSet3.DataSetName = "CinemaDataDataSet3";
+            this.cinemaDataDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // seatBindingSource
+            // 
+            this.seatBindingSource.DataMember = "Seat";
+            this.seatBindingSource.DataSource = this.cinemaDataDataSet3;
+            // 
+            // seatTableAdapter
+            // 
+            this.seatTableAdapter.ClearBeforeFill = true;
+            // 
+            // seatIDDataGridViewTextBoxColumn
+            // 
+            this.seatIDDataGridViewTextBoxColumn.DataPropertyName = "SeatID";
+            this.seatIDDataGridViewTextBoxColumn.HeaderText = "SeatID";
+            this.seatIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.seatIDDataGridViewTextBoxColumn.Name = "seatIDDataGridViewTextBoxColumn";
+            this.seatIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Width = 125;
+            // 
             // mngSeat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -177,33 +223,41 @@
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.lblHall);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.txtSeatID);
             this.Controls.Add(this.uptBtn);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.seatDataGridView);
             this.Controls.Add(this.label2);
             this.Name = "mngSeat";
             this.Text = "mngSeat";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.mngSeat_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.seatDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seatBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSeatID;
         private RoundedButton uptBtn;
         private RoundedButton ClearBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private RoundedButton BackBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView seatDataGridView;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtStatus;
         private RoundedButton lblHall;
+        private CinemaDataDataSet3 cinemaDataDataSet3;
+        private System.Windows.Forms.BindingSource seatBindingSource;
+        private CinemaDataDataSet3TableAdapters.SeatTableAdapter seatTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seatIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
     }
 }

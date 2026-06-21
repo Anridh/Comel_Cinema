@@ -80,6 +80,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CinemaDataDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CinemaDataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaDataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaDataDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaDataDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaDataDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaDataDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="mngMovie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +240,39 @@
     </None>
     <None Include="CinemaDataDataSet.xss">
       <DependentUpon>CinemaDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet1.xsc">
+      <DependentUpon>CinemaDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CinemaDataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CinemaDataDataSet1.xss">
+      <DependentUpon>CinemaDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet2.xsc">
+      <DependentUpon>CinemaDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CinemaDataDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CinemaDataDataSet2.xss">
+      <DependentUpon>CinemaDataDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet3.xsc">
+      <DependentUpon>CinemaDataDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CinemaDataDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CinemaDataDataSet3.xss">
+      <DependentUpon>CinemaDataDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
