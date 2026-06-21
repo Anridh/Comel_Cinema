@@ -83,7 +83,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(0, 161);
+            this.label3.Location = new System.Drawing.Point(-4, 161);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
             this.label3.Size = new System.Drawing.Size(1261, 84);
@@ -98,7 +98,7 @@
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(354, 106);
+            this.label6.Location = new System.Drawing.Point(365, 106);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(442, 52);
             this.label6.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Location = new System.Drawing.Point(351, 182);
+            this.label7.Location = new System.Drawing.Point(362, 182);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 42);
@@ -125,7 +125,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Location = new System.Drawing.Point(409, 182);
+            this.label8.Location = new System.Drawing.Point(420, 182);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 42);
@@ -308,6 +308,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::Ticket_Cinema.Properties.Resources.payment2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
