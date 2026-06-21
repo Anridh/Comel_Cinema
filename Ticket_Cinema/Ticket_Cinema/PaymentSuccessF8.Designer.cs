@@ -62,6 +62,7 @@
             this.label1.Size = new System.Drawing.Size(568, 72);
             this.label1.TabIndex = 1;
             this.label1.Text = "Payment Successful!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label8
             // 
@@ -135,6 +136,7 @@
             this.lblPMethod.TabIndex = 13;
             this.lblPMethod.Text = "Method Pay";
             this.lblPMethod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPMethod.Click += new System.EventHandler(this.lblPMethod_Click);
             // 
             // lblPDate
             // 
@@ -147,18 +149,20 @@
             this.lblPDate.TabIndex = 14;
             this.lblPDate.Text = "Payment date";
             this.lblPDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPDate.Click += new System.EventHandler(this.lblPDate_Click);
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label6.Location = new System.Drawing.Point(745, 386);
+            this.label6.Location = new System.Drawing.Point(743, 396);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 42);
             this.label6.TabIndex = 18;
             this.label6.Text = "0.00";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 

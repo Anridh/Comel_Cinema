@@ -16,7 +16,7 @@ namespace Ticket_Cinema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ShowtimeF4());
+            Application.Run(new LoginF2());
         }
     }
 }

@@ -295,6 +295,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TicketF9";
             this.Text = "Ticket";
+            this.Load += new System.EventHandler(this.TicketF9_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMovie)).EndInit();
