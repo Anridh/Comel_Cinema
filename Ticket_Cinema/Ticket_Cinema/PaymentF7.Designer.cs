@@ -73,6 +73,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Booking ID:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -84,6 +85,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Total Amount:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.Click += new System.EventHandler(this.label3_Click_2);
             // 
             // label4
             // 
@@ -104,8 +106,8 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(442, 52);
             this.label6.TabIndex = 5;
-            this.label6.Text = "booking id num";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -118,18 +120,20 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "RM";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label8.Location = new System.Drawing.Point(339, 161);
+            this.label8.Location = new System.Drawing.Point(335, 161);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(75, 42);
             this.label8.TabIndex = 7;
             this.label8.Text = "0.00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label10
             // 
@@ -187,6 +191,7 @@
             this.cardNumberTB.Name = "cardNumberTB";
             this.cardNumberTB.Size = new System.Drawing.Size(264, 22);
             this.cardNumberTB.TabIndex = 21;
+            this.cardNumberTB.TextChanged += new System.EventHandler(this.cardNumberTB_TextChanged);
             // 
             // label5
             // 
@@ -239,6 +244,7 @@
             this.cardNameTB.Name = "cardNameTB";
             this.cardNameTB.Size = new System.Drawing.Size(264, 22);
             this.cardNameTB.TabIndex = 25;
+            this.cardNameTB.TextChanged += new System.EventHandler(this.cardNameTB_TextChanged);
             // 
             // textBox3
             // 
@@ -247,6 +253,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(49, 22);
             this.textBox3.TabIndex = 27;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label13
             // 
@@ -266,6 +273,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(49, 22);
             this.textBox4.TabIndex = 29;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -274,6 +282,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(93, 22);
             this.textBox5.TabIndex = 30;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // PaymentF7
             // 

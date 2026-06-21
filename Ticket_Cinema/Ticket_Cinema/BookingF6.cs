@@ -25,12 +25,17 @@ namespace Ticket_Cinema
         public BookingF6()
         {
             InitializeComponent();
-            //this.Load += BookingF6_Load;
+            this.Load += BookingF6_Load;
         }
 
         private void BookingF6_Load(object sender, EventArgs e)
         {
             LoadLatestBookingDetails();
+        }
+
+        private void BookingF6_Load_1(object sender, EventArgs e)
+        {
+
         }
 
         private void LoadLatestBookingDetails()
@@ -39,10 +44,14 @@ namespace Ticket_Cinema
             {
                 conn.Open();
 
+                // ⚠️ FIXED: No schema change needed. %%physloc%% reflects physical
+                // row storage order — on a heap table (no clustered index), new
+                // rows are appended at the end, so ordering by this descending
+                // approximates "most recently inserted" without needing a new column.
                 string queryBooking = @"
                     SELECT TOP 1 BookingID, TotalAmount_RM, CustomerID, ShowtimeID
                     FROM BOOKING
-                    ORDER BY BookingDate DESC, BookingID DESC";
+                    ORDER BY %%physloc%% DESC";
 
                 string customerId = "";
                 decimal totalAmount = 0;
@@ -113,7 +122,7 @@ namespace Ticket_Cinema
                 textBoxSeatNumber.Text = string.Join(", ", seatList);
                 textBoxTicketPrice.Text = ticketPrice.ToString("0.00");
                 textBoxTotalAmount.Text = totalAmount.ToString("0.00");
-                //gini dato dato-dat0 duk kat sini untuk customer name dan email
+
                 string queryCustomer = @"
                     SELECT CustomerName, Email
                     FROM CUSTOMER
@@ -134,7 +143,6 @@ namespace Ticket_Cinema
             }
         }
 
-        //yang ni ini nak gi payment nak bayo kalau tak bayo kene tangka
         private void btnClose_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Booking confirmed! Proceeding to payment.",
@@ -144,7 +152,7 @@ namespace Ticket_Cinema
             payment.Show();
             this.Close();
         }
-        // button ni digunakan untk kembali ke tempat waktu kita berjumpa
+
         private void backBtn_Click_1(object sender, EventArgs e)
         {
             SeatSelectionF5 seatSelection = new SeatSelectionF5(showtimeId, movieId);
@@ -161,14 +169,6 @@ namespace Ticket_Cinema
         private void textBoxTicketPrice_TextChanged(object sender, EventArgs e) { }
         private void textBoxTotalAmount_TextChanged(object sender, EventArgs e) { }
 
-        private void labelbooking_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BookingF6_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        private void labelbooking_Click(object sender, EventArgs e) { }
     }
 }

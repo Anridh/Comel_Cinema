@@ -800,6 +800,7 @@
             this.textBoxScreen.Size = new System.Drawing.Size(851, 30);
             this.textBoxScreen.TabIndex = 105;
             this.textBoxScreen.Text = "                                                           Screen";
+            this.textBoxScreen.TextChanged += new System.EventHandler(this.textBoxScreen_TextChanged);
             // 
             // B2
             // 

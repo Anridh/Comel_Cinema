@@ -22,7 +22,7 @@ namespace Ticket_Cinema
         public TicketF9()
         {
             InitializeComponent();
-            //this.Load += TicketF9_Load;
+            this.Load += TicketF9_Load;
         }
 
         private void TicketF9_Load(object sender, EventArgs e)

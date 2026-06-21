@@ -301,10 +301,15 @@ namespace Ticket_Cinema
             this.Hide();
         }
 
+        private void textBoxScreen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         // Kosongkan / Padam kaedah kosong yang tidak digunakan untuk mengemas kod anda
-       
-        
-        
+
+
+
     }
 }
 
