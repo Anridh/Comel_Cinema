@@ -42,13 +42,6 @@ namespace Ticket_Cinema
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            BookingF6 bookingF6 = new BookingF6();
-            bookingF6.Show();
-            this.Hide();
-        }
-
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -56,7 +49,9 @@ namespace Ticket_Cinema
 
         private void bttnPay_Click(object sender, EventArgs e)
         {
-            
+            PaymentSuccessF8 paymentSuccessF8 = new PaymentSuccessF8();
+            paymentSuccessF8.Show();
+            this.Hide();
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -81,9 +76,7 @@ namespace Ticket_Cinema
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            PaymentSuccessF8 paymentSuccessF8 = new PaymentSuccessF8();
-            paymentSuccessF8.Show();
-            this.Hide();
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -126,6 +119,13 @@ namespace Ticket_Cinema
         private void label3_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BookingF6 bookingF6 = new BookingF6();
+            bookingF6.Show();
+            this.Hide();
         }
     }
 }
