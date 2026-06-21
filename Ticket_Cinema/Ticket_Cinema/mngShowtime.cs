@@ -23,5 +23,93 @@ namespace Ticket_Cinema
             adminPg.Show();
             this.Hide();
         }
+
+        private void mngShowtime_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'cinemaDataDataSet5.Showtime' table. You can move, or remove it, as needed.
+            this.showtimeTableAdapter.Fill(this.cinemaDataDataSet5.Showtime);
+
+        }
+
+        private void showtimeDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtShowtimeID.Text = showtimeDataGridView.CurrentRow.Cells[0].Value.ToString();
+
+            showDate.Value = Convert.ToDateTime(
+                showtimeDataGridView.CurrentRow.Cells[1].Value);
+
+            showTime.Value = Convert.ToDateTime(
+                showtimeDataGridView.CurrentRow.Cells[2].Value);
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            txtShowtimeID.Clear();
+            showDate.Value = DateTime.Now;
+            showTime.Value = DateTime.Now;
+        }
+
+        private void uptBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                showtimeDataGridView.CurrentRow.Cells[1].Value = showDate.Value.Date;
+                showtimeDataGridView.CurrentRow.Cells[2].Value = showTime.Value;
+
+                showtimeBindingSource.EndEdit();
+                showtimeTableAdapter.Update(cinemaDataDataSet5.Showtime);
+
+                MessageBox.Show("Showtime updated successfully!");
+
+                this.showtimeTableAdapter.Fill(this.cinemaDataDataSet5.Showtime);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow newRow = cinemaDataDataSet5.Showtime.NewRow();
+
+                newRow["ShowtimeID"] = txtShowtimeID.Text;
+                newRow["ShowDate"] = showDate.Value.Date;
+                newRow["ShowTime"] = showTime.Value;
+
+                cinemaDataDataSet5.Showtime.Rows.Add(newRow);
+
+                showtimeTableAdapter.Update(cinemaDataDataSet5.Showtime);
+
+                MessageBox.Show("Showtime added successfully!");
+
+                this.showtimeTableAdapter.Fill(this.cinemaDataDataSet5.Showtime);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                showtimeBindingSource.RemoveCurrent();
+
+                showtimeBindingSource.EndEdit();
+                showtimeTableAdapter.Update(cinemaDataDataSet5.Showtime);
+
+                MessageBox.Show("Showtime deleted successfully!");
+
+                this.showtimeTableAdapter.Fill(this.cinemaDataDataSet5.Showtime);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
