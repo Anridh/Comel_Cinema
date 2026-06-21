@@ -35,7 +35,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.bttnPay = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cardNumberTB = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +109,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label7.Location = new System.Drawing.Point(341, 206);
             this.label7.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label7.Name = "label7";
@@ -122,11 +122,11 @@
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label8.Location = new System.Drawing.Point(388, 206);
+            this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label8.Location = new System.Drawing.Point(397, 206);
             this.label8.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 42);
+            this.label8.Size = new System.Drawing.Size(90, 42);
             this.label8.TabIndex = 7;
             this.label8.Text = "0.00";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,18 +144,6 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "Credit / Debit Card:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(109, 569);
-            this.button1.Margin = new System.Windows.Forms.Padding(100, 2, 29, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 54);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bttnPay
             // 
@@ -285,6 +273,20 @@
             this.textBox5.TabIndex = 30;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(62)))));
+            this.button2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(109, 569);
+            this.button2.Margin = new System.Windows.Forms.Padding(100, 2, 100, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 54);
+            this.button2.TabIndex = 31;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // PaymentF7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,6 +295,7 @@
             this.BackgroundImage = global::Ticket_Cinema.Properties.Resources.payment2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -303,7 +306,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cardNumberTB);
             this.Controls.Add(this.bttnPay);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label8);
@@ -333,7 +335,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bttnPay;
         private System.Windows.Forms.TextBox cardNumberTB;
         private System.Windows.Forms.Label label5;
@@ -344,5 +345,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button button2;
     }
 }
