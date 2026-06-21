@@ -65,6 +65,7 @@
             this.labelmoviename.Size = new System.Drawing.Size(205, 29);
             this.labelmoviename.TabIndex = 2;
             this.labelmoviename.Text = "labelmoviename";
+            this.labelmoviename.Click += new System.EventHandler(this.labelmoviename_Click);
             // 
             // label1
             // 
@@ -189,6 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.backBtn);

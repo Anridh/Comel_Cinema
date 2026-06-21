@@ -30,12 +30,36 @@
         {
             this.btnLogout = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.lblRating3 = new System.Windows.Forms.Label();
+            this.lblLang3 = new System.Windows.Forms.Label();
+            this.lblDuration3 = new System.Windows.Forms.Label();
+            this.lblGenre3 = new System.Windows.Forms.Label();
+            this.lblTitle3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblRating2 = new System.Windows.Forms.Label();
+            this.lblLang2 = new System.Windows.Forms.Label();
+            this.lblDuration2 = new System.Windows.Forms.Label();
+            this.lblGenre2 = new System.Windows.Forms.Label();
+            this.lblTitle2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBook3 = new System.Windows.Forms.Button();
             this.btnBookings = new System.Windows.Forms.Button();
             this.btnBook2 = new System.Windows.Forms.Button();
             this.btnBook1 = new System.Windows.Forms.Button();
             this.lblNowShowing = new System.Windows.Forms.Label();
-            this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,48 +73,25 @@
             this.lblGenre1 = new System.Windows.Forms.Label();
             this.lblTitle1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblRating2 = new System.Windows.Forms.Label();
-            this.lblLang2 = new System.Windows.Forms.Label();
-            this.lblDuration2 = new System.Windows.Forms.Label();
-            this.lblGenre2 = new System.Windows.Forms.Label();
-            this.lblTitle2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.lblRating3 = new System.Windows.Forms.Label();
-            this.lblLang3 = new System.Windows.Forms.Label();
-            this.lblDuration3 = new System.Windows.Forms.Label();
-            this.lblGenre3 = new System.Windows.Forms.Label();
-            this.lblTitle3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelMain.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(683, 34);
+            this.btnLogout.Location = new System.Drawing.Point(1085, 25);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(143, 37);
+            this.btnLogout.Size = new System.Drawing.Size(109, 37);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -118,12 +119,287 @@
             this.panelMain.TabIndex = 1;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.btnNext.Location = new System.Drawing.Point(1176, 288);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 30, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(43, 61);
+            this.btnNext.TabIndex = 3;
+            this.btnNext.Text = ">";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Controls.Add(this.lblRating3);
+            this.panel3.Controls.Add(this.lblLang3);
+            this.panel3.Controls.Add(this.lblDuration3);
+            this.panel3.Controls.Add(this.lblGenre3);
+            this.panel3.Controls.Add(this.lblTitle3);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Location = new System.Drawing.Point(808, 85);
+            this.panel3.Margin = new System.Windows.Forms.Padding(27, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(296, 473);
+            this.panel3.TabIndex = 15;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.Window;
+            this.label16.Location = new System.Drawing.Point(123, 374);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 16);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Minute";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.SystemColors.Window;
+            this.label17.Location = new System.Drawing.Point(15, 437);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 16);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Rating :";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ForeColor = System.Drawing.SystemColors.Window;
+            this.label18.Location = new System.Drawing.Point(15, 406);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 16);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Language :";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.SystemColors.Window;
+            this.label19.Location = new System.Drawing.Point(15, 374);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(63, 16);
+            this.label19.TabIndex = 8;
+            this.label19.Text = "Duration :";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.Window;
+            this.label20.Location = new System.Drawing.Point(15, 344);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(50, 16);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "Genre :";
+            // 
+            // lblRating3
+            // 
+            this.lblRating3.AutoSize = true;
+            this.lblRating3.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblRating3.Location = new System.Drawing.Point(95, 437);
+            this.lblRating3.Name = "lblRating3";
+            this.lblRating3.Size = new System.Drawing.Size(44, 16);
+            this.lblRating3.TabIndex = 5;
+            this.lblRating3.Text = "label1";
+            // 
+            // lblLang3
+            // 
+            this.lblLang3.AutoSize = true;
+            this.lblLang3.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblLang3.Location = new System.Drawing.Point(95, 406);
+            this.lblLang3.Name = "lblLang3";
+            this.lblLang3.Size = new System.Drawing.Size(44, 16);
+            this.lblLang3.TabIndex = 4;
+            this.lblLang3.Text = "label5";
+            // 
+            // lblDuration3
+            // 
+            this.lblDuration3.AutoSize = true;
+            this.lblDuration3.Location = new System.Drawing.Point(95, 374);
+            this.lblDuration3.Name = "lblDuration3";
+            this.lblDuration3.Size = new System.Drawing.Size(44, 16);
+            this.lblDuration3.TabIndex = 3;
+            this.lblDuration3.Text = "label4";
+            // 
+            // lblGenre3
+            // 
+            this.lblGenre3.AutoSize = true;
+            this.lblGenre3.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblGenre3.Location = new System.Drawing.Point(95, 344);
+            this.lblGenre3.Name = "lblGenre3";
+            this.lblGenre3.Size = new System.Drawing.Size(44, 16);
+            this.lblGenre3.TabIndex = 2;
+            this.lblGenre3.Text = "label3";
+            // 
+            // lblTitle3
+            // 
+            this.lblTitle3.AutoSize = true;
+            this.lblTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle3.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblTitle3.Location = new System.Drawing.Point(113, 288);
+            this.lblTitle3.Name = "lblTitle3";
+            this.lblTitle3.Size = new System.Drawing.Size(70, 25);
+            this.lblTitle3.TabIndex = 1;
+            this.lblTitle3.Text = "label2";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Ticket_Cinema.Properties.Resources.pic3;
+            this.pictureBox3.Location = new System.Drawing.Point(18, 21);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 60, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(260, 260);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.lblRating2);
+            this.panel2.Controls.Add(this.lblLang2);
+            this.panel2.Controls.Add(this.lblDuration2);
+            this.panel2.Controls.Add(this.lblGenre2);
+            this.panel2.Controls.Add(this.lblTitle2);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Location = new System.Drawing.Point(483, 85);
+            this.panel2.Margin = new System.Windows.Forms.Padding(27, 2, 0, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(296, 473);
+            this.panel2.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.Window;
+            this.label6.Location = new System.Drawing.Point(123, 374);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Minute";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.Window;
+            this.label7.Location = new System.Drawing.Point(15, 437);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 16);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Rating :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.Window;
+            this.label8.Location = new System.Drawing.Point(15, 406);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 16);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Language :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.Window;
+            this.label9.Location = new System.Drawing.Point(15, 374);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 16);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Duration :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.Window;
+            this.label10.Location = new System.Drawing.Point(15, 344);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 16);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Genre :";
+            // 
+            // lblRating2
+            // 
+            this.lblRating2.AutoSize = true;
+            this.lblRating2.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblRating2.Location = new System.Drawing.Point(95, 437);
+            this.lblRating2.Name = "lblRating2";
+            this.lblRating2.Size = new System.Drawing.Size(44, 16);
+            this.lblRating2.TabIndex = 5;
+            this.lblRating2.Text = "label1";
+            // 
+            // lblLang2
+            // 
+            this.lblLang2.AutoSize = true;
+            this.lblLang2.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblLang2.Location = new System.Drawing.Point(95, 406);
+            this.lblLang2.Name = "lblLang2";
+            this.lblLang2.Size = new System.Drawing.Size(44, 16);
+            this.lblLang2.TabIndex = 4;
+            this.lblLang2.Text = "label5";
+            // 
+            // lblDuration2
+            // 
+            this.lblDuration2.AutoSize = true;
+            this.lblDuration2.Location = new System.Drawing.Point(95, 374);
+            this.lblDuration2.Name = "lblDuration2";
+            this.lblDuration2.Size = new System.Drawing.Size(44, 16);
+            this.lblDuration2.TabIndex = 3;
+            this.lblDuration2.Text = "label4";
+            // 
+            // lblGenre2
+            // 
+            this.lblGenre2.AutoSize = true;
+            this.lblGenre2.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblGenre2.Location = new System.Drawing.Point(95, 344);
+            this.lblGenre2.Name = "lblGenre2";
+            this.lblGenre2.Size = new System.Drawing.Size(44, 16);
+            this.lblGenre2.TabIndex = 2;
+            this.lblGenre2.Text = "label3";
+            // 
+            // lblTitle2
+            // 
+            this.lblTitle2.AutoSize = true;
+            this.lblTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle2.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblTitle2.Location = new System.Drawing.Point(113, 288);
+            this.lblTitle2.Name = "lblTitle2";
+            this.lblTitle2.Size = new System.Drawing.Size(70, 25);
+            this.lblTitle2.TabIndex = 1;
+            this.lblTitle2.Text = "label2";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Ticket_Cinema.Properties.Resources.pic2;
+            this.pictureBox2.Location = new System.Drawing.Point(18, 21);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 60, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(260, 260);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // btnBook3
             // 
-            this.btnBook3.BackColor = System.Drawing.Color.Yellow;
-            this.btnBook3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook3.ForeColor = System.Drawing.Color.Black;
-            this.btnBook3.Location = new System.Drawing.Point(905, 574);
+            this.btnBook3.BackColor = System.Drawing.Color.Transparent;
+            this.btnBook3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBook3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.btnBook3.Location = new System.Drawing.Point(906, 562);
             this.btnBook3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBook3.Name = "btnBook3";
             this.btnBook3.Size = new System.Drawing.Size(93, 38);
@@ -136,11 +412,12 @@
             // 
             this.btnBookings.BackColor = System.Drawing.Color.Navy;
             this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBookings.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookings.ForeColor = System.Drawing.Color.White;
-            this.btnBookings.Location = new System.Drawing.Point(887, 34);
+            this.btnBookings.Location = new System.Drawing.Point(901, 25);
             this.btnBookings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBookings.Name = "btnBookings";
-            this.btnBookings.Size = new System.Drawing.Size(143, 37);
+            this.btnBookings.Size = new System.Drawing.Size(159, 37);
             this.btnBookings.TabIndex = 1;
             this.btnBookings.Text = "Your Booking";
             this.btnBookings.UseVisualStyleBackColor = false;
@@ -148,10 +425,10 @@
             // 
             // btnBook2
             // 
-            this.btnBook2.BackColor = System.Drawing.Color.Yellow;
-            this.btnBook2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook2.ForeColor = System.Drawing.Color.Black;
-            this.btnBook2.Location = new System.Drawing.Point(582, 574);
+            this.btnBook2.BackColor = System.Drawing.Color.Transparent;
+            this.btnBook2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnBook2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.btnBook2.Location = new System.Drawing.Point(581, 562);
             this.btnBook2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBook2.Name = "btnBook2";
             this.btnBook2.Size = new System.Drawing.Size(93, 38);
@@ -162,10 +439,10 @@
             // 
             // btnBook1
             // 
-            this.btnBook1.BackColor = System.Drawing.Color.Yellow;
-            this.btnBook1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBook1.ForeColor = System.Drawing.Color.Black;
-            this.btnBook1.Location = new System.Drawing.Point(256, 574);
+            this.btnBook1.BackColor = System.Drawing.Color.Transparent;
+            this.btnBook1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnBook1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.btnBook1.Location = new System.Drawing.Point(255, 562);
             this.btnBook1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBook1.Name = "btnBook1";
             this.btnBook1.Size = new System.Drawing.Size(93, 38);
@@ -177,34 +454,24 @@
             // lblNowShowing
             // 
             this.lblNowShowing.AutoSize = true;
-            this.lblNowShowing.Font = new System.Drawing.Font("Segoe UI Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNowShowing.Location = new System.Drawing.Point(28, 21);
+            this.lblNowShowing.Font = new System.Drawing.Font("Arial Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNowShowing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNowShowing.Location = new System.Drawing.Point(28, 12);
             this.lblNowShowing.Name = "lblNowShowing";
-            this.lblNowShowing.Size = new System.Drawing.Size(252, 46);
+            this.lblNowShowing.Size = new System.Drawing.Size(272, 48);
             this.lblNowShowing.TabIndex = 5;
             this.lblNowShowing.Text = "Now Showing";
             this.lblNowShowing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNowShowing.Click += new System.EventHandler(this.lblNowShowing_Click);
             // 
-            // btnNext
-            // 
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(1162, 273);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 30, 2);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(57, 76);
-            this.btnNext.TabIndex = 3;
-            this.btnNext.Text = ">";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
             // btnPrevious
             // 
-            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(36, 273);
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.btnPrevious.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.btnPrevious.Location = new System.Drawing.Point(36, 292);
             this.btnPrevious.Margin = new System.Windows.Forms.Padding(30, 2, 3, 2);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(57, 76);
+            this.btnPrevious.Size = new System.Drawing.Size(43, 61);
             this.btnPrevious.TabIndex = 2;
             this.btnPrevious.Text = "<";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -343,268 +610,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.lblRating2);
-            this.panel2.Controls.Add(this.lblLang2);
-            this.panel2.Controls.Add(this.lblDuration2);
-            this.panel2.Controls.Add(this.lblGenre2);
-            this.panel2.Controls.Add(this.lblTitle2);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(483, 85);
-            this.panel2.Margin = new System.Windows.Forms.Padding(27, 2, 0, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(296, 473);
-            this.panel2.TabIndex = 14;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(123, 374);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 16);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Minute";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(15, 437);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 16);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Rating :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.Window;
-            this.label8.Location = new System.Drawing.Point(15, 406);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 16);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Language :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.Window;
-            this.label9.Location = new System.Drawing.Point(15, 374);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 16);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Duration :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.Window;
-            this.label10.Location = new System.Drawing.Point(15, 344);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(50, 16);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Genre :";
-            // 
-            // lblRating2
-            // 
-            this.lblRating2.AutoSize = true;
-            this.lblRating2.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblRating2.Location = new System.Drawing.Point(95, 437);
-            this.lblRating2.Name = "lblRating2";
-            this.lblRating2.Size = new System.Drawing.Size(44, 16);
-            this.lblRating2.TabIndex = 5;
-            this.lblRating2.Text = "label1";
-            // 
-            // lblLang2
-            // 
-            this.lblLang2.AutoSize = true;
-            this.lblLang2.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblLang2.Location = new System.Drawing.Point(95, 406);
-            this.lblLang2.Name = "lblLang2";
-            this.lblLang2.Size = new System.Drawing.Size(44, 16);
-            this.lblLang2.TabIndex = 4;
-            this.lblLang2.Text = "label5";
-            // 
-            // lblDuration2
-            // 
-            this.lblDuration2.AutoSize = true;
-            this.lblDuration2.Location = new System.Drawing.Point(95, 374);
-            this.lblDuration2.Name = "lblDuration2";
-            this.lblDuration2.Size = new System.Drawing.Size(44, 16);
-            this.lblDuration2.TabIndex = 3;
-            this.lblDuration2.Text = "label4";
-            // 
-            // lblGenre2
-            // 
-            this.lblGenre2.AutoSize = true;
-            this.lblGenre2.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblGenre2.Location = new System.Drawing.Point(95, 344);
-            this.lblGenre2.Name = "lblGenre2";
-            this.lblGenre2.Size = new System.Drawing.Size(44, 16);
-            this.lblGenre2.TabIndex = 2;
-            this.lblGenre2.Text = "label3";
-            // 
-            // lblTitle2
-            // 
-            this.lblTitle2.AutoSize = true;
-            this.lblTitle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle2.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTitle2.Location = new System.Drawing.Point(113, 288);
-            this.lblTitle2.Name = "lblTitle2";
-            this.lblTitle2.Size = new System.Drawing.Size(70, 25);
-            this.lblTitle2.TabIndex = 1;
-            this.lblTitle2.Text = "label2";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Ticket_Cinema.Properties.Resources.pic2;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 21);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 60, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(260, 260);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label19);
-            this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.lblRating3);
-            this.panel3.Controls.Add(this.lblLang3);
-            this.panel3.Controls.Add(this.lblDuration3);
-            this.panel3.Controls.Add(this.lblGenre3);
-            this.panel3.Controls.Add(this.lblTitle3);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(808, 85);
-            this.panel3.Margin = new System.Windows.Forms.Padding(27, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 473);
-            this.panel3.TabIndex = 15;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.SystemColors.Window;
-            this.label16.Location = new System.Drawing.Point(123, 374);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 16);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "Minute";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.SystemColors.Window;
-            this.label17.Location = new System.Drawing.Point(15, 437);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 16);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Rating :";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.ForeColor = System.Drawing.SystemColors.Window;
-            this.label18.Location = new System.Drawing.Point(15, 406);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 16);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "Language :";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.ForeColor = System.Drawing.SystemColors.Window;
-            this.label19.Location = new System.Drawing.Point(15, 374);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 16);
-            this.label19.TabIndex = 8;
-            this.label19.Text = "Duration :";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.SystemColors.Window;
-            this.label20.Location = new System.Drawing.Point(15, 344);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(50, 16);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "Genre :";
-            // 
-            // lblRating3
-            // 
-            this.lblRating3.AutoSize = true;
-            this.lblRating3.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblRating3.Location = new System.Drawing.Point(95, 437);
-            this.lblRating3.Name = "lblRating3";
-            this.lblRating3.Size = new System.Drawing.Size(44, 16);
-            this.lblRating3.TabIndex = 5;
-            this.lblRating3.Text = "label1";
-            // 
-            // lblLang3
-            // 
-            this.lblLang3.AutoSize = true;
-            this.lblLang3.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblLang3.Location = new System.Drawing.Point(95, 406);
-            this.lblLang3.Name = "lblLang3";
-            this.lblLang3.Size = new System.Drawing.Size(44, 16);
-            this.lblLang3.TabIndex = 4;
-            this.lblLang3.Text = "label5";
-            // 
-            // lblDuration3
-            // 
-            this.lblDuration3.AutoSize = true;
-            this.lblDuration3.Location = new System.Drawing.Point(95, 374);
-            this.lblDuration3.Name = "lblDuration3";
-            this.lblDuration3.Size = new System.Drawing.Size(44, 16);
-            this.lblDuration3.TabIndex = 3;
-            this.lblDuration3.Text = "label4";
-            // 
-            // lblGenre3
-            // 
-            this.lblGenre3.AutoSize = true;
-            this.lblGenre3.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblGenre3.Location = new System.Drawing.Point(95, 344);
-            this.lblGenre3.Name = "lblGenre3";
-            this.lblGenre3.Size = new System.Drawing.Size(44, 16);
-            this.lblGenre3.TabIndex = 2;
-            this.lblGenre3.Text = "label3";
-            // 
-            // lblTitle3
-            // 
-            this.lblTitle3.AutoSize = true;
-            this.lblTitle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle3.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTitle3.Location = new System.Drawing.Point(113, 288);
-            this.lblTitle3.Name = "lblTitle3";
-            this.lblTitle3.Size = new System.Drawing.Size(70, 25);
-            this.lblTitle3.TabIndex = 1;
-            this.lblTitle3.Text = "label2";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Ticket_Cinema.Properties.Resources.pic3;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 21);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 60, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(260, 260);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // HomeF3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -620,15 +625,15 @@
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

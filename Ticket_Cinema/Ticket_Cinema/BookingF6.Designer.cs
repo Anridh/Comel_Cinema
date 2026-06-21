@@ -250,6 +250,8 @@ namespace Ticket_Cinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Ticket_Cinema.Properties.Resources.payment1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.btnClose);

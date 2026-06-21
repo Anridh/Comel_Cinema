@@ -181,5 +181,10 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void labelmoviename_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
