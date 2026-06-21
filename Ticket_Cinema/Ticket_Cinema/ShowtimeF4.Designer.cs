@@ -178,11 +178,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(706, 78);
+            this.label6.Location = new System.Drawing.Point(771, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 16);
             this.label6.TabIndex = 19;
             this.label6.Text = "Minute";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // ShowtimeF4
             // 

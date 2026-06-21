@@ -48,16 +48,16 @@ namespace Ticket_Cinema
                 conn.Open();
 
                 string query = @"
-SELECT
-    s.ShowtimeID,
-    s.ShowDate,
-    s.ShowTime,
-    h.HallName,
-    h.Capacity_Seat
-FROM Showtime s
-INNER JOIN Hall h
-    ON s.HallID = h.HallID
-WHERE s.MovieID = @MovieID";
+                    SELECT
+                        s.ShowtimeID,
+                        s.ShowDate,
+                        s.ShowTime,
+                        h.HallName,
+                        h.Capacity_Seat
+                    FROM Showtime s
+                    INNER JOIN Hall h
+                        ON s.HallID = h.HallID
+                    WHERE s.MovieID = @MovieID";
 
 
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -175,6 +175,11 @@ WHERE s.MovieID = @MovieID";
             HomeF3 homeForm = new HomeF3();
             homeForm.Show();
             this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
