@@ -31,7 +31,7 @@ namespace Ticket_Cinema
         }
         private void ShowtimeF4_Load(object sender, EventArgs e)
         {
-          
+            BgBrightness();
             // Pastikan movieId tidak kosong sebelum cari data
             if (!string.IsNullOrEmpty(movieId))
             {
@@ -172,14 +172,62 @@ namespace Ticket_Cinema
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            HomeF3 homeForm = new HomeF3();
-            homeForm.Show();
-            this.Hide();
+            
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void labelmoviename_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labellanguage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelduration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelrating_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomeF3 homeForm = new HomeF3();
+            homeForm.Show();
+            this.Hide();
+        }
+
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Bitmap bggelap = new Bitmap(this.BackgroundImage.Width, this.BackgroundImage.Height);
+
+                using (Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
         }
     }
 }
