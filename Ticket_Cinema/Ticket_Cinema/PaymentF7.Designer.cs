@@ -151,10 +151,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(62)))));
             this.button1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(109, 561);
+            this.button1.Location = new System.Drawing.Point(71, 564);
             this.button1.Margin = new System.Windows.Forms.Padding(100, 2, 29, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 53);
+            this.button1.Size = new System.Drawing.Size(121, 49);
             this.button1.TabIndex = 18;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -165,7 +165,7 @@
             this.bttnPay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(148)))));
             this.bttnPay.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnPay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bttnPay.Location = new System.Drawing.Point(970, 570);
+            this.bttnPay.Location = new System.Drawing.Point(970, 564);
             this.bttnPay.Margin = new System.Windows.Forms.Padding(51, 2, 100, 0);
             this.bttnPay.Name = "bttnPay";
             this.bttnPay.Size = new System.Drawing.Size(182, 53);
