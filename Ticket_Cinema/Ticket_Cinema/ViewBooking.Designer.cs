@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.bookingDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblsales = new System.Windows.Forms.Label();
-            this.lbltotalbooking = new System.Windows.Forms.Label();
-            this.cinemaDataDataSet = new Ticket_Cinema.CinemaDataDataSet();
-            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookingTableAdapter = new Ticket_Cinema.CinemaDataDataSetTableAdapters.BookingTableAdapter();
             this.bookingIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookingDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalAmountRMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.showtimeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cinemaDataDataSet = new Ticket_Cinema.CinemaDataDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblsales = new System.Windows.Forms.Label();
+            this.lbltotalbooking = new System.Windows.Forms.Label();
+            this.bookingTableAdapter = new Ticket_Cinema.CinemaDataDataSetTableAdapters.BookingTableAdapter();
             this.BackBtn = new Ticket_Cinema.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.bookingDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -79,6 +79,56 @@
             this.bookingDataGridView.RowTemplate.Height = 24;
             this.bookingDataGridView.Size = new System.Drawing.Size(1148, 233);
             this.bookingDataGridView.TabIndex = 3;
+            // 
+            // bookingIDDataGridViewTextBoxColumn
+            // 
+            this.bookingIDDataGridViewTextBoxColumn.DataPropertyName = "BookingID";
+            this.bookingIDDataGridViewTextBoxColumn.HeaderText = "BookingID";
+            this.bookingIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bookingIDDataGridViewTextBoxColumn.Name = "bookingIDDataGridViewTextBoxColumn";
+            this.bookingIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bookingDateDataGridViewTextBoxColumn
+            // 
+            this.bookingDateDataGridViewTextBoxColumn.DataPropertyName = "BookingDate";
+            this.bookingDateDataGridViewTextBoxColumn.HeaderText = "BookingDate";
+            this.bookingDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
+            this.bookingDateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // totalAmountRMDataGridViewTextBoxColumn
+            // 
+            this.totalAmountRMDataGridViewTextBoxColumn.DataPropertyName = "TotalAmount_RM";
+            this.totalAmountRMDataGridViewTextBoxColumn.HeaderText = "TotalAmount_RM";
+            this.totalAmountRMDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totalAmountRMDataGridViewTextBoxColumn.Name = "totalAmountRMDataGridViewTextBoxColumn";
+            this.totalAmountRMDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // customerIDDataGridViewTextBoxColumn
+            // 
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // showtimeIDDataGridViewTextBoxColumn
+            // 
+            this.showtimeIDDataGridViewTextBoxColumn.DataPropertyName = "ShowtimeID";
+            this.showtimeIDDataGridViewTextBoxColumn.HeaderText = "ShowtimeID";
+            this.showtimeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.showtimeIDDataGridViewTextBoxColumn.Name = "showtimeIDDataGridViewTextBoxColumn";
+            this.showtimeIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // bookingBindingSource
+            // 
+            this.bookingBindingSource.DataMember = "Booking";
+            this.bookingBindingSource.DataSource = this.cinemaDataDataSet;
+            // 
+            // cinemaDataDataSet
+            // 
+            this.cinemaDataDataSet.DataSetName = "CinemaDataDataSet";
+            this.cinemaDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -125,59 +175,9 @@
             this.lbltotalbooking.Text = "-";
             this.lbltotalbooking.Click += new System.EventHandler(this.lbltotalbooking_Click);
             // 
-            // cinemaDataDataSet
-            // 
-            this.cinemaDataDataSet.DataSetName = "CinemaDataDataSet";
-            this.cinemaDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookingBindingSource
-            // 
-            this.bookingBindingSource.DataMember = "Booking";
-            this.bookingBindingSource.DataSource = this.cinemaDataDataSet;
-            // 
             // bookingTableAdapter
             // 
             this.bookingTableAdapter.ClearBeforeFill = true;
-            // 
-            // bookingIDDataGridViewTextBoxColumn
-            // 
-            this.bookingIDDataGridViewTextBoxColumn.DataPropertyName = "BookingID";
-            this.bookingIDDataGridViewTextBoxColumn.HeaderText = "BookingID";
-            this.bookingIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bookingIDDataGridViewTextBoxColumn.Name = "bookingIDDataGridViewTextBoxColumn";
-            this.bookingIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // bookingDateDataGridViewTextBoxColumn
-            // 
-            this.bookingDateDataGridViewTextBoxColumn.DataPropertyName = "BookingDate";
-            this.bookingDateDataGridViewTextBoxColumn.HeaderText = "BookingDate";
-            this.bookingDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.bookingDateDataGridViewTextBoxColumn.Name = "bookingDateDataGridViewTextBoxColumn";
-            this.bookingDateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // totalAmountRMDataGridViewTextBoxColumn
-            // 
-            this.totalAmountRMDataGridViewTextBoxColumn.DataPropertyName = "TotalAmount_RM";
-            this.totalAmountRMDataGridViewTextBoxColumn.HeaderText = "TotalAmount_RM";
-            this.totalAmountRMDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.totalAmountRMDataGridViewTextBoxColumn.Name = "totalAmountRMDataGridViewTextBoxColumn";
-            this.totalAmountRMDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // customerIDDataGridViewTextBoxColumn
-            // 
-            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
-            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
-            this.customerIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // showtimeIDDataGridViewTextBoxColumn
-            // 
-            this.showtimeIDDataGridViewTextBoxColumn.DataPropertyName = "ShowtimeID";
-            this.showtimeIDDataGridViewTextBoxColumn.HeaderText = "ShowtimeID";
-            this.showtimeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.showtimeIDDataGridViewTextBoxColumn.Name = "showtimeIDDataGridViewTextBoxColumn";
-            this.showtimeIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // BackBtn
             // 
@@ -214,8 +214,8 @@
             this.Text = "ViewBooking";
             this.Load += new System.EventHandler(this.ViewBooking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookingDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

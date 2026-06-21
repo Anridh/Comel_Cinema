@@ -31,6 +31,7 @@ namespace Ticket_Cinema
 
         private void SeatSelection_Load(object sender, EventArgs e)
         {
+            BgBrightness();
             LoadMovieDetailsAndShowtime();
             LoadBookedSeatsFromDatabase();
             AttachSeatClickEvents();
@@ -306,9 +307,44 @@ namespace Ticket_Cinema
 
         }
 
+        private void labelA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotalPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSelectedSeats_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         // Kosongkan / Padam kaedah kosong yang tidak digunakan untuk mengemas kod anda
 
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Image gambarAsal = this.BackgroundImage;
+                Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
 
+                bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
+                using (Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
+
+
+        }
 
     }
 }
