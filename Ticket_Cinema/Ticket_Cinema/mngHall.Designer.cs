@@ -28,21 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.hallDataGridView = new System.Windows.Forms.DataGridView();
             this.BackBtn = new Ticket_Cinema.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtHallID = new System.Windows.Forms.TextBox();
+            this.numCapacity = new System.Windows.Forms.NumericUpDown();
+            this.txtHallName = new System.Windows.Forms.TextBox();
             this.addBtn = new Ticket_Cinema.RoundedButton();
             this.delBtn = new Ticket_Cinema.RoundedButton();
             this.ClearBtn = new Ticket_Cinema.RoundedButton();
             this.uptBtn = new Ticket_Cinema.RoundedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.cinemaDataDataSet4 = new Ticket_Cinema.CinemaDataDataSet4();
+            this.hallBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hallTableAdapter = new Ticket_Cinema.CinemaDataDataSet4TableAdapters.HallTableAdapter();
+            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hallNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capacitySeatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.hallDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCapacity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -58,16 +67,23 @@
             this.label2.Text = "MANAGE HALL";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // hallDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(59, 169);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 445);
-            this.dataGridView1.TabIndex = 5;
+            this.hallDataGridView.AutoGenerateColumns = false;
+            this.hallDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hallDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.hallIDDataGridViewTextBoxColumn,
+            this.hallNameDataGridViewTextBoxColumn,
+            this.capacitySeatDataGridViewTextBoxColumn});
+            this.hallDataGridView.DataSource = this.hallBindingSource;
+            this.hallDataGridView.Location = new System.Drawing.Point(59, 169);
+            this.hallDataGridView.Margin = new System.Windows.Forms.Padding(50, 50, 3, 50);
+            this.hallDataGridView.Name = "hallDataGridView";
+            this.hallDataGridView.RowHeadersWidth = 51;
+            this.hallDataGridView.RowTemplate.Height = 24;
+            this.hallDataGridView.Size = new System.Drawing.Size(555, 445);
+            this.hallDataGridView.TabIndex = 5;
+            this.hallDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hallDataGridView_CellContentClick);
             // 
             // BackBtn
             // 
@@ -119,30 +135,30 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Capacity Seat:";
             // 
-            // textBox1
+            // txtHallID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(792, 183);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 28);
-            this.textBox1.TabIndex = 29;
+            this.txtHallID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHallID.Location = new System.Drawing.Point(792, 183);
+            this.txtHallID.Name = "txtHallID";
+            this.txtHallID.Size = new System.Drawing.Size(94, 28);
+            this.txtHallID.TabIndex = 29;
             // 
-            // numericUpDown1
+            // numCapacity
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(792, 291);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(94, 28);
-            this.numericUpDown1.TabIndex = 30;
+            this.numCapacity.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCapacity.Location = new System.Drawing.Point(792, 291);
+            this.numCapacity.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
+            this.numCapacity.Name = "numCapacity";
+            this.numCapacity.Size = new System.Drawing.Size(94, 28);
+            this.numCapacity.TabIndex = 30;
             // 
-            // textBox2
+            // txtHallName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(792, 237);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 28);
-            this.textBox2.TabIndex = 31;
+            this.txtHallName.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHallName.Location = new System.Drawing.Point(792, 237);
+            this.txtHallName.Name = "txtHallName";
+            this.txtHallName.Size = new System.Drawing.Size(184, 28);
+            this.txtHallName.TabIndex = 31;
             // 
             // addBtn
             // 
@@ -159,6 +175,7 @@
             this.addBtn.TabIndex = 32;
             this.addBtn.Text = "Add";
             this.addBtn.UseVisualStyleBackColor = false;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // delBtn
             // 
@@ -175,6 +192,7 @@
             this.delBtn.TabIndex = 33;
             this.delBtn.Text = "Delete";
             this.delBtn.UseVisualStyleBackColor = false;
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
             // 
             // ClearBtn
             // 
@@ -191,6 +209,7 @@
             this.ClearBtn.TabIndex = 34;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // uptBtn
             // 
@@ -207,6 +226,45 @@
             this.uptBtn.TabIndex = 35;
             this.uptBtn.Text = "Update";
             this.uptBtn.UseVisualStyleBackColor = false;
+            this.uptBtn.Click += new System.EventHandler(this.uptBtn_Click);
+            // 
+            // cinemaDataDataSet4
+            // 
+            this.cinemaDataDataSet4.DataSetName = "CinemaDataDataSet4";
+            this.cinemaDataDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hallBindingSource
+            // 
+            this.hallBindingSource.DataMember = "Hall";
+            this.hallBindingSource.DataSource = this.cinemaDataDataSet4;
+            // 
+            // hallTableAdapter
+            // 
+            this.hallTableAdapter.ClearBeforeFill = true;
+            // 
+            // hallIDDataGridViewTextBoxColumn
+            // 
+            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "HallID";
+            this.hallIDDataGridViewTextBoxColumn.HeaderText = "HallID";
+            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
+            this.hallIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // hallNameDataGridViewTextBoxColumn
+            // 
+            this.hallNameDataGridViewTextBoxColumn.DataPropertyName = "HallName";
+            this.hallNameDataGridViewTextBoxColumn.HeaderText = "HallName";
+            this.hallNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hallNameDataGridViewTextBoxColumn.Name = "hallNameDataGridViewTextBoxColumn";
+            this.hallNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // capacitySeatDataGridViewTextBoxColumn
+            // 
+            this.capacitySeatDataGridViewTextBoxColumn.DataPropertyName = "Capacity_Seat";
+            this.capacitySeatDataGridViewTextBoxColumn.HeaderText = "Capacity_Seat";
+            this.capacitySeatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.capacitySeatDataGridViewTextBoxColumn.Name = "capacitySeatDataGridViewTextBoxColumn";
+            this.capacitySeatDataGridViewTextBoxColumn.Width = 125;
             // 
             // mngHall
             // 
@@ -218,19 +276,22 @@
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.addBtn);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHallName);
+            this.Controls.Add(this.numCapacity);
+            this.Controls.Add(this.txtHallID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.hallDataGridView);
             this.Controls.Add(this.label2);
             this.Name = "mngHall";
             this.Text = "mngHall";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Load += new System.EventHandler(this.mngHall_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.hallDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCapacity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hallBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,17 +300,23 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView hallDataGridView;
         private RoundedButton BackBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtHallID;
+        private System.Windows.Forms.NumericUpDown numCapacity;
+        private System.Windows.Forms.TextBox txtHallName;
         private RoundedButton addBtn;
         private RoundedButton delBtn;
         private RoundedButton ClearBtn;
         private RoundedButton uptBtn;
+        private CinemaDataDataSet4 cinemaDataDataSet4;
+        private System.Windows.Forms.BindingSource hallBindingSource;
+        private CinemaDataDataSet4TableAdapters.HallTableAdapter hallTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hallIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hallNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capacitySeatDataGridViewTextBoxColumn;
     }
 }
