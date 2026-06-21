@@ -31,9 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.showtimeDataGridView = new System.Windows.Forms.DataGridView();
+            this.showtimeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.showDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.showTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.movieIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.showtimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cinemaDataDataSet5 = new Ticket_Cinema.CinemaDataDataSet5();
             this.uptBtn = new Ticket_Cinema.RoundedButton();
             this.ClearBtn = new Ticket_Cinema.RoundedButton();
-            this.delBtn = new Ticket_Cinema.RoundedButton();
             this.addBtn = new Ticket_Cinema.RoundedButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,17 +48,10 @@
             this.txtShowtimeID = new System.Windows.Forms.TextBox();
             this.showDate = new System.Windows.Forms.DateTimePicker();
             this.showTime = new System.Windows.Forms.DateTimePicker();
-            this.cinemaDataDataSet5 = new Ticket_Cinema.CinemaDataDataSet5();
-            this.showtimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.showtimeTableAdapter = new Ticket_Cinema.CinemaDataDataSet5TableAdapters.ShowtimeTableAdapter();
-            this.showtimeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.showDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.showTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.movieIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hallIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.showtimeDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showtimeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -88,6 +87,56 @@
             this.showtimeDataGridView.TabIndex = 6;
             this.showtimeDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showtimeDataGridView_CellContentClick);
             // 
+            // showtimeIDDataGridViewTextBoxColumn
+            // 
+            this.showtimeIDDataGridViewTextBoxColumn.DataPropertyName = "ShowtimeID";
+            this.showtimeIDDataGridViewTextBoxColumn.HeaderText = "ShowtimeID";
+            this.showtimeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.showtimeIDDataGridViewTextBoxColumn.Name = "showtimeIDDataGridViewTextBoxColumn";
+            this.showtimeIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // showDateDataGridViewTextBoxColumn
+            // 
+            this.showDateDataGridViewTextBoxColumn.DataPropertyName = "ShowDate";
+            this.showDateDataGridViewTextBoxColumn.HeaderText = "ShowDate";
+            this.showDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.showDateDataGridViewTextBoxColumn.Name = "showDateDataGridViewTextBoxColumn";
+            this.showDateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // showTimeDataGridViewTextBoxColumn
+            // 
+            this.showTimeDataGridViewTextBoxColumn.DataPropertyName = "ShowTime";
+            this.showTimeDataGridViewTextBoxColumn.HeaderText = "ShowTime";
+            this.showTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.showTimeDataGridViewTextBoxColumn.Name = "showTimeDataGridViewTextBoxColumn";
+            this.showTimeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // movieIDDataGridViewTextBoxColumn
+            // 
+            this.movieIDDataGridViewTextBoxColumn.DataPropertyName = "MovieID";
+            this.movieIDDataGridViewTextBoxColumn.HeaderText = "MovieID";
+            this.movieIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.movieIDDataGridViewTextBoxColumn.Name = "movieIDDataGridViewTextBoxColumn";
+            this.movieIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // hallIDDataGridViewTextBoxColumn
+            // 
+            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "HallID";
+            this.hallIDDataGridViewTextBoxColumn.HeaderText = "HallID";
+            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
+            this.hallIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // showtimeBindingSource
+            // 
+            this.showtimeBindingSource.DataMember = "Showtime";
+            this.showtimeBindingSource.DataSource = this.cinemaDataDataSet5;
+            // 
+            // cinemaDataDataSet5
+            // 
+            this.cinemaDataDataSet5.DataSetName = "CinemaDataDataSet5";
+            this.cinemaDataDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // uptBtn
             // 
             this.uptBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(59)))), ((int)(((byte)(171)))));
@@ -113,7 +162,7 @@
             this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.ClearBtn.Location = new System.Drawing.Point(1032, 346);
+            this.ClearBtn.Location = new System.Drawing.Point(1032, 287);
             this.ClearBtn.Margin = new System.Windows.Forms.Padding(50, 10, 60, 0);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(160, 49);
@@ -121,23 +170,6 @@
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
             this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
-            // 
-            // delBtn
-            // 
-            this.delBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(49)))));
-            this.delBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.delBtn.FlatAppearance.BorderSize = 0;
-            this.delBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delBtn.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
-            this.delBtn.Location = new System.Drawing.Point(1032, 287);
-            this.delBtn.Margin = new System.Windows.Forms.Padding(50, 10, 60, 0);
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(160, 49);
-            this.delBtn.TabIndex = 44;
-            this.delBtn.Text = "Delete";
-            this.delBtn.UseVisualStyleBackColor = false;
-            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
             // 
             // addBtn
             // 
@@ -239,59 +271,9 @@
             this.showTime.TabIndex = 49;
             this.showTime.Value = new System.DateTime(2030, 2, 28, 0, 0, 0, 0);
             // 
-            // cinemaDataDataSet5
-            // 
-            this.cinemaDataDataSet5.DataSetName = "CinemaDataDataSet5";
-            this.cinemaDataDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // showtimeBindingSource
-            // 
-            this.showtimeBindingSource.DataMember = "Showtime";
-            this.showtimeBindingSource.DataSource = this.cinemaDataDataSet5;
-            // 
             // showtimeTableAdapter
             // 
             this.showtimeTableAdapter.ClearBeforeFill = true;
-            // 
-            // showtimeIDDataGridViewTextBoxColumn
-            // 
-            this.showtimeIDDataGridViewTextBoxColumn.DataPropertyName = "ShowtimeID";
-            this.showtimeIDDataGridViewTextBoxColumn.HeaderText = "ShowtimeID";
-            this.showtimeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.showtimeIDDataGridViewTextBoxColumn.Name = "showtimeIDDataGridViewTextBoxColumn";
-            this.showtimeIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // showDateDataGridViewTextBoxColumn
-            // 
-            this.showDateDataGridViewTextBoxColumn.DataPropertyName = "ShowDate";
-            this.showDateDataGridViewTextBoxColumn.HeaderText = "ShowDate";
-            this.showDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.showDateDataGridViewTextBoxColumn.Name = "showDateDataGridViewTextBoxColumn";
-            this.showDateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // showTimeDataGridViewTextBoxColumn
-            // 
-            this.showTimeDataGridViewTextBoxColumn.DataPropertyName = "ShowTime";
-            this.showTimeDataGridViewTextBoxColumn.HeaderText = "ShowTime";
-            this.showTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.showTimeDataGridViewTextBoxColumn.Name = "showTimeDataGridViewTextBoxColumn";
-            this.showTimeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // movieIDDataGridViewTextBoxColumn
-            // 
-            this.movieIDDataGridViewTextBoxColumn.DataPropertyName = "MovieID";
-            this.movieIDDataGridViewTextBoxColumn.HeaderText = "MovieID";
-            this.movieIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.movieIDDataGridViewTextBoxColumn.Name = "movieIDDataGridViewTextBoxColumn";
-            this.movieIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // hallIDDataGridViewTextBoxColumn
-            // 
-            this.hallIDDataGridViewTextBoxColumn.DataPropertyName = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.HeaderText = "HallID";
-            this.hallIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hallIDDataGridViewTextBoxColumn.Name = "hallIDDataGridViewTextBoxColumn";
-            this.hallIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // mngShowtime
             // 
@@ -304,7 +286,6 @@
             this.Controls.Add(this.txtShowtimeID);
             this.Controls.Add(this.uptBtn);
             this.Controls.Add(this.ClearBtn);
-            this.Controls.Add(this.delBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -316,8 +297,8 @@
             this.Text = "mngShowtime";
             this.Load += new System.EventHandler(this.mngShowtime_Load);
             ((System.ComponentModel.ISupportInitialize)(this.showtimeDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showtimeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,7 +310,6 @@
         private System.Windows.Forms.DataGridView showtimeDataGridView;
         private RoundedButton uptBtn;
         private RoundedButton ClearBtn;
-        private RoundedButton delBtn;
         private RoundedButton addBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
