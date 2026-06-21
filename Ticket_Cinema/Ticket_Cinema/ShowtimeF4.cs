@@ -26,7 +26,7 @@ namespace Ticket_Cinema
         {
             InitializeComponent();
             movieId = selectedMovieId;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            //dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             
         }
         private void ShowtimeF4_Load(object sender, EventArgs e)
