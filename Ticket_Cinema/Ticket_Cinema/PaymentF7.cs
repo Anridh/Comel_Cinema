@@ -13,15 +13,6 @@ namespace Ticket_Cinema
 {
     public partial class PaymentF7 : Form
     {
-        //ambik dato dato
-        private string connectionString =
-            @"Data Source=(LocalDB)\MSSQLLocalDB;
-              AttachDbFilename=|DataDirectory|\CinemaData.mdf;
-              Integrated Security=True";
-
-        private string bookingId = "";
-        private decimal totalAmount = 0;
-
         public PaymentF7()
         {
             InitializeComponent();
@@ -34,36 +25,16 @@ namespace Ticket_Cinema
         }
 
         private void LoadBookingSummary()
-            //gini untuk ambik daterrr daterr jugakkk
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+       
+            if (string.IsNullOrEmpty(BookingSession.BookingId))
             {
-                conn.Open();
-
-                string query = @"
-                    SELECT TOP 1 BookingID, TotalAmount_RM
-                    FROM BOOKING
-                    ORDER BY BookingDate DESC, BookingID DESC";
-
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        //kat sini untuk tunjuk daterrrr daterrr ke tumpat yang sepatutnye
-                        bookingId = reader["BookingID"].ToString();
-                        totalAmount = Convert.ToDecimal(reader["TotalAmount_RM"]);
-
-                        label6.Text = bookingId;
-
-                        label8.Text = totalAmount.ToString("0.00");
-                    }
-                    else
-                    {
-                        MessageBox.Show("No booking found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
+                MessageBox.Show("No booking found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+            label6.Text = BookingSession.BookingId;
+            label8.Text = BookingSession.TotalAmount.ToString("0.00");
         }
 
         private void bttnPay_Click(object sender, EventArgs e)
@@ -132,6 +103,36 @@ namespace Ticket_Cinema
         private void label6_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
         private void label8_Click(object sender, EventArgs e) { }
+
+        private void PaymentF7_Load_1(object sender, EventArgs e)
+        {
+            BgBrightness();
+        }
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Image gambarAsal = this.BackgroundImage;
+                Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
+
+                bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
+                using (Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
 

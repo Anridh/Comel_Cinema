@@ -22,16 +22,15 @@ namespace Ticket_Cinema
             @"Data Source=(LocalDB)\MSSQLLocalDB;
               AttachDbFilename=|DataDirectory|\CinemaData.mdf;
               Integrated Security=True";
-        public SeatSelectionF5(string selectedShowtimeId, string selectedMovieId    )
+        public SeatSelectionF5(string selectedShowtimeId, string selectedMovieId)
         {
             InitializeComponent();
             showtimeId = selectedShowtimeId;
-            movieId = selectedMovieId;  
+            movieId = selectedMovieId;
         }
 
         private void SeatSelection_Load(object sender, EventArgs e)
         {
-            BgBrightness();
             LoadMovieDetailsAndShowtime();
             LoadBookedSeatsFromDatabase();
             AttachSeatClickEvents();
@@ -160,7 +159,7 @@ namespace Ticket_Cinema
         }
         private void UpdateSummary()
         {
-            // Join names into a comma-separated string: "C3, C4"
+            
             // 🟢 Nota: Pastikan (Name) property Textbox anda di designer ditukar kepada nama di bawah
             txtSelectedSeats.Text = string.Join(", ", selectedSeats);
 
@@ -294,6 +293,18 @@ namespace Ticket_Cinema
                 }
             }
 
+            //ni untuk variable array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
+            BookingSession.BookingId = newBookingId;
+            BookingSession.ShowtimeId = showtimeId;
+            BookingSession.MovieId = movieId;
+            BookingSession.CustomerId = currentCustomerId; 
+            BookingSession.SeatNumbers = string.Join(", ", selectedSeats);
+            BookingSession.TicketPrice = SEAT_PRICE;
+            BookingSession.TotalAmount = totalAmount;
+            BookingSession.MovieTitle = labelmoviename.Text;
+            BookingSession.ShowtimeText = labelDatemovie.Text + " " + labelTime.Text;
+            BookingSession.HallName = labelHall.Text;
+
             MessageBox.Show("Tempahan kerusi berjaya disimpan!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // Buka form BookingF6
@@ -307,47 +318,30 @@ namespace Ticket_Cinema
 
         }
 
-        private void labelA_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTotalPrice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSelectedSeats_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
         // Kosongkan / Padam kaedah kosong yang tidak digunakan untuk mengemas kod anda
 
-        private void BgBrightness()
-        {
-            if (this.BackgroundImage != null)
-            {
-                Image gambarAsal = this.BackgroundImage;
-                Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
 
-                bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
-                using (Graphics g = Graphics.FromImage(bggelap))
-                {
-                    g.DrawImage(this.BackgroundImage, 0, 0);
-                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
-                    {
-                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
-                    }
-                }
-                this.BackgroundImage = bggelap;
-            }
-
-
-        }
 
     }
+    //ni variables array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
+    public static class BookingSession
+    {
+        public static string BookingId = "";
+        public static string ShowtimeId = "";
+        public static string MovieId = "";
+        public static string CustomerId = "";
+        public static string CustomerName = "";
+        public static string Email = "";
+        public static string MovieTitle = "";
+        public static string ShowtimeText = "";
+        public static string HallName = "";
+        public static string SeatNumbers = "";
+        public static decimal TicketPrice = 0;
+        public static decimal TotalAmount = 0;
+    }
 }
-
-     
-

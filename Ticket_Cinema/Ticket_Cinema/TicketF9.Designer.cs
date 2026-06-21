@@ -175,7 +175,7 @@
             this.label7.Size = new System.Drawing.Size(163, 27);
             this.label7.TabIndex = 7;
             this.label7.Text = "Ticket Price : ";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            //this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -187,7 +187,7 @@
             this.label6.Size = new System.Drawing.Size(128, 27);
             this.label6.TabIndex = 6;
             this.label6.Text = "Ticket ID : ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            //this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -199,7 +199,7 @@
             this.label5.Size = new System.Drawing.Size(80, 27);
             this.label5.TabIndex = 5;
             this.label5.Text = "Seat : ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            //this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -211,7 +211,7 @@
             this.label4.Size = new System.Drawing.Size(141, 27);
             this.label4.TabIndex = 4;
             this.label4.Text = "Showtime : ";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            //this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -223,7 +223,7 @@
             this.label3.Size = new System.Drawing.Size(75, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hall : ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -300,7 +300,7 @@
             this.label11.Size = new System.Drawing.Size(39, 28);
             this.label11.TabIndex = 18;
             this.label11.Text = "By";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            //this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
