@@ -89,7 +89,6 @@ namespace Ticket_Cinema
                     }
                 }
 
-               //ini pun dato yang kita guna
                 string querySeats = @"
                     SELECT SeatID, TicketPrice_RM
                     FROM TICKET
