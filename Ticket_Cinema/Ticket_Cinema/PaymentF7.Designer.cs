@@ -190,7 +190,7 @@
             // cardNumberTB
             // 
             this.cardNumberTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cardNumberTB.Location = new System.Drawing.Point(609, 322);
+            this.cardNumberTB.Location = new System.Drawing.Point(632, 322);
             this.cardNumberTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardNumberTB.Name = "cardNumberTB";
             this.cardNumberTB.Size = new System.Drawing.Size(264, 30);
@@ -252,7 +252,7 @@
             // cardNameTB
             // 
             this.cardNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cardNameTB.Location = new System.Drawing.Point(609, 282);
+            this.cardNameTB.Location = new System.Drawing.Point(631, 282);
             this.cardNameTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cardNameTB.Name = "cardNameTB";
             this.cardNameTB.Size = new System.Drawing.Size(264, 30);
@@ -262,7 +262,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(609, 367);
+            this.textBox3.Location = new System.Drawing.Point(632, 367);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(49, 30);
@@ -273,7 +273,7 @@
             // 
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(666, 367);
+            this.label13.Location = new System.Drawing.Point(689, 367);
             this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(27, 30);
@@ -285,7 +285,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(701, 367);
+            this.textBox4.Location = new System.Drawing.Point(724, 367);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(49, 30);
@@ -295,7 +295,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(609, 409);
+            this.textBox5.Location = new System.Drawing.Point(632, 409);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(93, 30);

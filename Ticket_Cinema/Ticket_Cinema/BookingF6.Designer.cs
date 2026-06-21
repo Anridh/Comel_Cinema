@@ -55,10 +55,12 @@ namespace Ticket_Cinema
             // labelbooking
             // 
             this.labelbooking.AutoSize = true;
-            this.labelbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelbooking.Location = new System.Drawing.Point(27, 32);
+            this.labelbooking.BackColor = System.Drawing.Color.Transparent;
+            this.labelbooking.Font = new System.Drawing.Font("Arial Black", 19.8F, System.Drawing.FontStyle.Bold);
+            this.labelbooking.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelbooking.Location = new System.Drawing.Point(24, 22);
             this.labelbooking.Name = "labelbooking";
-            this.labelbooking.Size = new System.Drawing.Size(197, 29);
+            this.labelbooking.Size = new System.Drawing.Size(305, 46);
             this.labelbooking.TabIndex = 0;
             this.labelbooking.Text = "Booking Details";
             this.labelbooking.Click += new System.EventHandler(this.labelbooking_Click);
