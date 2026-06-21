@@ -175,7 +175,6 @@
             this.label7.Size = new System.Drawing.Size(163, 27);
             this.label7.TabIndex = 7;
             this.label7.Text = "Ticket Price : ";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 

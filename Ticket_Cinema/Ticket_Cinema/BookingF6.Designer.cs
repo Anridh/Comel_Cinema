@@ -167,9 +167,9 @@ namespace Ticket_Cinema
             // 
             // textBoxCustomerName
             // 
-            this.textBoxCustomerName.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustomerName.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxCustomerName.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustomerName.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustomerName.ForeColor = System.Drawing.Color.Black;
             this.textBoxCustomerName.Location = new System.Drawing.Point(358, 92);
             this.textBoxCustomerName.Name = "textBoxCustomerName";
             this.textBoxCustomerName.Size = new System.Drawing.Size(459, 34);
@@ -178,9 +178,9 @@ namespace Ticket_Cinema
             // 
             // textBoxTotalAmount
             // 
-            this.textBoxTotalAmount.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxTotalAmount.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxTotalAmount.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTotalAmount.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxTotalAmount.ForeColor = System.Drawing.Color.Black;
             this.textBoxTotalAmount.Location = new System.Drawing.Point(358, 470);
             this.textBoxTotalAmount.Name = "textBoxTotalAmount";
             this.textBoxTotalAmount.Size = new System.Drawing.Size(459, 34);
@@ -189,9 +189,9 @@ namespace Ticket_Cinema
             // 
             // textBoxTicketPrice
             // 
-            this.textBoxTicketPrice.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxTicketPrice.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxTicketPrice.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTicketPrice.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxTicketPrice.ForeColor = System.Drawing.Color.Black;
             this.textBoxTicketPrice.Location = new System.Drawing.Point(358, 414);
             this.textBoxTicketPrice.Name = "textBoxTicketPrice";
             this.textBoxTicketPrice.Size = new System.Drawing.Size(459, 34);
@@ -200,9 +200,9 @@ namespace Ticket_Cinema
             // 
             // textBoxSeatNumber
             // 
-            this.textBoxSeatNumber.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxSeatNumber.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxSeatNumber.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSeatNumber.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxSeatNumber.ForeColor = System.Drawing.Color.Black;
             this.textBoxSeatNumber.Location = new System.Drawing.Point(358, 362);
             this.textBoxSeatNumber.Name = "textBoxSeatNumber";
             this.textBoxSeatNumber.Size = new System.Drawing.Size(459, 34);
@@ -211,9 +211,9 @@ namespace Ticket_Cinema
             // 
             // textBoxCinemaHall
             // 
-            this.textBoxCinemaHall.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCinemaHall.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxCinemaHall.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCinemaHall.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxCinemaHall.ForeColor = System.Drawing.Color.Black;
             this.textBoxCinemaHall.Location = new System.Drawing.Point(358, 307);
             this.textBoxCinemaHall.Name = "textBoxCinemaHall";
             this.textBoxCinemaHall.Size = new System.Drawing.Size(459, 34);
@@ -222,9 +222,9 @@ namespace Ticket_Cinema
             // 
             // textBoxShowtime
             // 
-            this.textBoxShowtime.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxShowtime.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxShowtime.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShowtime.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxShowtime.ForeColor = System.Drawing.Color.Black;
             this.textBoxShowtime.Location = new System.Drawing.Point(358, 254);
             this.textBoxShowtime.Name = "textBoxShowtime";
             this.textBoxShowtime.Size = new System.Drawing.Size(459, 34);
@@ -233,9 +233,9 @@ namespace Ticket_Cinema
             // 
             // textBoxMovie
             // 
-            this.textBoxMovie.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxMovie.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxMovie.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMovie.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxMovie.ForeColor = System.Drawing.Color.Black;
             this.textBoxMovie.Location = new System.Drawing.Point(358, 200);
             this.textBoxMovie.Name = "textBoxMovie";
             this.textBoxMovie.Size = new System.Drawing.Size(459, 34);
@@ -244,9 +244,9 @@ namespace Ticket_Cinema
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxEmail.BackColor = System.Drawing.Color.DarkGray;
             this.textBoxEmail.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBoxEmail.ForeColor = System.Drawing.Color.Black;
             this.textBoxEmail.Location = new System.Drawing.Point(358, 146);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(459, 34);

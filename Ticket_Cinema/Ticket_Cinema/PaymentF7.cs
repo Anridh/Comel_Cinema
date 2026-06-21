@@ -26,7 +26,6 @@ namespace Ticket_Cinema
 
         private void LoadBookingSummary()
         {
-       
             if (string.IsNullOrEmpty(BookingSession.BookingId))
             {
                 MessageBox.Show("No booking found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -50,25 +49,21 @@ namespace Ticket_Cinema
                 MessageBox.Show("Please enter the cardholder name.", "Missing Info", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             if (cardNumber.Length != 16 || !long.TryParse(cardNumber, out _))
             {
                 MessageBox.Show("Card number must be 16 digits.", "Invalid Card", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             if (!int.TryParse(expMonth, out int month) || month < 1 || month > 12)
             {
                 MessageBox.Show("Enter a valid expiration month (01-12).", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             if (expYear.Length != 2 || !int.TryParse(expYear, out _))
             {
                 MessageBox.Show("Enter a valid 2-digit expiration year.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             if (cvc.Length != 3 || !int.TryParse(cvc, out _))
             {
                 MessageBox.Show("Security code must be 3 digits.", "Invalid CVC", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -95,7 +90,6 @@ namespace Ticket_Cinema
         private void textBox4_TextChanged(object sender, EventArgs e) { }
         private void cardNumberTB_TextChanged(object sender, EventArgs e) { }
         private void textBox5_TextChanged(object sender, EventArgs e) { }
-
         private void label1_Click(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
         private void label3_Click_2(object sender, EventArgs e) { }
@@ -114,25 +108,17 @@ namespace Ticket_Cinema
             {
                 Image gambarAsal = this.BackgroundImage;
                 Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
-
                 bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
                 using (Graphics g = Graphics.FromImage(bggelap))
                 {
                     g.DrawImage(this.BackgroundImage, 0, 0);
                     using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
-                    {
                         g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
-                    }
                 }
                 this.BackgroundImage = bggelap;
             }
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void label13_Click(object sender, EventArgs e) { }
     }
 }
-
-

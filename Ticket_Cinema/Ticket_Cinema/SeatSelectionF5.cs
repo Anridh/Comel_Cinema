@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ticket_Cinema;
 
 namespace Ticket_Cinema
 {
@@ -22,6 +23,7 @@ namespace Ticket_Cinema
             @"Data Source=(LocalDB)\MSSQLLocalDB;
               AttachDbFilename=|DataDirectory|\CinemaData.mdf;
               Integrated Security=True";
+
         public SeatSelectionF5(string selectedShowtimeId, string selectedMovieId)
         {
             InitializeComponent();
@@ -36,6 +38,7 @@ namespace Ticket_Cinema
             AttachSeatClickEvents();
             UpdateSummary();
         }
+
         private void LoadMovieDetailsAndShowtime()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -44,7 +47,7 @@ namespace Ticket_Cinema
 
                 // 🟢 MovieImage dipadamkan dari query kerana ia tiada dalam database anda
                 string query = @"
-            SELECT m.MovieID, m.Title, s.ShowDate, s.ShowTime, s.HallID, h.HallName 
+            SELECT m.MovieID, m.Title, s.ShowDate, s.ShowTime, s.HallID, h.HallName
             FROM Showtime s
             INNER JOIN Movie m ON s.MovieID = m.MovieID
             INNER JOIN HALL h ON s.HallID = h.HallID
@@ -79,24 +82,12 @@ namespace Ticket_Cinema
                             // Menggunakan logik switch-case yang sama seperti HomeForm anda
                             switch (currentMovieId)
                             {
-                                case "M001":
-                                    img = Properties.Resources.pic1;
-                                    break;
-                                case "M002":
-                                    img = Properties.Resources.pic2;
-                                    break;
-                                case "M003":
-                                    img = Properties.Resources.pic3;
-                                    break;
-                                case "M004":
-                                    img = Properties.Resources.pic4;
-                                    break;
-                                case "M005":
-                                    img = Properties.Resources.pic5;
-                                    break;
-                                case "M006":
-                                    img = Properties.Resources.pic6;
-                                    break;
+                                case "M001": img = Properties.Resources.pic1; break;
+                                case "M002": img = Properties.Resources.pic2; break;
+                                case "M003": img = Properties.Resources.pic3; break;
+                                case "M004": img = Properties.Resources.pic4; break;
+                                case "M005": img = Properties.Resources.pic5; break;
+                                case "M006": img = Properties.Resources.pic6; break;
                             }
 
                             // Jika gambar dijumpai, paparkan pada pictureBox1
@@ -110,22 +101,22 @@ namespace Ticket_Cinema
                 }
             }
         }
+
         private void AttachSeatClickEvents()
         {
             GetAllSeatButtons(this);
         }
+
         private void GetAllSeatButtons(Control container)
         {
             foreach (Control control in container.Controls)
             {
-                // Jika butang kerusi sepanjang 2 huruf (cth: A1, B4) dan bukan butang navigasi
                 if (control is Button btn && btn.Name.Length == 2 && btn.Name != "Back" && btn.Name != "Next")
                 {
-                    btn.Click -= SeatButton_Click; // Elakkan pertindihan event
+                    btn.Click -= SeatButton_Click;
                     btn.Click += SeatButton_Click;
                 }
 
-                // Jika butang tersimpan di dalam panel/container lain, gali ke dalam
                 if (control.HasChildren)
                 {
                     GetAllSeatButtons(control);
@@ -157,15 +148,15 @@ namespace Ticket_Cinema
 
             UpdateSummary();
         }
+
         private void UpdateSummary()
         {
-            
-            // 🟢 Nota: Pastikan (Name) property Textbox anda di designer ditukar kepada nama di bawah
             txtSelectedSeats.Text = string.Join(", ", selectedSeats);
 
             decimal totalPrice = selectedSeats.Count * SEAT_PRICE;
             txtTotalPrice.Text = totalPrice.ToString("0.00");
         }
+
         private void LoadBookedSeatsFromDatabase()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -173,7 +164,7 @@ namespace Ticket_Cinema
                 conn.Open();
 
                 string query = @"
-                    SELECT t.SeatID 
+                    SELECT t.SeatID
                     FROM TICKET t
                     INNER JOIN BOOKING b ON t.BookingID = b.BookingID
                     WHERE b.ShowtimeID = @ShowtimeID";
@@ -186,8 +177,6 @@ namespace Ticket_Cinema
                         while (reader.Read())
                         {
                             string bookedSeat = reader["SeatID"].ToString().Trim();
-
-                            // Menggunakan fungsi rekursif untuk mencari kawalan di seluruh pelan form
                             Control seatControl = FindControlRecursive(this, bookedSeat);
 
                             if (seatControl != null && seatControl is Button seatBtn)
@@ -200,7 +189,7 @@ namespace Ticket_Cinema
                 }
             }
         }
-        // Fungsi khas mencari komponen secara mendalam ke dalam form anak
+
         private Control FindControlRecursive(Control container, string name)
         {
             if (container.Name == name) return container;
@@ -212,32 +201,36 @@ namespace Ticket_Cinema
             }
             return null;
         }
+
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            string movieId = GetMovieId();
+            string movieIdForBack = GetMovieId();
 
-            ShowtimeF4 showtime = new ShowtimeF4(movieId);
+            ShowtimeF4 showtime = new ShowtimeF4(movieIdForBack);
             showtime.Show();
             this.Hide();
         }
+
         private string GetMovieId()
         {
-            string movieId = "";
+            string result = "";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
                 string query = "SELECT MovieID FROM Showtime WHERE ShowtimeID = @ShowtimeID";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@ShowtimeID", showtimeId);
-                object result = cmd.ExecuteScalar();
+                object queryResult = cmd.ExecuteScalar();
 
-                if (result != null)
+                if (queryResult != null)
                 {
-                    movieId = result.ToString();
+                    result = queryResult.ToString();
                 }
             }
-            return movieId;
+            return result;
         }
+
+        // ---------------- BOOKING SUBMIT (this is the part that was buggy) ----------------
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
@@ -247,57 +240,68 @@ namespace Ticket_Cinema
                 return;
             }
 
-            // Generasikan ID contoh (Anda boleh ubah mengikut logik penjanaan ID anda sendiri)
-            string newBookingId = "B88" + DateTime.Now.ToString("ssmm");
-            string currentCustomerId = "C101";
+            string currentCustomerId = string.IsNullOrEmpty(BookingSession.CustomerId)
+                ? "C101"
+                : BookingSession.CustomerId;
+
             decimal totalAmount = selectedSeats.Count * SEAT_PRICE;
+            string newBookingId;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-
-                // ---- 1. INSERT MASUK TABLE BOOKING ----
-                string queryBooking = @"INSERT INTO BOOKING (BookingID, BookingDate, TotalAmount_RM, CustomerID, ShowtimeID) 
-                                        VALUES (@BookingID, @BookingDate, @TotalAmount, @CustomerID, @ShowtimeID)";
-
-                using (SqlCommand cmdBooking = new SqlCommand(queryBooking, conn))
+                SqlTransaction transaction = conn.BeginTransaction();
+                try
                 {
-                    cmdBooking.Parameters.AddWithValue("@BookingID", newBookingId);
-                    cmdBooking.Parameters.AddWithValue("@BookingDate", DateTime.Now.ToString("yyyy-MM-dd"));
-                    cmdBooking.Parameters.AddWithValue("@TotalAmount", totalAmount);
-                    cmdBooking.Parameters.AddWithValue("@CustomerID", currentCustomerId);
-                    cmdBooking.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+                    newBookingId = GenerateNewBookingId(conn, transaction);
 
-                    cmdBooking.ExecuteNonQuery();
-                }
+                    string queryBooking = @"INSERT INTO BOOKING (BookingID, BookingDate, TotalAmount_RM, CustomerID, ShowtimeID)
+                                            VALUES (@BookingID, @BookingDate, @TotalAmount, @CustomerID, @ShowtimeID)";
 
-                // ---- 2. INSERT MASUK TABLE TICKET (Looping ikot jumlah kerusi) ----
-                int ticketCounter = 1;
-                foreach (string seat in selectedSeats)
-                {
-                    string newTicketId = "T99" + DateTime.Now.ToString("ff") + ticketCounter;
-
-                    string queryTicket = @"INSERT INTO TICKET (TicketID, TicketPrice_RM, BookingID, SeatID) 
-                                           VALUES (@TicketID, @Price, @BookingID, @SeatID)";
-
-                    using (SqlCommand cmdTicket = new SqlCommand(queryTicket, conn))
+                    using (SqlCommand cmdBooking = new SqlCommand(queryBooking, conn, transaction))
                     {
-                        cmdTicket.Parameters.AddWithValue("@TicketID", newTicketId);
-                        cmdTicket.Parameters.AddWithValue("@Price", SEAT_PRICE);
-                        cmdTicket.Parameters.AddWithValue("@BookingID", newBookingId);
-                        cmdTicket.Parameters.AddWithValue("@SeatID", seat);
-
-                        cmdTicket.ExecuteNonQuery();
+                        cmdBooking.Parameters.AddWithValue("@BookingID", newBookingId);
+                        cmdBooking.Parameters.AddWithValue("@BookingDate", DateTime.Now.ToString("yyyy-MM-dd"));
+                        cmdBooking.Parameters.AddWithValue("@TotalAmount", totalAmount);
+                        cmdBooking.Parameters.AddWithValue("@CustomerID", currentCustomerId);
+                        cmdBooking.Parameters.AddWithValue("@ShowtimeID", showtimeId);
+                        cmdBooking.ExecuteNonQuery();
                     }
-                    ticketCounter++;
+
+                    int nextTicketNumber = GetNextTicketNumber(conn, transaction);
+                    foreach (string seat in selectedSeats)
+                    {
+                        string newTicketId = "T99" + nextTicketNumber.ToString("00");
+
+                        string queryTicket = @"INSERT INTO TICKET (TicketID, TicketPrice_RM, BookingID, SeatID)
+                                               VALUES (@TicketID, @Price, @BookingID, @SeatID)";
+
+                        using (SqlCommand cmdTicket = new SqlCommand(queryTicket, conn, transaction))
+                        {
+                            cmdTicket.Parameters.AddWithValue("@TicketID", newTicketId);
+                            cmdTicket.Parameters.AddWithValue("@Price", SEAT_PRICE);
+                            cmdTicket.Parameters.AddWithValue("@BookingID", newBookingId);
+                            cmdTicket.Parameters.AddWithValue("@SeatID", seat);
+                            cmdTicket.ExecuteNonQuery();
+                        }
+                        nextTicketNumber++;
+                    }
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    MessageBox.Show("Could not save booking: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
 
-            //ni untuk variable array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
-            BookingSession.BookingId = newBookingId;
+            // ni untuk variable array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
+            BookingSession.BookingId = newBookingId; 
             BookingSession.ShowtimeId = showtimeId;
             BookingSession.MovieId = movieId;
-            BookingSession.CustomerId = currentCustomerId; 
+            BookingSession.CustomerId = currentCustomerId;
             BookingSession.SeatNumbers = string.Join(", ", selectedSeats);
             BookingSession.TicketPrice = SEAT_PRICE;
             BookingSession.TotalAmount = totalAmount;
@@ -307,28 +311,42 @@ namespace Ticket_Cinema
 
             MessageBox.Show("Tempahan kerusi berjaya disimpan!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Buka form BookingF6
             BookingF6 booking = new BookingF6();
             booking.Show();
             this.Hide();
         }
 
-        private void textBoxScreen_TextChanged(object sender, EventArgs e)
+        private string GenerateNewBookingId(SqlConnection conn, SqlTransaction transaction)
         {
-
+            string query = "SELECT MAX(BookingID) FROM BOOKING";
+            using (SqlCommand cmd = new SqlCommand(query, conn, transaction))
+            {
+                object result = cmd.ExecuteScalar();
+                if (result == null || result == DBNull.Value) return "B8801";
+                string lastId = result.ToString();
+                int lastNum = int.Parse(lastId.Substring(3));
+                return "B88" + (lastNum + 1).ToString("00");
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private int GetNextTicketNumber(SqlConnection conn, SqlTransaction transaction)
         {
-
+            string query = "SELECT MAX(TicketID) FROM TICKET";
+            using (SqlCommand cmd = new SqlCommand(query, conn, transaction))
+            {
+                object result = cmd.ExecuteScalar();
+                if (result == null || result == DBNull.Value) return 1;
+                string lastId = result.ToString();
+                int lastNum = int.Parse(lastId.Substring(3));
+                return lastNum + 1;
+            }
         }
 
-        // Kosongkan / Padam kaedah kosong yang tidak digunakan untuk mengemas kod anda
+        private void textBoxScreen_TextChanged(object sender, EventArgs e) { }
 
-
-
+        private void pictureBox1_Click(object sender, EventArgs e) { }
     }
-    //ni variables array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
+
     public static class BookingSession
     {
         public static string BookingId = "";
@@ -343,5 +361,21 @@ namespace Ticket_Cinema
         public static string SeatNumbers = "";
         public static decimal TicketPrice = 0;
         public static decimal TotalAmount = 0;
+
+        public static void Reset()
+        {
+            BookingId = "";
+            ShowtimeId = "";
+            MovieId = "";
+            CustomerId = "";
+            CustomerName = "";
+            Email = "";
+            MovieTitle = "";
+            ShowtimeText = "";
+            HallName = "";
+            SeatNumbers = "";
+            TicketPrice = 0;
+            TotalAmount = 0;
+        }
     }
 }
