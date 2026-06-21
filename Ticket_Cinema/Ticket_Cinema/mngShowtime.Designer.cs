@@ -49,6 +49,10 @@
             this.showDate = new System.Windows.Forms.DateTimePicker();
             this.showTime = new System.Windows.Forms.DateTimePicker();
             this.showtimeTableAdapter = new Ticket_Cinema.CinemaDataDataSet5TableAdapters.ShowtimeTableAdapter();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtHallID = new System.Windows.Forms.TextBox();
+            this.txtMovieID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.showtimeDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showtimeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cinemaDataDataSet5)).BeginInit();
@@ -192,7 +196,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(627, 295);
+            this.label4.Location = new System.Drawing.Point(627, 403);
             this.label4.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 24);
@@ -203,7 +207,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(627, 241);
+            this.label3.Location = new System.Drawing.Point(627, 349);
             this.label3.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 24);
@@ -252,7 +256,7 @@
             this.showDate.AllowDrop = true;
             this.showDate.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.showDate.Location = new System.Drawing.Point(779, 238);
+            this.showDate.Location = new System.Drawing.Point(779, 346);
             this.showDate.MaxDate = new System.DateTime(2026, 12, 31, 0, 0, 0, 0);
             this.showDate.MinDate = new System.DateTime(2026, 6, 15, 0, 0, 0, 0);
             this.showDate.Name = "showDate";
@@ -264,7 +268,7 @@
             this.showTime.Checked = false;
             this.showTime.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.showTime.Location = new System.Drawing.Point(779, 287);
+            this.showTime.Location = new System.Drawing.Point(779, 395);
             this.showTime.Name = "showTime";
             this.showTime.ShowUpDown = true;
             this.showTime.Size = new System.Drawing.Size(146, 28);
@@ -275,12 +279,54 @@
             // 
             this.showtimeTableAdapter.ClearBeforeFill = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(627, 241);
+            this.label5.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 24);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "Movie ID:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(627, 295);
+            this.label6.Margin = new System.Windows.Forms.Padding(10, 30, 3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 24);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Hall ID:";
+            // 
+            // txtHallID
+            // 
+            this.txtHallID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHallID.Location = new System.Drawing.Point(779, 291);
+            this.txtHallID.Name = "txtHallID";
+            this.txtHallID.Size = new System.Drawing.Size(94, 28);
+            this.txtHallID.TabIndex = 52;
+            // 
+            // txtMovieID
+            // 
+            this.txtMovieID.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMovieID.Location = new System.Drawing.Point(779, 237);
+            this.txtMovieID.Name = "txtMovieID";
+            this.txtMovieID.Size = new System.Drawing.Size(94, 28);
+            this.txtMovieID.TabIndex = 53;
+            // 
             // mngShowtime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.txtMovieID);
+            this.Controls.Add(this.txtHallID);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.showTime);
             this.Controls.Add(this.showDate);
             this.Controls.Add(this.txtShowtimeID);
@@ -326,5 +372,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn showTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn movieIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hallIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtHallID;
+        private System.Windows.Forms.TextBox txtMovieID;
     }
 }
