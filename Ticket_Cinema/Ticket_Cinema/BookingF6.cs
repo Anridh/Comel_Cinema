@@ -35,7 +35,7 @@ namespace Ticket_Cinema
 
         private void BookingF6_Load_1(object sender, EventArgs e)
         {
-
+            BgBrightness();
         }
 
         private void LoadLatestBookingDetails()
@@ -145,12 +145,7 @@ namespace Ticket_Cinema
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Booking confirmed! Proceeding to payment.",
-             "Booking Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            PaymentF7 payment = new PaymentF7();
-            payment.Show();
-            this.Close();
         }
 
         private void backBtn_Click_1(object sender, EventArgs e)
@@ -170,5 +165,42 @@ namespace Ticket_Cinema
         private void textBoxTotalAmount_TextChanged(object sender, EventArgs e) { }
 
         private void labelbooking_Click(object sender, EventArgs e) { }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeatSelectionF5 seatSelection = new SeatSelectionF5(showtimeId, movieId);
+            seatSelection.Show();
+            this.Close();
+        }
+
+        private void bttnPay_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Booking confirmed! Proceeding to payment.",
+             "Booking Confirmed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            PaymentF7 payment = new PaymentF7();
+            payment.Show();
+            this.Close();
+        }
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Image gambarAsal = this.BackgroundImage;
+                Bitmap bggelap = new Bitmap(gambarAsal.Width, gambarAsal.Height);
+
+                bggelap.SetResolution(gambarAsal.HorizontalResolution, gambarAsal.VerticalResolution);
+                using (Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
+
+        }
     }
 }
