@@ -154,5 +154,10 @@ namespace Ticket_Cinema
         {
 
         }
+
+        private void TicketF9_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
