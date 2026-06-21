@@ -229,5 +229,10 @@ namespace Ticket_Cinema
                 this.BackgroundImage = bggelap;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

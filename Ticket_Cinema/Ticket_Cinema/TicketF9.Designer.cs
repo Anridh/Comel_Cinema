@@ -262,6 +262,7 @@
             this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picQR.TabIndex = 13;
             this.picQR.TabStop = false;
+            this.picQR.Click += new System.EventHandler(this.picQR_Click);
             // 
             // label8
             // 
