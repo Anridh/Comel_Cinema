@@ -33,6 +33,7 @@ namespace Ticket_Cinema
 
         private void SeatSelection_Load(object sender, EventArgs e)
         {
+            BgBrightness();
             LoadMovieDetailsAndShowtime();
             LoadBookedSeatsFromDatabase();
             AttachSeatClickEvents();
@@ -298,7 +299,7 @@ namespace Ticket_Cinema
             }
 
             // ni untuk variable array untuk set kan data sekali. dan bende ini tak menganggu dengan data base
-            BookingSession.BookingId = newBookingId; 
+            BookingSession.BookingId = newBookingId;
             BookingSession.ShowtimeId = showtimeId;
             BookingSession.MovieId = movieId;
             BookingSession.CustomerId = currentCustomerId;
@@ -345,6 +346,24 @@ namespace Ticket_Cinema
         private void textBoxScreen_TextChanged(object sender, EventArgs e) { }
 
         private void pictureBox1_Click(object sender, EventArgs e) { }
+
+        private void BgBrightness()
+        {
+            if (this.BackgroundImage != null)
+            {
+                Bitmap bggelap = new Bitmap(this.BackgroundImage.Width, this.BackgroundImage.Height);
+
+                using (Graphics g = Graphics.FromImage(bggelap))
+                {
+                    g.DrawImage(this.BackgroundImage, 0, 0);
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(160, 0, 0, 0)))
+                    {
+                        g.FillRectangle(brush, 0, 0, bggelap.Width, bggelap.Height);
+                    }
+                }
+                this.BackgroundImage = bggelap;
+            }
+        }
     }
 
     public static class BookingSession
@@ -377,5 +396,5 @@ namespace Ticket_Cinema
             TicketPrice = 0;
             TotalAmount = 0;
         }
-    }
+    } 
 }
