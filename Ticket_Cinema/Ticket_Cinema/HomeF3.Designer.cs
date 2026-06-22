@@ -56,7 +56,6 @@
             this.lblTitle2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnBook3 = new System.Windows.Forms.Button();
-            this.btnBookings = new System.Windows.Forms.Button();
             this.btnBook2 = new System.Windows.Forms.Button();
             this.btnBook1 = new System.Windows.Forms.Button();
             this.lblNowShowing = new System.Windows.Forms.Label();
@@ -105,7 +104,6 @@
             this.panelMain.Controls.Add(this.panel3);
             this.panelMain.Controls.Add(this.panel2);
             this.panelMain.Controls.Add(this.btnBook3);
-            this.panelMain.Controls.Add(this.btnBookings);
             this.panelMain.Controls.Add(this.btnBook2);
             this.panelMain.Controls.Add(this.btnBook1);
             this.panelMain.Controls.Add(this.lblNowShowing);
@@ -408,21 +406,6 @@
             this.btnBook3.UseVisualStyleBackColor = false;
             this.btnBook3.Click += new System.EventHandler(this.btnBook3_Click);
             // 
-            // btnBookings
-            // 
-            this.btnBookings.BackColor = System.Drawing.Color.Navy;
-            this.btnBookings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBookings.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookings.ForeColor = System.Drawing.Color.White;
-            this.btnBookings.Location = new System.Drawing.Point(901, 25);
-            this.btnBookings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBookings.Name = "btnBookings";
-            this.btnBookings.Size = new System.Drawing.Size(159, 37);
-            this.btnBookings.TabIndex = 1;
-            this.btnBookings.Text = "Your Booking";
-            this.btnBookings.UseVisualStyleBackColor = false;
-            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
-            // 
             // btnBook2
             // 
             this.btnBook2.BackColor = System.Drawing.Color.Transparent;
@@ -458,7 +441,7 @@
             this.lblNowShowing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNowShowing.Location = new System.Drawing.Point(28, 12);
             this.lblNowShowing.Name = "lblNowShowing";
-            this.lblNowShowing.Size = new System.Drawing.Size(272, 48);
+            this.lblNowShowing.Size = new System.Drawing.Size(263, 46);
             this.lblNowShowing.TabIndex = 5;
             this.lblNowShowing.Text = "Now Showing";
             this.lblNowShowing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -654,7 +637,6 @@
         private System.Windows.Forms.Label lblGenre1;
         private System.Windows.Forms.Label lblTitle1;
         private System.Windows.Forms.Label lblRating1;
-        private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

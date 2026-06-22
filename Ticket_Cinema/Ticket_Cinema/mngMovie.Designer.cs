@@ -210,7 +210,7 @@
             // txtDuration
             // 
             this.txtDuration.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDuration.Location = new System.Drawing.Point(806, 365);
+            this.txtDuration.Location = new System.Drawing.Point(819, 365);
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(184, 28);
             this.txtDuration.TabIndex = 51;

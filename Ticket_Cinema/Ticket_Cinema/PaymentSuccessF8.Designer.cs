@@ -155,7 +155,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label6.Location = new System.Drawing.Point(743, 396);
+            this.label6.Location = new System.Drawing.Point(742, 386);
             this.label6.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 42);

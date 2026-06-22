@@ -124,5 +124,26 @@ namespace Ticket_Cinema
         private void label6_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
         private void label11_Click(object sender, EventArgs e) { }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to logout?",
+                "Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                LoginF2 login = new LoginF2();
+                login.Show();
+                this.Hide();
+            }
+        }
     }
 }

@@ -30,8 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicketF9));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.lblTicketPrice = new System.Windows.Forms.Label();
+            this.picQR = new System.Windows.Forms.PictureBox();
             this.lblTicketID = new System.Windows.Forms.Label();
             this.lblSeat = new System.Windows.Forms.Label();
             this.lblShowtime = new System.Windows.Forms.Label();
@@ -46,13 +50,11 @@
             this.picMovie = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.picQR = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -89,6 +91,27 @@
             this.groupBox1.Tag = "";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Rage Italic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(372, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(360, 35);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Comel Cinemax Booking system";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(335, 28);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(39, 28);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "By";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
@@ -98,6 +121,17 @@
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 17;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label8.Location = new System.Drawing.Point(364, 475);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(376, 26);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Here\'s your ticket. Enjoy the movie!";
             // 
             // lblTicketPrice
             // 
@@ -109,6 +143,18 @@
             this.lblTicketPrice.TabIndex = 10;
             this.lblTicketPrice.Text = "RM 20.00";
             this.lblTicketPrice.Click += new System.EventHandler(this.lblTicketPrice_Click);
+            // 
+            // picQR
+            // 
+            this.picQR.Image = ((System.Drawing.Image)(resources.GetObject("picQR.Image")));
+            this.picQR.Location = new System.Drawing.Point(822, 155);
+            this.picQR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picQR.Name = "picQR";
+            this.picQR.Size = new System.Drawing.Size(237, 265);
+            this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQR.TabIndex = 13;
+            this.picQR.TabStop = false;
+            this.picQR.Click += new System.EventHandler(this.picQR_Click);
             // 
             // lblTicketID
             // 
@@ -267,49 +313,33 @@
             this.label10.Text = "_________________________________________________________________________________" +
     "__________________________________________________________";
             // 
-            // picQR
+            // buttonExit
             // 
-            this.picQR.Image = ((System.Drawing.Image)(resources.GetObject("picQR.Image")));
-            this.picQR.Location = new System.Drawing.Point(822, 155);
-            this.picQR.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picQR.Name = "picQR";
-            this.picQR.Size = new System.Drawing.Size(237, 265);
-            this.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picQR.TabIndex = 13;
-            this.picQR.TabStop = false;
-            this.picQR.Click += new System.EventHandler(this.picQR_Click);
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(33)))), ((int)(((byte)(62)))));
+            this.buttonExit.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(562, 605);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(100, 2, 29, 50);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(121, 49);
+            this.buttonExit.TabIndex = 19;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // label8
+            // btnLogout
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label8.Location = new System.Drawing.Point(364, 475);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(376, 26);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Here\'s your ticket. Enjoy the movie!";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(335, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 28);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "By";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Rage Italic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(372, 27);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(360, 35);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Comel Cinemax Booking system";
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(1071, 31);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(109, 37);
+            this.btnLogout.TabIndex = 20;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // TicketF9
             // 
@@ -318,6 +348,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1261, 673);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -326,8 +358,8 @@
             this.Load += new System.EventHandler(this.TicketF9_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMovie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picQR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMovie)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,5 +387,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
